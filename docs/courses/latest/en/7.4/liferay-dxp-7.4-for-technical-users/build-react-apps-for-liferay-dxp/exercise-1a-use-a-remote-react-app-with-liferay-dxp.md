@@ -74,3 +74,7 @@
 ## Next Up
 
 * [Exercise 1b: Add a React Remote App to Your Platform](./exercise-1b-add-a-react-remote-app-to-your-platform.md)
+
+## Previous Step
+
+* [Building a React Application for Liferay DXP](./building-a-react-application-for-liferay-dxp.md)
