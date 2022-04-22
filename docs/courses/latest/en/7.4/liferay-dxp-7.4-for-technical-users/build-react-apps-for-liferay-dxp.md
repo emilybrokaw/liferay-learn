@@ -41,35 +41,15 @@ build-react-apps-for-liferay-dxp/summary.md
 * An running instance of Liferay DXP 7.4 with the following contents:
 	- A picklist called _Account Types_ with options for _Savings_, _Checking_, and _Individual Retirement_.
 	- A Liferay Object called _Bank Accounts_ with the following fields:
-<table>
-  <tr>
-    <th>Label</th>
-    <th>Type</th>
-    <th>Mandatory</th>
-  </tr>
-  <tr>
-    <td>Account Holder</td>
-    <td>Text</td>
-    <td>Yes</td>
-  </tr>
-  <tr>
-    <td>Account Number</td>
-    <td>Integer</td>
-    <td>Yes</td>
-  </tr>
-  <tr>
-    <td>Account Type</td>
-    <td>Picklist</td>
-    <td>Yes</td>
-  </tr>
-  <tr>
-    <td>Account Balance</td>
-    <td>Decimal</td>
-    <td>Yes</td>
-  </tr>
-</table>
 
-	- At least two entries for the _Bank Accounts_ Object with your Administrator as the _Account Holder_ (three will be demonstrated)
+| Label         | Type      | Mandatory   |       
+|:--------------- |:-------------:|--------------:|
+| Account Holder  | Text          | Yes           |
+| Account Number  | Integer       | Yes           |
+| Account Type    | Picklist      | Yes           |
+| Account Balance | Decimal       | Yes           |
+
+  - At least two entries for the _Bank Accounts_ Object with your Administrator as the _Account Holder_ (three will be demonstrated)
 
 ## Next Steps
 
