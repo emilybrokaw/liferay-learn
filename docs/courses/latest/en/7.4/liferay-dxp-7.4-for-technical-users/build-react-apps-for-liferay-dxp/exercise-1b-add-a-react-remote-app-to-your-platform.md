@@ -7,8 +7,6 @@
 - Register a React Remote App with Liferay DXP
 - Add the App to a Page as a Remote App Widget
 
- </div>
-
 ## Register the Faria Financial Manager App as a Remote App
 
 1. **Open** an instance of Liferay DXP at `localhost:8080`.
