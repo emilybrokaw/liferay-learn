@@ -105,3 +105,7 @@
 ## Next Up
 
 * [Organizing Assets into a Folder Structure](./organizing-assets-into-a-folder-structure.md)
+
+## Previous Step
+
+* [Organizing Assets with Metadata](./organizing-assets-with-metadata.md)

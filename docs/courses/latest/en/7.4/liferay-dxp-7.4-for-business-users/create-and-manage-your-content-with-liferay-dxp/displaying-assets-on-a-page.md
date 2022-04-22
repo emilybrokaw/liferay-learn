@@ -7,3 +7,7 @@
 ## Next Up
 
 * [Exercise 4: Present Content with Display Page Templates](./exercise-4-present-content-with-display-page-templates.md)
+
+## Previous Step
+
+* [Exercise 3: Organize Content with Folders](./exercise-3-organize-content-with-folders.md)

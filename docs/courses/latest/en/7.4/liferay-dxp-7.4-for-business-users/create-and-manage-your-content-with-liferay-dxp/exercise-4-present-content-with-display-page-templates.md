@@ -182,3 +182,7 @@
 ## Next Up
 
 * [Summary](./summary.md)
+
+## Previous Step
+
+* [Displaying Assets on a Page](./displaying-assets-on-a-page.md)
