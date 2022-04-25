@@ -13,6 +13,7 @@ add-users-and-manage-permissions-with-liferay-dxp/exercise-3a-customize-site-con
 add-users-and-manage-permissions-with-liferay-dxp/exercise-3b-create-custom-site-role.md
 add-users-and-manage-permissions-with-liferay-dxp/controlling-specific-permissions-on-sites.md
 add-users-and-manage-permissions-with-liferay-dxp/exercise-4-permissions-on-sites.md
+add-users-and-manage-permissions-with-liferay-dxp/summary.md
 ```
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/wHHhqOwiSQ0
@@ -64,3 +65,4 @@ add-users-and-manage-permissions-with-liferay-dxp/exercise-4-permissions-on-site
 * [Exercise 3b: Create Custom Site Role](./add-users-and-manage-permissions-with-liferay-dxp/exercise-3b-create-custom-site-role.md) 
 * [Controlling Specific Permissions on Sites](./add-users-and-manage-permissions-with-liferay-dxp/controlling-specific-permissions-on-sites.md) 
 * [Exercise 4: Permissions on Sites](./add-users-and-manage-permissions-with-liferay-dxp/exercise-4-permissions-on-sites.md) 
+* [Summary](./add-users-and-manage-permissions-with-liferay-dxp/summary.md) 
