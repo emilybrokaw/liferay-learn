@@ -46,6 +46,6 @@ gather-and-analyze-data-with-liferay-dxp/summary.md
 * [Gathering Feedback](./gather-and-analyze-data-with-liferay-dxp/gathering-feedback.md) 
 * [Exercise 1: Creating Forms](./gather-and-analyze-data-with-liferay-dxp/exercise-1-creating-forms.md) 
 * [Addressing Feedback](./gather-and-analyze-data-with-liferay-dxp/addressing-feedback.md)
-* [Exercise 2: Gathering and Viewing Data](./gather-and-analyze-data-with-liferay-dxp/exercise-2-gathering-and-viewing-feedback.md) 
+* [Exercise 2: Gathering and Viewing Feedback](./gather-and-analyze-data-with-liferay-dxp/exercise-2-gathering-and-viewing-feedback.md) 
 * [Creating a Kaleo Forms Process](./gather-and-analyze-data-with-liferay-dxp/creating-a-kaleo-forms-process.md)
 * [Summary](./gather-and-analyze-data-with-liferay-dxp/summary.md)

@@ -185,3 +185,7 @@
 ## Next Up
 
 * [Addressing Feedback](./addressing-feedback.md)
+
+## Previous Step
+
+* [Gathering Feedback](./gathering-feedback.md)

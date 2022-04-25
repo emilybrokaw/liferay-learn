@@ -7,3 +7,7 @@
 ## Next Up
 
 * [Summary](./summary.md)
+
+## Previous Step
+
+* [Exercise 2: Gathering and Viewing Feedback](./exercise-2-gathering-and-viewing-feedback.md)
