@@ -81,3 +81,7 @@
 ## Next Up
 
 * [Summary](./summary.md)
+
+## Previous Step
+
+* [Managing Site Configuration](./managing-site-configuration.md)

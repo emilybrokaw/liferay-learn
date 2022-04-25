@@ -128,3 +128,7 @@
 ## Next Up
 
 * [Managing Site Configuration](./managing-site-configuration.md)
+
+## Previous Step
+
+* [Creating Sites with Site Templates](./create-sites-with-site-templates.md)
