@@ -110,4 +110,8 @@
 
 ## Next Up
 
-* [Exercise 2a: Create an Organization Hierarchy](./exercise-2a-create-an-organization-hierarchy.md)
+* [Manage and Organize Users](./manage-and-organize-users.md)
+
+## Previous Step
+
+* [Adding Users to Liferay DXP](./adding-users-to-liferay-dxp.md) 
