@@ -5,8 +5,8 @@
 
 ## Next Up
 
-* [Exercise 4: Permissions on Sites](./exercise-4-permissions-on-sites.md) 
+* [Exercise 4: Manage Teams and Community Permissions on Sites](./exercise-4-permissions-on-sites.md) 
 
 ## Previous Step
 
-* [Exercise 3b: Create Custom Site Role](./exercise-3b-create-custom-site-role.md) 
+* [Exercise 3b: Create a Custom Site Role](./exercise-3b-create-custom-site-role.md) 

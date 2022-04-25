@@ -107,4 +107,4 @@
 
 ## Previous Step
 
-* [Exercise 3a: Customize Site Content Reviewer Role](./exercise-3a-customize-site-content-reviewer-role.md) 
+* [Exercise 3a: Customize the Site Content Reviewer Role](./exercise-3a-customize-site-content-reviewer-role.md) 

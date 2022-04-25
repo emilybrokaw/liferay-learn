@@ -6,4 +6,4 @@
 
 ## Previous Step
 
-* [Exercise 4: Permissions on Sites](./exercise-4-permissions-on-sites.md) 
+* [Exercise 4: Manage Teams and Community Permissions on Sites](./exercise-4-permissions-on-sites.md) 

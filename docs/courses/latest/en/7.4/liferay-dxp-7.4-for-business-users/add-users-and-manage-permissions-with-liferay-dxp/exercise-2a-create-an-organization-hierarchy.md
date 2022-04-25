@@ -75,7 +75,7 @@
 
 ## Next Up
 
-* [Exercise 2b: Create User Groups](./exercise-2b-create-user-groups.md)
+* [Exercise 2b: Create and Manage User Groups](./exercise-2b-create-user-groups.md)
 
 ## Previous Step
 
