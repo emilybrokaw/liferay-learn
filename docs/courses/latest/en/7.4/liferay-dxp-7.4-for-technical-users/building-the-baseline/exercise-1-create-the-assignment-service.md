@@ -2,7 +2,7 @@
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/nleXG4QFsN8
 
-#### Exercise Goals
+## Exercise Goals
 
 - Create a Liferay Service Builder Project using the _service-builder_ template
 - Define the Assignment entity
@@ -12,7 +12,7 @@
 
 </div>
 	
-#### Create a Liferay Service Builder Project
+## Create a Liferay Service Builder Project
 
 1. **Create** a new service builder project in the gradebook-workspace with the following parameters:
 	* Use `gradebook` for the _Project Name_.
@@ -24,7 +24,7 @@ Feel free to use whatever method you are most comfortable with to generate this 
 
 `service.xml` is the main configuration file of a Service Builder project. It lets you define model entities, data sources, finder methods, and exceptions for your service. You can customize `service.xml` with a graphical designer tool or edit the file's source code directly. 
 
-#### Define the Assignment Entity
+## Define the Assignment Entity
 
 1. **Go to** `modules/gradebook/gradebook-service` in your preferred IDE.
 2. **Open** the `service.xml` file.
@@ -39,7 +39,7 @@ Feel free to use whatever method you are most comfortable with to generate this 
 	```
 
 
-#### Create the Assignment Entity
+## Create the Assignment Entity
 
 1. **Add** the following entity just before the closing `service-builder` tag:
 	```xml
@@ -48,7 +48,7 @@ Feel free to use whatever method you are most comfortable with to generate this 
 
 This creates an entity named _Assignment_ and enables both the local and remote services.
 
-#### Define Assignment Columns
+## Define Assignment Columns
 
 1. **Add** a column called _title_ to the _Assignment_ entity. Your entity will look like this:
 	```xml
@@ -68,7 +68,7 @@ This creates an entity named _Assignment_ and enables both the local and remote 
     ```
 
 
-#### Add Definitions to the `service.xml` File
+## Add Definitions to the `service.xml` File
 
 1. **Add** the following snippet after the _column_ definitions:
 	```xml
@@ -115,7 +115,7 @@ This creates an entity named _Assignment_ and enables both the local and remote 
 
 The final `service.xml` should look like this:
 
-#### Final Code Review
+## Final Code Review
 
 ```xml
 <?xml version="1.0"?>
@@ -191,7 +191,7 @@ When you run the `buildService` Gradle task, the following items are generated:
 
 <div class="page"></div>
 
-#### Build the Service
+## Build the Service
 
 1. **Run** the `buildService` task in the `gradebook-workspace/modules/gradebook/build` directory.
 	* Note that you can run the service generation task several different ways:
