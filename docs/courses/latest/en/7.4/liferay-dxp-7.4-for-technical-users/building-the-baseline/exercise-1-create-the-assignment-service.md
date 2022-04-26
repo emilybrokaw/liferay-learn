@@ -1,10 +1,6 @@
 # Create the Assignment Service
 
-Coming Soon!
-
-<!--
-
-Note to the editor: I had to change some snippet instructions to remove the !-- -- in order to comment out the entire file. Make sure to review and ensure the snippets are correct.
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/nleXG4QFsN8
 
 #### Exercise Goals
 
@@ -17,6 +13,7 @@ Note to the editor: I had to change some snippet instructions to remove the !-- 
 </div>
 	
 #### Create a Liferay Service Builder Project
+
 1. **Create** a new service builder project in the gradebook-workspace with the following parameters:
 	* Use `gradebook` for the _Project Name_.
 	* Use _service-builder_ for the _Project Template Name_.
@@ -28,7 +25,8 @@ Feel free to use whatever method you are most comfortable with to generate this 
 `service.xml` is the main configuration file of a Service Builder project. It lets you define model entities, data sources, finder methods, and exceptions for your service. You can customize `service.xml` with a graphical designer tool or edit the file's source code directly. 
 
 #### Define the Assignment Entity
-1. **Go to** `modules > gradebook > gradebook-service` in your preferred IDE.
+
+1. **Go to** `modules/gradebook/gradebook-service` in your preferred IDE.
 2. **Open** the `service.xml` file.
 3. **Replace** the contents of the file with the following:
 	```xml
@@ -36,12 +34,13 @@ Feel free to use whatever method you are most comfortable with to generate this 
 	<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
 	<service-builder dependency-injector="ds" package-path="com.liferay.training.gradebook">
 		<namespace>Gradebook</namespace>
-		<<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">>
+		<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
 	</service-builder>
 	```
 
 
-#### Create the Assignment Entity 
+#### Create the Assignment Entity
+
 1. **Add** the following entity just before the closing `service-builder` tag:
 	```xml
 	<entity name="Assignment" local-service="true"></entity>
@@ -50,6 +49,7 @@ Feel free to use whatever method you are most comfortable with to generate this 
 This creates an entity named _Assignment_ and enables both the local and remote services.
 
 #### Define Assignment Columns
+
 1. **Add** a column called _title_ to the _Assignment_ entity. Your entity will look like this:
 	```xml
 	<entity name="Assignment" local-service="true">
@@ -69,9 +69,10 @@ This creates an entity named _Assignment_ and enables both the local and remote 
 
 
 #### Add Definitions to the `service.xml` File
+
 1. **Add** the following snippet after the _column_ definitions:
 	```xml
-	< Order >
+	<!-- Order -->
 	<order by="asc">
 		<order-column name="title" />
 	</order>
@@ -79,8 +80,8 @@ This creates an entity named _Assignment_ and enables both the local and remote 
 
 2. **Add** the following snippet after the _order_ definition:
 	```xml
-	< Finders >
-	< Find by groupId >
+	<!-- Finders -->
+	<!-- Find by groupId -->
 	<finder name="GroupId" return-type="Collection">
 		<finder-column name="groupId"></finder-column>
 	</finder>
@@ -91,9 +92,9 @@ This creates an entity named _Assignment_ and enables both the local and remote 
 
 3. **Add** the following reference definitions after the _finder_ definitions:
 	```xml
-	< Reference to Group entity service >
+	<!-- Reference to Group entity service -->
 	<reference entity="Group" package-path="com.liferay.portal"></reference>
-	< Entity services needed for the integration to Asset framework >
+	<!-- Entity services needed for the integration to Asset framework -->
 	<reference entity="AssetEntry"
 		package-path="com.liferay.portlet.asset"></reference>
 	<reference entity="AssetLink"
@@ -104,7 +105,7 @@ This creates an entity named _Assignment_ and enables both the local and remote 
 
 4. **Add** the following code snippet after the closing tag of _entity_:
 	```xml
-	< Exceptions >
+	<!-- Exceptions -->
 	<exceptions>
 		<exception>AssignmentValidation</exception>
 	</exceptions>
@@ -122,18 +123,18 @@ The final `service.xml` should look like this:
 
 <service-builder dependency-injector="ds" package-path="com.liferay.training.gradebook">
 	<namespace>Gradebook</namespace>
-	<<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
 	<entity name="Assignment" local-service="true">
 
-		< PK fields >
+		<!-- PK fields -->
 
 		<column name="assignmentId" primary="true" type="long"></column>
 
-		< Group instance >
+		<!-- Group instance -->
 
 		<column name="groupId" type="long"></column>
 
-		< Audit fields >
+		<!-- Audit fields -->
 
 		<column name="companyId" type="long"></column>
 		<column name="userId" type="long"></column>
@@ -144,25 +145,25 @@ The final `service.xml` should look like this:
 		<column name="description" type="String"></column>
 		<column name="dueDate" type="Date"></column>
 
-		< Order >
+		<!-- Order -->
 
 		<order by="asc">
 			<order-column name="title" />
 		</order>
 
-		< Finders >
+		<!-- Finders -->
 
-		< Find by groupId >
+		<!-- Find by groupId -->
 
 		<finder name="GroupId" return-type="Collection">
 			<finder-column name="groupId"></finder-column>
 		</finder>
 
-		< Reference to Group entity service >
+		<!-- Reference to Group entity service -->
 
 		<reference entity="Group" package-path="com.liferay.portal"></reference>
 
-		< Entity services needed for the integration to Asset framework >
+		<!-- Entity services needed for the integration to Asset framework -->
 
 		<reference entity="AssetEntry"
 			package-path="com.liferay.portlet.asset"></reference>
@@ -172,7 +173,7 @@ The final `service.xml` should look like this:
 			package-path="com.liferay.portlet.asset"></reference>
 	</entity>
 
-	< Exceptions >
+	<!-- Exceptions -->
 
 	<exceptions>
 		<exception>AssignmentValidation</exception>
@@ -191,6 +192,7 @@ When you run the `buildService` Gradle task, the following items are generated:
 <div class="page"></div>
 
 #### Build the Service
+
 1. **Run** the `buildService` task in the `gradebook-workspace/modules/gradebook/build` directory.
 	* Note that you can run the service generation task several different ways:
  		* The _Gradle Tasks_ panel using the project's `buildService` task 
@@ -221,4 +223,12 @@ tasks.withType(JavaCompile) {
 }
 ```
 
--->
+---
+
+## Next Up
+
+* [Local and Remote Service](./local-and-remote-service.md)
+
+## Previous Step
+
+* [Using Service Builder](./using-service-builder.md)
