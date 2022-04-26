@@ -1,10 +1,9 @@
 # Implement Assignment Remote Service
 
-Coming Soon!
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/0lNvBGjU3Y4
 
-<!--
+## Exercise Goals
 
-#### Exercise Goals
 - Declare dependencies
 - Implement the facade methods for the local service in the <code>AssignmentServiceImpl.java</code>
 - Do a final code review
@@ -12,7 +11,8 @@ Coming Soon!
 
 </div>
 	
-#### Implement the Façade Methods
+## Implement the Façade Methods
+
 1. **Open** the `AssignmentServiceImpl.java` class. The empty class looks like this:
 
   ```java
@@ -111,7 +111,8 @@ Coming Soon!
   }
   ```
 
-#### Final Code Review
+## Final Code Review
+
 1. **Resolve** missing imports.
    * Note: You can ignore any errors for unimplemented methods as these should be addressed in later modules. 
 2. **Fix** indents and spacing by using automatic code formatting.
@@ -209,10 +210,11 @@ public class AssignmentServiceImpl extends AssignmentServiceBaseImpl {
 }
 ```
 
-#### Rebuild and Deploy the Service
+## Rebuild and Deploy the Service
+
 1. **Run** the `buildService` Gradle task to regenerate the service.
-* **Start** your Docker container if it's not running.
-* **Run** `../gradlew deploy` to deploy the modules.
+2. **Start** your Docker container if it's not running.
+3. **Run** `../gradlew deploy` to deploy the modules.
 
 You should see a success log message if modules were deployed successfully:
 
@@ -221,4 +223,12 @@ You should see a success log message if modules were deployed successfully:
 2019-03-20 11:32:02.573 INFO  [pipe-start 985][BundleStartStopLogger:39] STARTED com.liferay.training.gradebook.service_1.0.0 [985]
 ```
 
--->
+---
+
+## Next Up 
+
+* [Exercise 2: Implement Assignment Local Service](./exercise-2-implement-assignment-local-service.md) 
+
+## Previous Step
+
+* [Summary](./summary.md) 
