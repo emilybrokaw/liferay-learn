@@ -1,10 +1,8 @@
 # Implement Assignment Local Service
 
-Coming Soon!
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/jWPb3lqz-Lg
 
-<!-- 
-
-#### Exercise Goals
+## Exercise Goals
 
 - Implement <code>addAssignment()</code>
 - Implement <code>updateAssignment()</code>
@@ -27,7 +25,8 @@ public Assignment addAssignment(Assignment assignment) {
 }
 ```
 
-#### Implement addAssignment()
+## Implement addAssignment()
+
 1. **Open** the `AssignmentLocalServiceImpl`. The empty class looks like this:
 
 	```java
@@ -106,7 +105,8 @@ public class AssignmentLocalServiceImpl extends AssignmentLocalServiceBaseImpl {
 }
 ```
 
-#### Implement updateAssignment
+## Implement updateAssignment
+
 1. **Create** an overload for the `updateAssignment()`:
 
 ```java
@@ -126,7 +126,8 @@ public Assignment updateAssignment(long assignmentId, String title,
 
 Defining finders in `service.xml` automatically creates the corresponding methods in the persistence classes, but we cannot access those directly from the controller layer and have to implement facades in the service implementation class.
 
-#### Implement the Finder Methods
+## Implement the Finder Methods
+
 1. **Implement** the finder methods as follows:
 
 ```java
@@ -174,7 +175,8 @@ private DynamicQuery getKeywordSearchDynamicQuery(
 
 Sometimes it's practical to silence generated methods to ensure correct API usage. Override and "silence" the generated `addAssignment()` and `updateAssignment()` method signatures, which we replaced with our overrides before.
 
-#### "Silence" the Generated Method 
+## "Silence" the Generated Method 
+
 1. Add the following code to the end of the `AssignmentLocalServiceImpl.java` class.
 
 ```java
@@ -189,7 +191,8 @@ public Assignment updateAssignment(Assignment assignment) {
 ```
 <br />
 
-#### Do a Final Code Review
+## Do a Final Code Review
+
 1. **Resolve** missing imports.
 2. **Fix** indents and spacing by using automatic code formatting.
 3. **Save** the file.
@@ -337,8 +340,17 @@ public class AssignmentLocalServiceImpl extends AssignmentLocalServiceBaseImpl {
 }
 ```
 
-#### Rebuild the Service
+## Rebuild the Service
+
 1. **Run** the `buildService` Gradle task at the gradebook level to regenerate the service.
       * If you encounter issues with `buildService`, you may need to run it from `gradebook-workspace/modules/gradebook/gradebook-service/build`.
 
--->
+---
+
+## Next Up
+
+* [Exercise 3: Implement Assignment Remote Service](./exercise-3-implement-assignment-remote-service.md) 
+
+## Previous Step
+
+* [Local and Remote Service](./local-and-remote-service.md) 
