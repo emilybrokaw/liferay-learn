@@ -3,12 +3,17 @@
 ```{toctree}
 :maxdepth: 2
 
+building-the-baseline/overview-developing-real-world-application.md
+building-the-baseline/introducing-liferay-service-builder.md
+building-the-baseline/using-service-builder.md
 building-the-baseline/exercise-1-create-the-assignment-service.md
+building-the-baseline/local-and-remote-service.md
 building-the-baseline/exercise-2-implement-assignment-local-service.md
 building-the-baseline/exercise-3-implement-assignment-remote-service.md
+building-the-baseline/summary.md
 ```
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/q3veTitreto
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/lQVsAvqf_6s
 
 ## Learning Objectives
 
@@ -31,6 +36,11 @@ building-the-baseline/exercise-3-implement-assignment-remote-service.md
 
 ## Next Steps
 
+* [Overview of Developing a Real-World Application](./building-the-baseline/overview-developing-real-world-application.md) 
+* [Introducing Liferay Service Builder](./building-the-baseline/introducing-liferay-service-builder.md) 
+* [Using Service Builder](./building-the-baseline/using-service-builder.md) 
 * [Exercise 1: Create the Assignment Service](./building-the-baseline/exercise-1-create-the-assignment-service.md) 
+* [Local and Remote Service](./building-the-baseline/local-and-remote-service.md) 
 * [Exercise 2: Implement Assignment Local Service](./building-the-baseline/exercise-2-implement-assignment-local-service.md) 
 * [Exercise 3: Implement Assignment Remote Service](./building-the-baseline/exercise-3-implement-assignment-remote-service.md) 
+* [Summary](./building-the-baseline/summary.md) 
