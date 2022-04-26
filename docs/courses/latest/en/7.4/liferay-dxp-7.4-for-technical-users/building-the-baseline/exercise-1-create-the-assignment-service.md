@@ -1,4 +1,4 @@
-# Create the Assignment Service
+# Exercise 1: Create the Assignment Service
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/nleXG4QFsN8
 
@@ -9,8 +9,6 @@
 - Define service exceptions
 - Final code review
 - Build the service 
-
-</div>
 	
 ## Create a Liferay Service Builder Project
 

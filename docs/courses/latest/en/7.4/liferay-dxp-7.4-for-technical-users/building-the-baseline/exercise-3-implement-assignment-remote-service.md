@@ -1,4 +1,4 @@
-# Implement Assignment Remote Service
+# Exercise 3: Implement Assignment Remote Service
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/0lNvBGjU3Y4
 
@@ -9,8 +9,6 @@
 - Do a final code review
 - Rebuild and deploy the service
 
-</div>
-	
 ## Implement the Façade Methods
 
 1. **Open** the `AssignmentServiceImpl.java` class. The empty class looks like this:
@@ -227,8 +225,8 @@ You should see a success log message if modules were deployed successfully:
 
 ## Next Up 
 
-* [Exercise 2: Implement Assignment Local Service](./exercise-2-implement-assignment-local-service.md) 
+* [Summary](./summary.md) 
 
 ## Previous Step
 
-* [Summary](./summary.md) 
+* [Exercise 2: Implement Assignment Local Service](./exercise-2-implement-assignment-local-service.md) 

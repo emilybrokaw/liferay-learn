@@ -1,4 +1,4 @@
-# Implement Assignment Local Service
+# Exercise 2: Implement Assignment Local Service
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/jWPb3lqz-Lg
 
@@ -10,8 +10,6 @@
 - Silence generated methods
 - Do a final code review
 - Rebuild the service
-
-</div>
 
 Before implementing the method for adding assignments, open the local service base class `AssignmentLocalServiceBaseImpl` and take a look at the generated `addAssigment()` method. This method doesn't automatically generate an ID, set the audit fields (like creation or modification date), or validate the entity. Creating an overload for `addAssignment()` will take care of these tasks.
 
