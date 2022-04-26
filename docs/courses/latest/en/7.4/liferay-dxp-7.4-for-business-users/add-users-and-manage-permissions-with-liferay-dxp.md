@@ -12,7 +12,7 @@ add-users-and-manage-permissions-with-liferay-dxp/roles-and-permissions.md
 add-users-and-manage-permissions-with-liferay-dxp/exercise-3a-customize-site-content-reviewer-role.md
 add-users-and-manage-permissions-with-liferay-dxp/exercise-3b-create-custom-site-role.md
 add-users-and-manage-permissions-with-liferay-dxp/controlling-specific-permissions-on-sites.md
-add-users-and-manage-permissions-with-liferay-dxp/exercise-4-permissions-on-sites.md
+add-users-and-manage-permissions-with-liferay-dxp/exercise-4-teams-and-permissions-on-sites.md
 add-users-and-manage-permissions-with-liferay-dxp/summary.md
 ```
 
@@ -64,5 +64,5 @@ add-users-and-manage-permissions-with-liferay-dxp/summary.md
 * [Exercise 3a: Customize the Site Content Reviewer Role](./add-users-and-manage-permissions-with-liferay-dxp/exercise-3a-customize-site-content-reviewer-role.md) 
 * [Exercise 3b: Create a Custom Site Role](./add-users-and-manage-permissions-with-liferay-dxp/exercise-3b-create-custom-site-role.md) 
 * [Controlling Specific Permissions on Sites](./add-users-and-manage-permissions-with-liferay-dxp/controlling-specific-permissions-on-sites.md) 
-* [Exercise 4: Manage Teams and Community Permissions on Sites](./add-users-and-manage-permissions-with-liferay-dxp/exercise-4-permissions-on-sites.md) 
+* [Exercise 4: Manage Teams and Community Permissions on Sites](./add-users-and-manage-permissions-with-liferay-dxp/exercise-4-teams-and-permissions-on-sites.md) 
 * [Summary](./add-users-and-manage-permissions-with-liferay-dxp/summary.md) 
