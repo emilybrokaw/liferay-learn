@@ -1,15 +1,11 @@
 # Building the Baseline
 
-Coming Soon!
-
-<!-- 
-
 ```{toctree}
 :maxdepth: 2
 
-building-the-baseline/.md
-building-the-baseline/.md
-building-the-baseline/.md
+building-the-baseline/exercise-1-create-the-assignment-service.md
+building-the-baseline/exercise-2-implement-assignment-local-service.md
+building-the-baseline/exercise-3-implement-assignment-remote-service.md
 ```
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/q3veTitreto
@@ -35,8 +31,6 @@ building-the-baseline/.md
 
 ## Next Steps
 
-* [](./building-the-baseline/.md) 
-* [](./building-the-baseline/.md) 
-* [](./building-the-baseline/.md) 
-
--->
+* [Exercise 1: Create the Assignment Service](./building-the-baseline/exercise-1-create-the-assignment-service.md) 
+* [Exercise 2: Implement Assignment Local Service](./building-the-baseline/exercise-2-implement-assignment-local-service.md) 
+* [Exercise 3: Implement Assignment Remote Service](./building-the-baseline/exercise-3-implement-assignment-remote-service.md) 
