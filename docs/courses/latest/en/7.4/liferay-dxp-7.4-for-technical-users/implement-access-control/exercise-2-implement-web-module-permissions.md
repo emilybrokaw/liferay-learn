@@ -474,8 +474,8 @@ The last thing we need to do is to hide the plus button on the management toolba
 
 ## Next Up
 
-* [Exercise 1: Implement Service Module Permissions](./exercise-1-implement-service-module-permissions.md) 
+* [Summary](./summary.md)
 
 ## Previous Step
 
-* [Summary](./summary.md) 
+* [Exercise 1: Implement Service Module Permissions](./exercise-1-implement-service-module-permissions.md)

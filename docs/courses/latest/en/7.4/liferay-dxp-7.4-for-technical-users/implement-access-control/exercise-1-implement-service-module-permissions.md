@@ -591,8 +591,8 @@ public class AssignmentServiceImpl extends AssignmentServiceBaseImpl {
 
 ## Next Up
 
-* [Permissioning Concepts](./permissioning-concepts.md) 
+* [Exercise 2: Implement Web Module Permissions](./exercise-2-implement-web-module-permissions.md)
 
 ## Previous Step
 
-* [Exercise 2: Implement Web Module Permissions](./exercise-2-implement-web-module-permissions.md) 
+* [Permissioning Concepts](./permissioning-concepts.md)
