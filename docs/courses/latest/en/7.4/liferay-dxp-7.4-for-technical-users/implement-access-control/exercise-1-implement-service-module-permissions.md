@@ -1,4 +1,4 @@
-# Implement Service Module Permissions
+# Exercise 1: Implement Service Module Permissions
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/CdthfS5kzlE
 
@@ -21,16 +21,16 @@ To avoid misspellings in permission properties, we will create a constants class
 
 ## Create the Resource Constants Class
 
-1. **Create** a class `com.liferay.training.gradebook.constants.GradebookConstants` and implement as follows:
+1. **Create** a class <code>com.liferay.training.gradebook.constants.GradebookConstants</code> and implement as follows:
 
-	```java
+```java
 	package com.liferay.training.gradebook.constants;
 	public class GradebookConstants {
 		public static final String RESOURCE_NAME = "com.liferay.training.gradebook.model";
 	}
-	```
+```
 
-2. **Add** `com.liferay.training.gradebook.constants` to the exported packages in the `bnd.bnd` file. The file will look like this:
+2. **Add** <code>com.liferay.training.gradebook.constants</code> to the exported packages in the `bnd.bnd` file. The file will look like this:
 
 ```properties
 Bundle-Name: gradebook-api
@@ -130,10 +130,10 @@ Permissions need container objects for the model entities. When we create an ent
 
 ## Implement Permission Resource Management
 
-1. **Open** the class `com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl`.
+1. **Open** the class <code>com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl</code>.
 2. **Replace** the `addAssignment()` method with the following:
 
-	```java
+```java
 	public Assignment addAssignment(
 		long groupId, Map<Locale, String> titleMap, String description,
 		Date dueDate, ServiceContext serviceContext)
@@ -189,11 +189,11 @@ Permissions need container objects for the model entities. When we create an ent
 		
 		return assignment;
 	}
-	```
+```
 
 3. **Implement** a new signature for deleting assignments as follows:
 
-	```java
+```java
 	public Assignment deleteAssignment(Assignment assignment)
 		throws PortalException {
 			
@@ -206,7 +206,7 @@ Permissions need container objects for the model entities. When we create an ent
 			
 		return super.deleteAssignment(assignment);
 	}	
-	```
+```
 
 4. **Resolve** missing imports.	
 
@@ -216,10 +216,10 @@ Now we will create classes for registering the model and top-level resource perm
 
 ## Create the Permission Registrar Classes
 
-1. **Create** a class  `com.liferay.training.gradebook.internal.security.permission.resource.definition.AssignmentModelResourcePermissionDefinition` in the *gradebook-service* module.
+1. **Create** a class <code>com.liferay.training.gradebook.internal.security.permission.resource.definition.AssignmentModelResourcePermissionDefinition</code> in the *gradebook-service* module.
 2. **Implement** as follows:
 
-	```java
+```java
 	package com.liferay.training.gradebook.internal.security.permission.resource.definition;
 
 	import com.liferay.exportimport.kernel.staging.permission.StagingPermission;
@@ -310,13 +310,13 @@ Now we will create classes for registering the model and top-level resource perm
 		@Reference
 		private WorkflowPermission _workflowPermission;
 	}
-	```
+```
 
 3. **Create** a class for registering the Gradebook portlet resources and top level permissions:
 	
-	```java
+```java
 	com.liferay.training.gradebook.internal.security.permission.resource.definition.AssignmentPortletResourcePermissionDefinition
-	```
+```
 
 4. **Implement** as follows:
 
@@ -416,7 +416,7 @@ In this exercise, we'll allow everybody to see and search the assignments list b
 
 ## Implement Permission Checking in the Remote Service
 
-1. **Implement** the class `com.liferay.training.gradebook.service.impl.AssignmentServiceImpl.java` as follows (You'll see an error for the `filterFindBy` method because it's not yet generated): 
+1. **Implement** the class <code>com.liferay.training.gradebook.service.impl.AssignmentServiceImpl.java</code> as follows (You'll see an error for the `filterFindBy` method because it's not yet generated): 
 
 ```java
 /**
@@ -577,8 +577,6 @@ public class AssignmentServiceImpl extends AssignmentServiceBaseImpl {
 	private volatile PortletResourcePermission _portletResourcePermission;	
 }
 ```
-
-<div class="page"></div>
 
 ## Rebuild the Service
 

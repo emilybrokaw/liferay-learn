@@ -1,4 +1,4 @@
-# Implement Web Module Permissions
+# Exercise 2: Implement Web Module Permissions
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/HJiwJ9cNwn0
 
@@ -60,7 +60,7 @@ Implement a helper class in the *gradebook-web* module for checking top-level pe
 
 ## Implement the Top-Level Resource Permission Checker Class
 
-1. **Create** the class `com.liferay.training.gradebook.web.internal.security.permission.resource.AssignmentTopLevelPermission`.
+1. **Create** the class <code>com.liferay.training.gradebook.web.internal.security.permission.resource.AssignmentTopLevelPermission</code>.
 2. **Implement** as follows:
 
 ```java
@@ -107,7 +107,7 @@ Next we need to implement a class for checking existing entity permissions.
 
 ## Implement the Model Resource Permission Checker Class
 
-1. **Create** the class `com.liferay.training.gradebook.web.internal.security.permission.resource.AssignmentPermission`.
+1. **Create** the class <code>com.liferay.training.gradebook.web.internal.security.permission.resource.AssignmentPermission</code>.
 2. **Implement** as follows:
 
 ```java
@@ -167,19 +167,19 @@ We'll put our entity permission checking object into the request attributes of o
 
 ## Implement Permission Checking in the JSP Files
 
-1. **Open** the class `com.liferay.training.gradebook.web.portlet.action.ViewAssignmentsMVCRenderCommand`
+1. **Open** the class <code>com.liferay.training.gradebook.web.portlet.action.ViewAssignmentsMVCRenderCommand</code>
 2. **Add** a service reference for the permission checker:
 
-	```java
+```java
 	@Reference
 	protected AssignmentPermission _assignmentPermission;
-	```
+```
 
 3. **Add** the checker into the request attributes in the `render()` method:
 
-	```java
+```java
 	renderRequest.setAttribute("assignmentPermission", _assignmentPermission);		
-	```
+```
 	
 Your final class should now look like this:
 
@@ -354,11 +354,11 @@ We'll also add an option to manage entity permissions. For that purpose, we'll u
 
 1. **Declare** the `<liferay-security>` taglib in `src/main/resources/META-INF/resources/init.jsp`:
 
-	```html
+```html
 	<%@ taglib prefix="liferay-security" uri="http://liferay.com/tld/security" %>
-	```
+```
 
-2. **Open** the file `src/main/resources/META-INF/resources/assignment/entry_actions.jsp`
+2. **Open** the file <code>src/main/resources/META-INF/resources/assignment/entry_actions.jsp</code>
 3. **Wrap** all the actions with permission checks so that only authorized users can access the functions and add a permissions menu option. Replace the contents of the file with the following:
 
 ```html
@@ -427,10 +427,10 @@ The last thing we need to do is to hide the plus button on the management toolba
 
 ## Implement Permission Checking in the Management Toolbar
 
-1. **Open** the class `com.liferay.training.gradebook.web.display.context.AssignmentsManagementToolbarDisplayContext.java`.
+1. **Open** the class <code>com.liferay.training.gradebook.web.display.context.AssignmentsManagementToolbarDisplayContext.java</code>.
 2. **Implement** permission checking in the `getCreationMenu()` method as follows:
 
-	```java
+```java
 		public CreationMenu getCreationMenu() {
 		
 			// Check if user has permissions to add assignments.
@@ -458,7 +458,7 @@ The last thing we need to do is to hide the plus button on the management toolba
 				}
 			};		
 		}
-	```
+```
 
 3. **Resolve** missing imports.
 
