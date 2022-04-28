@@ -2,6 +2,8 @@
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/4kwQqCsYfQ8
 
+> The exercise video above uses DXP 7.3. To complete the exercise using DXP/CE 7.4, follow the updated exercise steps below.
+
 ## Exercise Goals
 
 * Use the NPM Liferay Bundle generator to generate and deploy a React JavaScript module

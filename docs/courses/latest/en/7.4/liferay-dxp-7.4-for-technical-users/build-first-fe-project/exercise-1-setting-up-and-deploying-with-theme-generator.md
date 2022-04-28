@@ -2,6 +2,8 @@
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/FIhj00c4-Qo
 
+> The exercise video above uses DXP 7.3. To complete the exercise using DXP/CE 7.4, follow the updated exercise steps below.
+
 ## Exercise Goals
 
 * Use the NPM Theme generator to quickly generate and deploy a theme
@@ -10,8 +12,6 @@
 	* Create a basic Theme Module
 	* Deploy the basic Theme Module to the local instance of Liferay
 	* Select the Theme Module on the platform
-
-</div>
 
 ## Install a Liferay Tomcat Bundle in a New Bundles Folder
 
