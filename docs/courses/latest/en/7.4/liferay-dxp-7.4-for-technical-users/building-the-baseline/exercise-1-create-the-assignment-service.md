@@ -2,6 +2,8 @@
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/nleXG4QFsN8
 
+> The exercise video above uses DXP 7.3. To complete the exercise using DXP/CE 7.4, follow the updated exercise steps below.
+
 ## Exercise Goals
 
 - Create a Liferay Service Builder Project using the _service-builder_ template
