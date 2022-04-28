@@ -10,4 +10,4 @@
 
 ## Previous Step
 
-* [ Build Your First Front-End Project](../build-first-fe-project.md) 
+* [Build Your First Front-End Project](../build-first-fe-project.md) 
