@@ -1,4 +1,4 @@
-# Setting up and Deploying with the Liferay Theme Generator
+# Exercise 1: Setting up and Deploying with the Liferay Theme Generator
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/FIhj00c4-Qo
 

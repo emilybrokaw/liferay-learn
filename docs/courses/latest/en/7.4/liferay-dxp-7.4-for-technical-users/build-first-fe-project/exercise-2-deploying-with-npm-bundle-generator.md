@@ -1,4 +1,4 @@
-# Deploying with the NPM Bundle Generator
+# Exercise 2: Deploying with the NPM Bundle Generator
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/4kwQqCsYfQ8
 
@@ -60,10 +60,6 @@
 2. Create and deploy another module using blade.
 
 ---
-
-## Next Up
-
-* [Summary](./summary.md) 
 
 ## Previous Step
 
