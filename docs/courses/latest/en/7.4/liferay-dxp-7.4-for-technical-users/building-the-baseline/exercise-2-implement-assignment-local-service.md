@@ -29,7 +29,7 @@ public Assignment addAssignment(Assignment assignment) {
 
 1. **Open** the `AssignmentLocalServiceImpl`. The empty class looks like this:
 
-	```java
+```java
 	/**
 	 * Copyright (c) 2000-present Liferay, Inc. All rights reserved.
 	 *
@@ -71,7 +71,7 @@ public Assignment addAssignment(Assignment assignment) {
 		 * Never reference this class directly. Use <code>com.liferay.training.gradebook.service.AssignmentLocalService</code> via injection or a <code>org.osgi.util.tracker.ServiceTracker</code> or use <code>com.liferay.training.gradebook.service.AssignmentLocalServiceUtil</code>.
 		 */
 	}
-	```
+```
 
 2. **Implement** the `addAssignment()` in the class as follows:
 
@@ -98,8 +98,7 @@ public class AssignmentLocalServiceImpl extends AssignmentLocalServiceBaseImpl {
       assignment.setTitle(title);
       assignment.setUserId(userId);
       assignment.setUserName(user.getScreenName());
-```
-```java
+
   // Persist assignment to database.
   return super.addAssignment(assignment);
 }
@@ -343,7 +342,7 @@ public class AssignmentLocalServiceImpl extends AssignmentLocalServiceBaseImpl {
 ## Rebuild the Service
 
 1. **Run** the `buildService` Gradle task at the gradebook level to regenerate the service.
-      * If you encounter issues with `buildService`, you may need to run it from `gradebook-workspace/modules/gradebook/gradebook-service/build`.
+      * If you encounter issues with `buildService`, you may need to run it from <code>gradebook-workspace/modules/gradebook/gradebook-service/build</code>.
 
 ---
 

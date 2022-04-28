@@ -15,7 +15,7 @@
 
 1. **Open** the `AssignmentServiceImpl.java` class. The empty class looks like this:
 
-  ```java
+```java
   /**
    * Copyright (c) 2000-present Liferay, Inc. All rights reserved.
    *
@@ -65,11 +65,11 @@
   	 * Never reference this class directly. Always use <code>com.liferay.training.gradebook.service.AssignmentServiceUtil</code> to access the assignment remote service.
   	 */
   }
-  ```
+```
 
 2. **Implement** the façade methods in the class as follows:
 
-  ```java
+```java
   public Assignment addAssignment(
     long groupId, String title, String description,
     Date dueDate, ServiceContext serviceContext)
@@ -109,7 +109,7 @@
     return assignmentLocalService.updateAssignment(
        assignmentId, title, description, dueDate, serviceContext);
   }
-  ```
+```
 
 ## Final Code Review
 

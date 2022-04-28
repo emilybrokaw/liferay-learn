@@ -29,69 +29,69 @@ Feel free to use whatever method you are most comfortable with to generate this 
 1. **Go to** `modules/gradebook/gradebook-service` in your preferred IDE.
 2. **Open** the `service.xml` file.
 3. **Replace** the contents of the file with the following:
-	```xml
+```xml
 	<?xml version="1.0"?>
 	<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
 	<service-builder dependency-injector="ds" package-path="com.liferay.training.gradebook">
 		<namespace>Gradebook</namespace>
 		<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
 	</service-builder>
-	```
+```
 
 
 ## Create the Assignment Entity
 
 1. **Add** the following entity just before the closing `service-builder` tag:
-	```xml
+```xml
 	<entity name="Assignment" local-service="true"></entity>
-	```
+```
 
 This creates an entity named _Assignment_ and enables both the local and remote services.
 
 ## Define Assignment Columns
 
 1. **Add** a column called _title_ to the _Assignment_ entity. Your entity will look like this:
-	```xml
+```xml
 	<entity name="Assignment" local-service="true">
         <column name="title" type="String"></column>
     </entity>
-    ```
+```
 
 2. **Add** columns for _description_ and _dueDate_ to the _Assignment_ entity. Your entity will now look like this:
 
-	```xml
+```xml
 	<entity name="Assignment" local-service="true">
         <column name="title" type="String"></column>
         <column name="description" type="String"></column>
 		<column name="dueDate" type="Date"></column>
     </entity>
-    ```
+```
 
 
 ## Add Definitions to the `service.xml` File
 
 1. **Add** the following snippet after the _column_ definitions:
-	```xml
+```xml
 	<!-- Order -->
 	<order by="asc">
 		<order-column name="title" />
 	</order>
-	```
+```
 
 2. **Add** the following snippet after the _order_ definition:
-	```xml
+```xml
 	<!-- Finders -->
 	<!-- Find by groupId -->
 	<finder name="GroupId" return-type="Collection">
 		<finder-column name="groupId"></finder-column>
 	</finder>
-	```
+```
 
-	> NOTE: <br/>
+> NOTE: <br/>
     > References define entity services injected in our service classes. This helps to keep the database calls inside a single transaction. We need the Group services and Liferay Asset services for integrating to the Liferay Asset framework for later exercise steps. 
 
 3. **Add** the following reference definitions after the _finder_ definitions:
-	```xml
+```xml
 	<!-- Reference to Group entity service -->
 	<reference entity="Group" package-path="com.liferay.portal"></reference>
 	<!-- Entity services needed for the integration to Asset framework -->
@@ -101,15 +101,15 @@ This creates an entity named _Assignment_ and enables both the local and remote 
 		package-path="com.liferay.portlet.asset"></reference>
 	<reference entity="AssetTag"
 		package-path="com.liferay.portlet.asset"></reference>
-	```
+```
 
 4. **Add** the following code snippet after the closing tag of _entity_:
-	```xml
+```xml
 	<!-- Exceptions -->
 	<exceptions>
 		<exception>AssignmentValidation</exception>
 	</exceptions>
-	```
+```
 
 5. **Save** the _service.xml_ file.
 
@@ -199,7 +199,7 @@ When you run the `buildService` Gradle task, the following items are generated:
 		* The _Overview_ panel of the `service.xml` designer
  		* The _Context_ menu of the gradebook-service project
  		* The _Command Line_ using the Liferay Workspace `gradlew` script
- 	* If you encounter issues with `buildService`, you may need to run it from `gradebook-workspace/modules/gradebook/gradebook-service/build`.
+ 	* If you encounter issues with `buildService`, you may need to run it from <code>gradebook-workspace/modules/gradebook/gradebook-service/build</code>.
 3. **Configure** and _save_ the dependencies in the gradebook-service module's `build.gradle` file as follows: 
 
 ```groovy
