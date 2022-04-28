@@ -2,7 +2,7 @@
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/HJiwJ9cNwn0
 
-Note to the editor: I had to change some snippet instructions to remove the !--, #--, or -- in order to comment out the entire file. Make sure to review and ensure the snippets are correct.
+> The exercise video above uses DXP 7.3. To complete the exercise using DXP/CE 7.4, follow the updated exercise steps below.
 
 ## Exercise Goals
 
