@@ -1,6 +1,6 @@
 # Front-End Development Tools in Liferay
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/v_Rz2IBgrGw
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/ro62wJ3orL0
 
 ---
 

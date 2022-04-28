@@ -1,6 +1,6 @@
 # Front-End Development Frameworks
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/KNqMMZHVbVQ
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/TzZFTvk28o
 
 ---
 
