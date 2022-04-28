@@ -1,14 +1,14 @@
 # Build Your First Front-End Project
 
-Coming Soon!
-
-<!--
-
 ```{toctree}
 :maxdepth: 2
 
-build-first-fe-project/.md
-build-first-fe-project/.md
+build-first-fe-project/adding-custom-branding-to-liferay-platform.md
+build-first-fe-project/front-end-development-frameworks.md
+build-first-fe-project/front-end-development-tools-in-liferay.md
+build-first-fe-project/exercise-1-setting-up-and-deploying-with-npm-bundle-generator.md
+build-first-fe-project/exercise-2-deploying-with-npm-bundle-generator.md
+build-first-fe-project/summary.md
 ```
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/q3veTitreto
@@ -42,8 +42,9 @@ In this module, you'll learn what tools and frameworks are available in Liferay 
 
 ## Next Steps
 
-* [](./build-first-fe-project/.md) 
-* [](./build-first-fe-project/.md) 
-* [](./build-first-fe-project/.md) 
-
--->
+* [Adding Custom Branding to the Liferay Platform](./build-first-fe-project/adding-custom-branding-to-liferay-platform.md) 
+* [Front-End Development Frameworks](./build-first-fe-project/front-end-development-frameworks.md) 
+* [Front-End Development Tools in Liferay](./build-first-fe-project/front-end-development-tools-in-liferay.md) 
+* [Exercise 1: Setting Up and Deploying with the NPM Bundle Generator](./build-first-fe-project/exercise-1-setting-up-and-deploying-with-npm-bundle-generator.md) 
+* [Exercise 2: Deploying with the NPM Bundle Generator](./build-first-fe-project/exercise-2-deploying-with-npm-bundle-generator.md) 
+* [Summary](./build-first-fe-project/summary.md) 
