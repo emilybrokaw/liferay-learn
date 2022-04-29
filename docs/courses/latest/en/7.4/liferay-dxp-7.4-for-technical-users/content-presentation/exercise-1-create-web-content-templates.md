@@ -288,7 +288,7 @@
 ## Add the Template to the Platform and Include the Title Data
 
 1. **Go to** the _Livingstone Hotels & Resorts_ site in the browser.
-  * Make sure you're logged in.  
+    * Make sure you're logged in.  
 2. **Go to** _Site Administration → Content & Data → Web Content_ in the _Menu_.  
 3. **Click** the _Templates_ tab in the top menu.
 4. **Click** the _Add_ at the top right.
