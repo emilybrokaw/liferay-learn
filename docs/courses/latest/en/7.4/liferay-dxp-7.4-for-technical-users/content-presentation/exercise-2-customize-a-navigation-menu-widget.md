@@ -1,4 +1,4 @@
-# Customize a Navigation Menu Widget
+# Exercise 2: Customize a Navigation Menu Widget
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/yxvqi1TywIg
 
@@ -13,11 +13,11 @@
 
 1. **Open** _Visual Studio Code_.
 2. **Go to** the _User Snippets_ menu.
-  * Windows: `File → Preferences → User Snippets`
-  * OSX: `Gear Icon → User Snippets`
+    * Windows: `File → Preferences → User Snippets`
+    * OSX: `Gear Icon → User Snippets`
 3. **Click** on _New Global Snippets file..._ in the drop-down menu.
 4. **Type** _lfr-widget-templates_ for the _name_.
-  * The full file name will be `lfr-widget-templates.code-snippets`.
+    * The full file name will be `lfr-widget-templates.code-snippets`.
 5. **Press** enter to save.
 
 ## Add the Snippet Content
@@ -25,7 +25,7 @@
 1. **Open** the widget-template-snippets.json in your module exercises folder.
 2. **Copy** the contents of the file.
 3. **Paste** the contents of the file in the lfr-widget-templates.code-snippets file just created in Visual Studio Code.
-  * Make sure to replace all the existing content in the file.
+    * Make sure to replace all the existing content in the file.
 4. **Save** the file.
 
 ## Add Alert Information if there are No Pages
@@ -49,7 +49,7 @@
 1. **Click** to highlight the `<#-- Insert 05-build-navigation-macro here -->` comment.
 2. **Type** `lfr-widget` to view the available code snippets.
 3. **Choose** the `05-build-navigation-macro` snippet.
-  * Alternatively, you can type:
+    * Alternatively, you can type:
 
 ```HTML
 <#macro buildNavigation navItem>
@@ -71,7 +71,7 @@
 1. **Click** to highlight the `<#-- Add 06-nav-item-assignments snippet here -->` comment.
 2. **Type** `lfr-widget` to view the available code snippets.
 3. **Choose** the `06-nav-item-assignments` snippet.
-  * Alternatively, you can type:
+    * Alternatively, you can type:
 
 ```HTML
 <#assign
@@ -90,7 +90,7 @@
 1. **Click** to highlight the `<#-- Add 07-children-menu-if-statement snippet here -->` comment.
 2. **Type** `lfr-widget` to view the available code snippets.
 3. **Choose** the `07-children-menu-if-statement` snippet.
-  * Alternatively, you can type:
+    * Alternatively, you can type:
 
 ```HTML
 <#if navItem.hasBrowsableChildren()>
@@ -124,7 +124,7 @@
 10. **Type** `</span>` to close the div.
 11. **Press** _Enter_ and _Tab_ after the `<span class="collapse-icon-open">` line above the closing span.
 12. **Type** `<@clay.icon symbol="caret-bottom" />` to add the Clay caret icon macro.
-  * Alternatively, you can use the `08-opt-clay-symbol-macros` snippet to add the following:
+    * Alternatively, you can use the `08-opt-clay-symbol-macros` snippet to add the following:
 
 ```HTML
 <span class="collapse-icon-open">
@@ -143,7 +143,7 @@
 4. **Type** `</#list>` to close the div.
 5. **Press** _Enter_ and _Tab_ after the `<#list navItem.getBrowsableChildren() as navItemChild>` line above the closing list.
 6. **Type** `<@buildNavigation navItem=navItemChild />` to add the Clay caret icon macro.
-  * Alternatively, you can use the `09-opt-nav-children-macro` snippet to add the following:
+    * Alternatively, you can use the `09-opt-nav-children-macro` snippet to add the following:
 
 ```HTML
 <#list navItem.getBrowsableChildren() as navItemChild>
@@ -157,7 +157,7 @@
 2. **Type** `lfr-widget` to view the available code snippets.
 3. **Choose** the `10-nav-menu-using-macro` snippet.
 4. **Save** the file.
-  * Alternatively, you can type:
+    * Alternatively, you can type:
 
 ```HTML
 <nav class="menubar menubar-transparent menubar-vertical-expand-md">
@@ -180,7 +180,7 @@
 ## Add the New Navigation Widget Template to the Platform
 
 1. **Go to** the default Site in your browser.
-  * Make sure you're logged in.
+    * Make sure you're logged in.
 2. **Open** the _Menu_.
 3. **Go to** _Design → Templates_ in the _Site Administration_ panel.
 4. **Click** the _Widget Templates_ tab. 
@@ -196,7 +196,7 @@
 
 1. **Go to** _Site Administration → Site Builder → Pages_ in the Menu.
 2. **Open** the _Configuration menu_ next to _Public Pages_.
-  * This is the gear icon.
+    * This is the gear icon.
 3. **Click** the _Change Current Theme_ button near the bottom.  
 4. **Choose** _Classic_.  
 5. **Click** the _Save_ button at the bottom.
@@ -209,7 +209,7 @@
 5. **Choose** the new _Vertical Navigation Template_.
 6. **Click** _Save_.
 7. **Close** the pop-up.
-  * _Note: You will need to create child pages to see the caret icons_
+    * _Note: You will need to create child pages to see the caret icons_
 
 ---
 

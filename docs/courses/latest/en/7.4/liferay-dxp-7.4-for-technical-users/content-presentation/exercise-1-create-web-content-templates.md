@@ -1,4 +1,4 @@
-# Create Web Content Templates
+# Exercise 1: Create Web Content Templates
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/0VI4zvY54Hw
 
@@ -209,7 +209,7 @@
 
 1. **Press** _Enter_ and _Tab_ after the `<div class="card-body">` line.
 2. **Type** `lfr` and choose the `03-hotel-title-link` snippet.
-    * Alternatively, you can Type the following to replace the comment:
+    * Alternatively, you can type the following to replace the comment:
 
 ```html
 <h2 class="text-center">
@@ -221,7 +221,7 @@
 
 1. **Click** to highlight the `<#-- Insert 04-top-row-second-column snippet here -->` comment.
 2. **Type** `lfr` and choose the `04-top-row-second-column` snippet.
-    * Alternatively, you can Type the following to replace the comment:
+    * Alternatively, you can type the following to replace the comment:
 
 ```html
 <li class="card col-md-6">
@@ -246,7 +246,7 @@
 
 1. **Click** to highlight the `<#-- Insert 05-second-row snippet here -->` comment.
 2. **Type** `lfr` and choose the `05-second-row` snippet and _Save_ the file.
-    * Alternatively, you can Type the following to replace the comment:
+    * Alternatively, you can type the following to replace the comment:
 
 ```html
 <ul class="list-unstyled row">
