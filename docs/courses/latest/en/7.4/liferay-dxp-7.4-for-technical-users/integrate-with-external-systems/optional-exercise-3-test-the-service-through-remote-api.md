@@ -15,7 +15,7 @@ We have to find an ID (`groupId`) for the site where we are going to create our 
 
 ## Add an Assignment Using Browser Console 
 
-Make sure that you are logged in to your instance. Open the JavaScript console of your favorite browser--usually __Ctrl+Shift+J__ (Windows / Linux) or __Cmd+Opt+J__ (OSX). Use the following JSON snippet in the Javascript console (check that the site ID matches).
+Make sure that you are logged in to your instance. Open the JavaScript console of your favorite browser&mdash;usually __Ctrl+Shift+J__ (Windows / Linux) or __Cmd+Opt+J__ (OSX). Use the following JSON snippet in the Javascript console (check that the site ID matches).
 
 ```json
 Liferay.Service('/gradebook.assignment/add-assignment', {

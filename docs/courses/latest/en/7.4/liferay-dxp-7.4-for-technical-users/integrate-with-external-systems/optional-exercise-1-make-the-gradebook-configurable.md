@@ -89,7 +89,7 @@ Notice the resource bundle property in our configuration interface:
 )
 ```
 
-Let's add the referenced resources to localize the user interface by creating the `Language.properties` file in the gradebook-api module. The implementation should look similar to:
+Let's add the referenced resources to localize the user interface by creating the `Language.properties` file in the _gradebook-api_ module. The implementation should look similar to:
 
 ```properties
 gradebook-service-configuration-name=Gradebook Service Configuration
@@ -109,7 +109,7 @@ We need to add a dependency to the Metatype API. Open _build.gradle_ in the _gra
 
 ## Implement Configuration Support to the Assignment Validator Service
 
-Open the validator service component `com.liferay.training.gradebook.util.validator.AssignmentValidatorImpl` in the *gradebook-api* module and add the `configurationPid` component property as shown below.
+Open the validator service component <code>com.liferay.training.gradebook.util.validator.AssignmentValidatorImpl</code> in the *gradebook-api* module and add the `configurationPid` component property as shown below.
 
 ```java
 @Component(
@@ -137,7 +137,7 @@ private void activate(Map<String, Object> properties) {
 }	 
 ```
 
-Replace the contents of the `isDescriptionValid()` method with the code below (notice the highlighted code) and organize the missing imports.
+Replace the contents of the `isDescriptionValid()` method with the code below and organize the missing imports.
 
 ```java
 private boolean isDescriptionValid(

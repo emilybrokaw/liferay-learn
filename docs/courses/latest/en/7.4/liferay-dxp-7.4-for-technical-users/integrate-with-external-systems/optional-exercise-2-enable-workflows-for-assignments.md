@@ -26,7 +26,7 @@ Open the `service.xml` in the *gradebook-service* module and add `WorkflowInstan
 
 ## Manage WorkflowInstanceLink Resources in the Assignment Local Service
 
-Workflows are bound to model entities with WorkflowInstanceLink resources. Like with permission and Asset resources, we have to take care of managing these resources in the Assignment local service. Open the class <code>com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl</code> in the *gradebook-service* module. Implement a new method for creating a WorkflowInstanceLink as shown in the code below. Organize the missing imports and save the class.
+Workflows are bound to model entities with `WorkflowInstanceLink` resources. Like with permission and Asset resources, we have to take care of managing these resources in the Assignment local service. Open the class <code>com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl</code> in the *gradebook-service* module. Implement a new method for creating a `WorkflowInstanceLink` as shown in the code below. Organize the missing imports and save the class.
 
 ```java
 protected Assignment startWorkflowInstance(
@@ -57,7 +57,7 @@ protected Assignment startWorkflowInstance(
 }
 ```
 
-Next, implement updating the status fields and managing WorkFlowInstances on creating and deleting Assignments by adding setting status fields and creating a WorkFlowInstanceLink in the `addAssignment()` method. Replace the method's code with the following. See the highlighted lines below for changes.
+Next, implement updating the status fields and managing WorkFlowInstances on creating and deleting Assignments by adding setting status fields and creating a `WorkFlowInstanceLink` in the `addAssignment()` method. Replace the method's code with the following. See the highlighted lines below for changes.
 
 ```java
 public Assignment addAssignment(long groupId, Map<Locale, String> titleMap, Map<Locale, String> description,
@@ -124,7 +124,7 @@ public Assignment addAssignment(long groupId, Map<Locale, String> titleMap, Map<
 }
 ```
 
-Implement code for deleting the WorkflowInstanceLink in `deleteAssignment()`. Replace the existing code with something similar to the following. See highlighted rows for changes and don't forget to organize missing imports.
+Implement code for deleting the `WorkflowInstanceLink` in `deleteAssignment()`. Replace the existing code with something similar to the following. See highlighted rows for changes and don't forget to organize missing imports.
 
 ```java
 public Assignment deleteAssignment(Assignment assignment)
@@ -713,7 +713,7 @@ The last thing to do is to show status in the user interface. Let's add the `sta
 
 ## Test the Application
 
-To be able to test, we have to enable and define a workflow for Assignments. Go to localhost:8080 in your browser and sign in if necessary. Go to workflows in the Site Administration panel. Set the *Assignment workflow* to *Single Approver*. Open the Gradebook application and create an Assignment. The status on the list should now be pending. Create a new assignment. After refreshing the page, you should see a notification on your avatar image indicating a new workflow event.
+To be able to test, we have to enable and define a workflow for Assignments. Go to `localhost:8080` in your browser and sign in if necessary. Go to workflows in the Site Administration panel. Set the *Assignment workflow* to *Single Approver*. Open the Gradebook application and create an Assignment. The status on the list should now be pending. Create a new assignment. After refreshing the page, you should see a notification on your avatar image indicating a new workflow event.
 
 Now you can manage the workflows for Assignments as for any other Liferay Assets.
 

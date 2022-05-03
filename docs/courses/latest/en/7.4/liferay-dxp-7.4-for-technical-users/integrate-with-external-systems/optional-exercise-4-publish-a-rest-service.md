@@ -20,19 +20,19 @@ A cURL command line client is needed for this exercise. Windows users can downlo
 
 ## Create a Liferay Module Project
 
-Create a new module project in dev studio (or if you've been using other tools in the previous exercises, use those tools) Use the following information for the first step:
-	* __Project Name__:  `indexer-post-processor`
-	* __Build Type__: Gradle
-	* __Liferay Version__: 7.4
-	* __Project Template__: rest
+Create a new module project in dev studio (or if you've been using other tools in the previous exercises, use those tools). Use the following information for the first step:
+* __Project Name__: `indexer-post-processor`
+* __Build Type__: Gradle
+* __Liferay Version__: 7.4
+* __Project Template__: rest
 
 Use the following information in the second step and then click finish:
-	* __Component Class Name__: `AssignmentRest`
-	* __Package Name__: `com.liferay.training.gradebook.rest`
+* __Component Class Name__: `AssignmentRest`
+* __Package Name__: `com.liferay.training.gradebook.rest`
 
 ## Resolve Dependencies
 
-We'll need to resolve dependencies for the portal kernel, servlet, portlet and Gradebook API by opening `build.gradle` for the indexer-post-processor module and adding the following dependencies:
+We'll need to resolve dependencies for the portal kernel, servlet, portlet and Gradebook API by opening `build.gradle` for the _indexer-post-processor_ module and adding the following dependencies:
 
 ```groovy
 compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
@@ -181,12 +181,12 @@ The JAX-RS REST application requires OAuth 2.0 authorization by default and we h
 ## Create an OAuth 2.0 Application
 
 Go to `localhost:8080` again and open *OAuth2 Administration* in the Control Panel. Add an application and use the following information for the first step:
-	* __Application Name__: `Gradebook REST`
-	* __Client Profile__:  `Headless Server`
+* __Application Name__: `Gradebook REST`
+* __Client Profile__:  `Headless Server`
 
 Leave the defaults for the other values and click *Save*. Copy the following values on the next dialog:
-	* __Client ID__
-	* __Client Secret__ (Click the *Edit* button to show the secret)
+* __Client ID__
+* __Client Secret__ (Click the *Edit* button to show the secret)
 
 Open the _Scopes_ tab, then open *Gradebook.Rest* and check *read data on your behalf*. Click the save button.
 
@@ -227,7 +227,7 @@ Find any `assignmentId` value in the response and get a single assignment from o
 ```bash
 curl -H 'Accept: application/json' -H "Authorization: Bearer [ACCESS_TOKEN]"
 	http://localhost:8080/o/gradebook-rest/assignment/[ASSIGNMENT_ID]
- ```
+```
 
 ## Takeaways 
 
