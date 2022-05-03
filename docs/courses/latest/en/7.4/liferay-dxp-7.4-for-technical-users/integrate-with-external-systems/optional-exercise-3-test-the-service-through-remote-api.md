@@ -11,11 +11,11 @@
 
 ## Find the Test Site ID
 
-We have to find an ID (`groupId`) for the site where we are going to create our test assignments. We will use the default guest site for this exercise. Sign in to your Liferay DXP instance with your web browser at localhost:8080. Open the site administration panel in the *Product Menu*. Find the *Site ID* value in the Configuration settings.
+We have to find an ID (`groupId`) for the site where we are going to create our test assignments. We will use the default guest site for this exercise. Sign in to your Liferay DXP instance with your web browser at `localhost:8080`. Open the site administration panel in the *Product Menu*. Find the *Site ID* value in the Configuration settings.
 
 ## Add an Assignment Using Browser Console 
 
-Make sure that you are logged in to your instance. Open the JavaScript console of your favorite browser (Usually __Ctrl+Shift+J__ (Windows / Linux) or __Cmd+Opt+J__ (OSX)). Use the following JSON snippet in the Javascript console (__check that the site ID matches__).
+Make sure that you are logged in to your instance. Open the JavaScript console of your favorite browser--usually __Ctrl+Shift+J__ (Windows / Linux) or __Cmd+Opt+J__ (OSX). Use the following JSON snippet in the Javascript console (check that the site ID matches).
 
 ```json
 Liferay.Service('/gradebook.assignment/add-assignment', {
@@ -33,7 +33,7 @@ Make sure to find the `assignmentId` in the JSON response, that is a requirement
 
 ## Get an Assignment Through the JSON API Test Page 
 
-Go to `http://localhost:8080/api/jsonws` in your web browser and choose *Gradebook* in the *Context Name* menu. In the menu, you'll see a list of methods we just added to our remote service. We'll now test our service with a browser's Javascript console. Click *get-assignment* and enter the assignment ID, then click **invoke**.
+Go to `http://localhost:8080/api/jsonws` in your web browser and choose *Gradebook* in the *Context Name* menu. In the menu, you'll see a list of methods we just added to our remote service. We'll now test our service with a browser's Javascript console. Click *get-assignment* and enter the assignment ID, then click *invoke*.
 
 ## Delete an Assignment Through the JSON API Test Page 
 

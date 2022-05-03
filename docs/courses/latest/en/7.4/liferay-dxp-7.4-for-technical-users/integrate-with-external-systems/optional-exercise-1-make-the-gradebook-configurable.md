@@ -16,7 +16,7 @@
 
 ## Declare Dependencies for the API Module
 
-You will need to open the build.gradle of your gradebook-api module to add the "biz.aQuote.bnd.annotation" and "com.liferay.portal.configuration.metatype.api" dependencies.
+You will need to open the _build.gradle_ of your _gradebook-api_ module to add the `biz.aQuote.bnd.annotation` and <code>com.liferay.portal.configuration.metatype.api</code> dependencies.
 
 ## Create the Configuration Interface in the API Module
 
@@ -101,11 +101,11 @@ title-min-length-name=Title Minimum Length
 
 ## Test the Configuration Interface
 
-Creating a configuration interface automatically generates an user interface. Open a browser at localhost:8080 and go to System Settings in the UI. Click the configuration icon and take a look.
+Creating a configuration interface automatically generates an user interface. Open a browser at `localhost:8080` and go to System Settings in the UI. Click the configuration icon and take a look.
 
 ## Declare Dependencies for the Service Module
 
-We need to add a dependency to the Metatype API. Open build.gradle in the gradebook-service module and add the `com.liferay.portal.configuration.metatype.api` dependency.
+We need to add a dependency to the Metatype API. Open _build.gradle_ in the _gradebook-service_ module and add the `com.liferay.portal.configuration.metatype.api` dependency.
 
 ## Implement Configuration Support to the Assignment Validator Service
 
