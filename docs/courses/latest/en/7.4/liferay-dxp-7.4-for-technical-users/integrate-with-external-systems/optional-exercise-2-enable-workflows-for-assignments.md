@@ -1,4 +1,4 @@
-# Optional Exercise: Enable Workflows for Assignments
+# Optional Exercise 2: Enable Workflows for Assignments
 
 ## Exercise Goals
 
