@@ -12,21 +12,17 @@
 - Add new error message localization resources
 - Test the Application
 
-<div class="note">
-Note: This exercise is optional. It is not written as step-by-step exercises so that you can explore and experiment more.
-</div>
-	
+> Note: This exercise is optional. It is not written as step-by-step exercises so that you can explore and experiment more.
+
 ## Declare Dependencies for the API Module
 
 You will need to open the build.gradle of your gradebook-api module to add the "biz.aQuote.bnd.annotation" and "com.liferay.portal.configuration.metatype.api" dependencies.
 
 ## Create the Configuration Interface in the API Module
 
-Add an interface to the gradebook-api module: "com.liferay.training.gradebook.configuration.GradebookSystemServiceConfiguration".
+Add an interface to the gradebook-api module: <code>com.liferay.training.gradebook.configuration.GradebookSystemServiceConfiguration</code>.
 
-<div class="note">
-Note: This naming syntax is by convention [Application][Scope][Layer]Configuration. Remember that the configuration ID must be the fully qualified name of the interface.
-</div>
+> Note: This naming syntax is by convention [Application][Scope][Layer]Configuration. Remember that the configuration ID must be the fully qualified name of the interface.
 
 The code implementation of this file should look something like this:
 
