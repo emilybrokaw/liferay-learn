@@ -61,8 +61,6 @@ export PATH=${PATH}:${NPM_PACKAGES}/bin
 6. **Save** the file.
 7. **Restart** the _Terminal_ for the changes to take place.
 
-<br />
-
 ## Install Yeoman and the Liferay Theme Generator
 
 1. **Run** `npm install -g yo gulp`  to install the Yeoman and Gulp dependency.  
@@ -70,8 +68,6 @@ export PATH=${PATH}:${NPM_PACKAGES}/bin
 3. **Run** `yo`  in the _Command Line/Terminal_ to see that the generator is installed.  
 	* Type _Y or N_ if an initial prompt asks to collect data.    
 4. **Choose** _Get me out of here!_
-
-<br />
 
 ## Start the Liferay-Tomcat Bundle
 
@@ -86,8 +82,6 @@ export PATH=${PATH}:${NPM_PACKAGES}/bin
 
 1. **Copy** the _activation-key-digitalenterprisedevelopment-7.3-liferaycom.xml_ file from your provided materials.
 2. **Paste** the file into your _liferay-dxp-[version]/deploy_ folder.
-
-<br />
 
 ## Complete the Liferay Setup Wizard
 
@@ -120,9 +114,7 @@ export PATH=${PATH}:${NPM_PACKAGES}/bin
 	* Unix Systems: _[user-home]/liferay/bundles/liferay-dxp-[version]/tomcat-[version]_
 9. **Press** _Enter_ to accept the default url.
 
-<div class="note">
-Note: Liferay themes created with the theme generator are bundled with Gulp. In order to run Gulp locally from the command line, we must add a script to the package.json file. Additionally, some setups run into issues running scripts with npm. If this is the case, try creating an .npmrc file in the root of your project and add the <code>ignore-scripts=false</code> configuration.
-</div>
+> Note: Liferay themes created with the theme generator are bundled with Gulp. In order to run Gulp locally from the command line, we must add a script to the package.json file. Additionally, some setups run into issues running scripts with npm. If this is the case, try creating an .npmrc file in the root of your project and add the `ignore-scripts=false` configuration.
 
 ## Deploy the Theme
 1. **Go to** your new theme directory in the _Command Line/Terminal_:
@@ -140,8 +132,6 @@ Note: Liferay themes created with the theme generator are bundled with Gulp. In 
 7. **Click** _Save_.
 8. **Click** _Home_ in the _Site Administration_ panel to see the base theme without any customization.
 	* Note: My Test Theme does not include a login portlet. Be sure to change the theme back to Classic if you need to close your instance. 
-
-<br />
 
 ---
 
