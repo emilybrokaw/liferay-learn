@@ -223,3 +223,7 @@
 ## Previous Step
 
 * [Widget Templates](./widget-templates.md) 
+
+## Related Information
+
+* [Developer Tools Overview](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/developer-tools-overview.html)
