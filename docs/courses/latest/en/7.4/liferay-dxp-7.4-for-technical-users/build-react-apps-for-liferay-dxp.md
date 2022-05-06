@@ -24,11 +24,11 @@ build-react-apps-for-liferay-dxp/summary.md
 ## Exercise Prerequisites
 
 * Java JDK installed to run Liferay
-    - Download here: <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html">https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html</a>
-    - Instructions on installation here: <a href="https://www.java.com/en/download/help/download_options.xml">https://www.java.com/en/download/help/download_options.xml</a>
+    - [Download from Oracle](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+    - [Instructions on installation](https://www.java.com/en/download/help/download_options.xml)
 * Unzipped module exercise files in the following folder structure:
-	- Windows: <code>C:\liferay</code>
-	- Unix Systems: <code>[user-home]/liferay</code>
+	- Windows: `C:\liferay`
+	- Unix Systems: `[user-home]/liferay`
 * Node.js installed (v 16.13.2 used in exercise videos)
 * Create React App installed 
 	- To install, run `npm install -g create-react-app` in your terminal
