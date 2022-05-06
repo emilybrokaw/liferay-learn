@@ -87,8 +87,8 @@ This creates an entity named _Assignment_ and enables both the local and remote 
 	</finder>
 ```
 
-> NOTE: <br/>
-    > References define entity services injected in our service classes. This helps to keep the database calls inside a single transaction. We need the Group services and Liferay Asset services for integrating to the Liferay Asset framework for later exercise steps. 
+
+> References define entity services injected in our service classes. This helps to keep the database calls inside a single transaction. We need the Group services and Liferay Asset services for integrating to the Liferay Asset framework for later exercise steps. 
 
 3. **Add** the following reference definitions after the _finder_ definitions:
 ```xml
@@ -186,10 +186,7 @@ When you run the `buildService` Gradle task, the following items are generated:
 - Persistence and caching
 - Local and remote service APIs
 
-> NOTE: <br/>
-    > Remember that you have to rebuild services whenever you edit the `service.xml`.
-
-<div class="page"></div>
+> Remember that you have to rebuild services whenever you edit the `service.xml`.
 
 ## Build the Service
 
@@ -199,7 +196,7 @@ When you run the `buildService` Gradle task, the following items are generated:
 		* The _Overview_ panel of the `service.xml` designer
  		* The _Context_ menu of the gradebook-service project
  		* The _Command Line_ using the Liferay Workspace `gradlew` script
- 	* If you encounter issues with `buildService`, you may need to run it from <code>gradebook-workspace/modules/gradebook/gradebook-service/build</code>.
+ 	* If you encounter issues with `buildService`, you may need to run it from `gradebook-workspace/modules/gradebook/gradebook-service/build`.
 3. **Configure** and _save_ the dependencies in the gradebook-service module's `build.gradle` file as follows: 
 
 ```groovy

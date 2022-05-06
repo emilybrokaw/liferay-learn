@@ -6,8 +6,8 @@
 
 ## Exercise Goals
 
-- Implement <code>addAssignment()</code>
-- Implement <code>updateAssignment()</code>
+- Implement `addAssignment()`
+- Implement `updateAssignment()`
 - Implement the finder methods
 - Silence generated methods
 - Do a final code review
@@ -169,7 +169,6 @@ private DynamicQuery getKeywordSearchDynamicQuery(
 }
 ```
 
-> NOTE: <br/>
 > For the sake of this exercise, we introduced a custom `getAssignmentsByKeywords()` method here, which we will use on the user interface later for searching. This method is using Dynamic Queries, which allow you to query the database with custom SQL. Note that this specific query wouldn't work well with localized fields, which are stored in xml.
 
 Sometimes it's practical to silence generated methods to ensure correct API usage. Override and "silence" the generated `addAssignment()` and `updateAssignment()` method signatures, which we replaced with our overrides before.
@@ -188,7 +187,6 @@ public Assignment updateAssignment(Assignment assignment) {
   throw new UnsupportedOperationException("Not supported.");
 }
 ```
-<br />
 
 ## Do a Final Code Review
 
@@ -342,7 +340,7 @@ public class AssignmentLocalServiceImpl extends AssignmentLocalServiceBaseImpl {
 ## Rebuild the Service
 
 1. **Run** the `buildService` Gradle task at the gradebook level to regenerate the service.
-      * If you encounter issues with `buildService`, you may need to run it from <code>gradebook-workspace/modules/gradebook/gradebook-service/build</code>.
+      * If you encounter issues with `buildService`, you may need to run it from `gradebook-workspace/modules/gradebook/gradebook-service/build`.
 
 ---
 

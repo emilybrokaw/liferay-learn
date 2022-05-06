@@ -7,7 +7,7 @@
 ## Exercise Goals
 
 - Declare dependencies
-- Implement the facade methods for the local service in the <code>AssignmentServiceImpl.java</code>
+- Implement the facade methods for the local service in the `AssignmentServiceImpl.java`
 - Do a final code review
 - Rebuild and deploy the service
 
