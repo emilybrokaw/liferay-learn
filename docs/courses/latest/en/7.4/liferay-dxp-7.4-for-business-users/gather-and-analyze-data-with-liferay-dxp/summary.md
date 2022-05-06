@@ -7,3 +7,7 @@
 ## Previous Step
 
 * [Creating a Kaleo Forms Process](./creating-a-kaleo-forms-process.md)
+
+## Related Information 
+
+* [Forms](https://learn.liferay.com/dxp/latest/en/process-automation/forms.html)
