@@ -21,7 +21,7 @@ To avoid misspellings in permission properties, we will create a constants class
 
 ## Create the Resource Constants Class
 
-1. **Create** a class <code>com.liferay.training.gradebook.constants.GradebookConstants</code> and implement as follows:
+1. **Create** a class `com.liferay.training.gradebook.constants.GradebookConstants` and implement as follows:
 
 ```java
 	package com.liferay.training.gradebook.constants;
@@ -30,7 +30,7 @@ To avoid misspellings in permission properties, we will create a constants class
 	}
 ```
 
-2. **Add** <code>com.liferay.training.gradebook.constants</code> to the exported packages in the `bnd.bnd` file. The file will look like this:
+2. **Add** `com.liferay.training.gradebook.constants` to the exported packages in the `bnd.bnd` file. The file will look like this:
 
 ```properties
 Bundle-Name: gradebook-api
@@ -130,7 +130,7 @@ Permissions need container objects for the model entities. When we create an ent
 
 ## Implement Permission Resource Management
 
-1. **Open** the class <code>com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl</code>.
+1. **Open** the class `com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl`.
 2. **Replace** the `addAssignment()` method with the following:
 
 ```java
@@ -216,7 +216,7 @@ Now we will create classes for registering the model and top-level resource perm
 
 ## Create the Permission Registrar Classes
 
-1. **Create** a class <code>com.liferay.training.gradebook.internal.security.permission.resource.definition.AssignmentModelResourcePermissionDefinition</code> in the *gradebook-service* module.
+1. **Create** a class `com.liferay.training.gradebook.internal.security.permission.resource.definition.AssignmentModelResourcePermissionDefinition` in the *gradebook-service* module.
 2. **Implement** as follows:
 
 ```java
@@ -416,7 +416,7 @@ In this exercise, we'll allow everybody to see and search the assignments list b
 
 ## Implement Permission Checking in the Remote Service
 
-1. **Implement** the class <code>com.liferay.training.gradebook.service.impl.AssignmentServiceImpl.java</code> as follows (You'll see an error for the `filterFindBy` method because it's not yet generated): 
+1. **Implement** the class `com.liferay.training.gradebook.service.impl.AssignmentServiceImpl.java` as follows (You'll see an error for the `filterFindBy` method because it's not yet generated): 
 
 ```java
 /**

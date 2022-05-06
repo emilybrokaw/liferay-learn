@@ -60,7 +60,7 @@ Implement a helper class in the *gradebook-web* module for checking top-level pe
 
 ## Implement the Top-Level Resource Permission Checker Class
 
-1. **Create** the class <code>com.liferay.training.gradebook.web.internal.security.permission.resource.AssignmentTopLevelPermission</code>.
+1. **Create** the class `com.liferay.training.gradebook.web.internal.security.permission.resource.AssignmentTopLevelPermission`.
 2. **Implement** as follows:
 
 ```java
@@ -107,7 +107,7 @@ Next we need to implement a class for checking existing entity permissions.
 
 ## Implement the Model Resource Permission Checker Class
 
-1. **Create** the class <code>com.liferay.training.gradebook.web.internal.security.permission.resource.AssignmentPermission</code>.
+1. **Create** the class `com.liferay.training.gradebook.web.internal.security.permission.resource.AssignmentPermission`.
 2. **Implement** as follows:
 
 ```java
@@ -167,7 +167,7 @@ We'll put our entity permission checking object into the request attributes of o
 
 ## Implement Permission Checking in the JSP Files
 
-1. **Open** the class <code>com.liferay.training.gradebook.web.portlet.action.ViewAssignmentsMVCRenderCommand</code>
+1. **Open** the class `com.liferay.training.gradebook.web.portlet.action.ViewAssignmentsMVCRenderCommand`
 2. **Add** a service reference for the permission checker:
 
 ```java
@@ -358,7 +358,7 @@ We'll also add an option to manage entity permissions. For that purpose, we'll u
 	<%@ taglib prefix="liferay-security" uri="http://liferay.com/tld/security" %>
 ```
 
-2. **Open** the file <code>src/main/resources/META-INF/resources/assignment/entry_actions.jsp</code>
+2. **Open** the file `src/main/resources/META-INF/resources/assignment/entry_actions.jsp`
 3. **Wrap** all the actions with permission checks so that only authorized users can access the functions and add a permissions menu option. Replace the contents of the file with the following:
 
 ```html
@@ -427,7 +427,7 @@ The last thing we need to do is to hide the plus button on the management toolba
 
 ## Implement Permission Checking in the Management Toolbar
 
-1. **Open** the class <code>com.liferay.training.gradebook.web.display.context.AssignmentsManagementToolbarDisplayContext.java</code>.
+1. **Open** the class `com.liferay.training.gradebook.web.display.context.AssignmentsManagementToolbarDisplayContext.java`.
 2. **Implement** permission checking in the `getCreationMenu()` method as follows:
 
 ```java
@@ -475,3 +475,8 @@ The last thing we need to do is to hide the plus button on the management toolba
 ## Previous Step
 
 * [Exercise 1: Implement Service Module Permissions](./exercise-1-implement-service-module-permissions.md)
+
+## Related Information
+
+* [Building Applications](https://learn.liferay.com/dxp/latest/en/building-applications.html)
+* [Introduction to Application Security (DXP 7.2)](https://help.liferay.com/hc/en-us/articles/360029045311-Introduction-to-Application-Security)
