@@ -66,3 +66,7 @@
 ## Previous Step
 
 * [Exercise 1: Setting Up and Deploying with the Liferay Theme Generator](./exercise-1-setting-up-and-deploying-with-theme-generator.md) 
+
+## Related Information
+
+* [Developer Tools Overview](https://learn.liferay.com/dxp/latest/en/building-applications/tooling/developer-tools-overview.html)
