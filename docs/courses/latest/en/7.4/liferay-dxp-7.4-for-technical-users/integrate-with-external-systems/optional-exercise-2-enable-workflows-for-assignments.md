@@ -26,7 +26,7 @@ Open the `service.xml` in the *gradebook-service* module and add `WorkflowInstan
 
 ## Manage WorkflowInstanceLink Resources in the Assignment Local Service
 
-Workflows are bound to model entities with `WorkflowInstanceLink` resources. Like with permission and Asset resources, we have to take care of managing these resources in the Assignment local service. Open the class <code>com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl</code> in the *gradebook-service* module. Implement a new method for creating a `WorkflowInstanceLink` as shown in the code below. Organize the missing imports and save the class.
+Workflows are bound to model entities with `WorkflowInstanceLink` resources. Like with permission and Asset resources, we have to take care of managing these resources in the Assignment local service. Open the class `com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl` in the *gradebook-service* module. Implement a new method for creating a `WorkflowInstanceLink` as shown in the code below. Organize the missing imports and save the class.
 
 ```java
 protected Assignment startWorkflowInstance(
@@ -156,7 +156,7 @@ public Assignment deleteAssignment(Assignment assignment)
 
 A workflow handler is an OSGi component that registers itself to the OSGi service registry as responsible for handling workflow status changes on defined model entities. For updating the workflow status, first create the actual worker method in the local service. This method should also sync the `visible` field of entity's Asset resource.
 
-Open the class <code>com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl</code> in the *gradebook-service* module. Implement a new `updateStatus()` method. When you're done, organize the missing imports and rebuild the service.
+Open the class `com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl` in the *gradebook-service* module. Implement a new `updateStatus()` method. When you're done, organize the missing imports and rebuild the service.
 
 ```java
 public Assignment updateStatus(
@@ -190,7 +190,7 @@ public Assignment updateStatus(
 }
 ```
 
-Next we need to implement the WorkflowHandler component by creating a class <code>com.liferay.training.gradebook.service.workflow.AssignmentWorkflowHandler</code> in the *gradebook-service* module. The code should look similar to what is written below.
+Next we need to implement the WorkflowHandler component by creating a class `com.liferay.training.gradebook.service.workflow.AssignmentWorkflowHandler` in the *gradebook-service* module. The code should look similar to what is written below.
 
 ```java
 
@@ -268,7 +268,7 @@ public class AssignmentWorkflowHandler extends BaseWorkflowHandler<Assignment> {
 
 Now our entities support workflows on the service layer, but we also have to be able to query them by their status so that, for example, draft entities are not shown to unauthorized users. 
 
-For the sake of exercise, we'll add a new signature for `getAssignmentsByKeywords()` only, taking the `status` field into account. Open the class <code>com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl</code> in the *gradebook-service* module and add new signatures for the `getAssignmentsByKeywords()` and `getAssignmentsCountByKeywords()`.
+For the sake of exercise, we'll add a new signature for `getAssignmentsByKeywords()` only, taking the `status` field into account. Open the class `com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl` in the *gradebook-service* module and add new signatures for the `getAssignmentsByKeywords()` and `getAssignmentsCountByKeywords()`.
 
 ```java
 public List<Assignment> getAssignmentsByKeywords(
@@ -298,7 +298,7 @@ public long getAssignmentsCountByKeywords(
 }
 ```
 
-These methods are called through the remote service, so let's add facades for them in the <code>com.liferay.training.gradebook.service.impl.AssignmentServiceImpl.java</code> class located in the *gradebook-service* module. When you're done, save the class and rebuild the service. Code for the new facade methods should be similar to the code below.
+These methods are called through the remote service, so let's add facades for them in the `com.liferay.training.gradebook.service.impl.AssignmentServiceImpl.java` class located in the *gradebook-service* module. When you're done, save the class and rebuild the service. Code for the new facade methods should be similar to the code below.
 
 ```java
 public List<Assignment> getAssignmentsByKeywords(
@@ -319,7 +319,7 @@ public long getAssignmentsCountByKeywords(
 
 ## Implement Workflow Support for Search
 
-Implement a pre filter for Assignments search so that only approved entities are shown by creating a class <code>com.liferay.training.gradebook.internal.search.spi.model.query.contributor.AssignmentModelPreFilterContributor</code> in the *gradebook-service* module. Code should look something like this:
+Implement a pre filter for Assignments search so that only approved entities are shown by creating a class `com.liferay.training.gradebook.internal.search.spi.model.query.contributor.AssignmentModelPreFilterContributor` in the *gradebook-service* module. Code should look something like this:
 
 ```java
 package com.liferay.training.gradebook.internal.search.spi.model.query.contributor;
@@ -366,7 +366,7 @@ public class AssignmentModelPreFilterContributor
 
 Next we'll change the implementation of the `ViewAssignmentsMVCRenderCommand`, which is responsible for listing the Assignments, so that it takes the `status` field into account and for the sake of exercise, exposes drafted entities only for the administrators.
 
-Replace the contents of the <code>com.liferay.training.gradebook.web.portlet.action.ViewAssignmentsMVCRenderCommand</code> class with the code below. See the highlighted lines for changes.
+Replace the contents of the `com.liferay.training.gradebook.web.portlet.action.ViewAssignmentsMVCRenderCommand` class with the code below. See the highlighted lines for changes.
 
 ```java
 package com.liferay.training.gradebook.web.portlet.action;
@@ -566,7 +566,7 @@ public class ViewAssignmentsMVCRenderCommand implements MVCRenderCommand {
 
 ## Implement Support for Workflow Status in the JSP Files
 
-The last thing to do is to show status in the user interface. Let's add the `status` column to the JSP file responsible for showing the Assignments list columns. Open the file <code>/src/main/resources/META-INF/resources/assignment/entry_search_column.jspf</code> in the *gradebook-web* module. Replace the file contents with code similar to that shown below.
+The last thing to do is to show status in the user interface. Let's add the `status` column to the JSP file responsible for showing the Assignments list columns. Open the file `/src/main/resources/META-INF/resources/assignment/entry_search_column.jspf` in the *gradebook-web* module. Replace the file contents with code similar to that shown below.
 
 ```html
 <%-- Generate assignment view  URL. --%>

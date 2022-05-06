@@ -16,11 +16,11 @@
 
 ## Declare Dependencies for the API Module
 
-You will need to open the _build.gradle_ of your _gradebook-api_ module to add the `biz.aQuote.bnd.annotation` and <code>com.liferay.portal.configuration.metatype.api</code> dependencies.
+You will need to open the _build.gradle_ of your _gradebook-api_ module to add the `biz.aQuote.bnd.annotation` and `com.liferay.portal.configuration.metatype.api` dependencies.
 
 ## Create the Configuration Interface in the API Module
 
-Add an interface to the gradebook-api module: <code>com.liferay.training.gradebook.configuration.GradebookSystemServiceConfiguration</code>.
+Add an interface to the gradebook-api module: `com.liferay.training.gradebook.configuration.GradebookSystemServiceConfiguration`.
 
 > Note: This naming syntax is by convention [Application][Scope][Layer]Configuration. Remember that the configuration ID must be the fully qualified name of the interface.
 
@@ -109,7 +109,7 @@ We need to add a dependency to the Metatype API. Open _build.gradle_ in the _gra
 
 ## Implement Configuration Support to the Assignment Validator Service
 
-Open the validator service component <code>com.liferay.training.gradebook.util.validator.AssignmentValidatorImpl</code> in the *gradebook-api* module and add the `configurationPid` component property as shown below.
+Open the validator service component `com.liferay.training.gradebook.util.validator.AssignmentValidatorImpl` in the *gradebook-api* module and add the `configurationPid` component property as shown below.
 
 ```java
 @Component(

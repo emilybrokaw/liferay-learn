@@ -16,8 +16,6 @@ In this exercise, we will be adding a REST API to the service layer by way of a 
 
 A cURL command line client is needed for this exercise. Windows users can download a client for example [here](https://curl.se/windows/). 
 
-<div class="page"></div>
-
 ## Create a Liferay Module Project
 
 Create a new module project in dev studio (or if you've been using other tools in the previous exercises, use those tools). Use the following information for the first step:
@@ -162,7 +160,7 @@ public class AssignmentRestApplication extends Application {
 
 ## Deploy and Test
 
-Go to `http://localhost:8080` and sign in as the administrative user. Then, go to <code>http://localhost:8080/o/gradebook-rest/assignments</code>.
+Go to `http://localhost:8080` and sign in as the administrative user. Then, go to `http://localhost:8080/o/gradebook-rest/assignments`.
 
 You should get an access denied message:
 
@@ -238,3 +236,7 @@ In this exercise you've seen how easy it is to create a REST API for your Lifera
 ## Previous Step
 
 * [Optional Exercise 3: Test the Service through Remote API](./optional-exercise-3-test-the-service-through-remote-api.md) 
+
+## Related Information 
+
+* [Building Applications](https://learn.liferay.com/dxp/latest/en/building-applications.html)
