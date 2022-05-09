@@ -13,6 +13,8 @@ digital-experiences-sites/manage-site-configuration.md
 digital-experiences-sites/exercise-4-add-public-and-private-sites.md
 digital-experiences-sites/summary.md
 ```
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/n7yvd4gG33A
+
 ## Learning Objectives
     
 * Understand what Sites are in Liferay DXP
