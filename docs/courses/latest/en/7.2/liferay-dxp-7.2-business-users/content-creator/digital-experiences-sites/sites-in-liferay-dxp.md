@@ -4,6 +4,8 @@
 
 Websites have a structure of pages that can be navigated by digital users and are used by virtually every modern business, but a website without content is like a book without pages. When you're building a website, you need to figure out how to include content and how to structure and display that content efficiently. So what is the best way to deliver content in a site for your business? That is the question this course will help you answer.
 
+![Liferay Site Management](./digital-experiences-sites/images/01.png)
+
 <figure>
 	<img src="../images/lecture-images/site-examples-lrsite.png" style="max-height: 100%" />
 	<figcaption style="font-size: x-small">Fig.1 Liferay Site Management</figcaption>

@@ -11,8 +11,8 @@ digital-experiences-sites/get-sites-to-market-with-site-templates.md
 digital-experiences-sites/exercise-3-add-sites-to-platform.md
 digital-experiences-sites/manage-site-configuration.md
 digital-experiences-sites/exercise-4-add-public-and-private-sites.md
-digital-experiences-sites/summary.md
 ```
+
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/n7yvd4gG33A
 
 ## Learning Objectives
@@ -21,7 +21,6 @@ digital-experiences-sites/summary.md
 * Understand how to add Pages and create Page Templates
 * Learn what Site Templates are and how to use them
 * Learn how to manage Sites and configure Site Settings
-    
 
 ## Tasks to Accomplish
 
@@ -52,4 +51,3 @@ digital-experiences-sites/summary.md
 * [Exercise 3: Add Sites to the Livingstone Platform](./digital-experiences-sites/exercise-3-add-sites-to-platform.md)
 * [Manage Site Configuration](./digital-experiences-sites/manage-site-configuration.md)
 * [Exercise 4: Add Public and Private Sites to the Platform](./digital-experiences-sites/exercise-4-add-public-and-private-sites.md)
-* [Summary](./digital-experiences-sites/summary.md)
