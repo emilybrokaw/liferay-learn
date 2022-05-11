@@ -88,3 +88,7 @@
 ## Next Up
 
 * [Displaying Assets on a Page](./displaying-assets-on-a-page.md)
+
+##Previous Step
+
+* [Organizing Assets into a Folder Structure](./organizing-assets-into-a-folder-structure.md)

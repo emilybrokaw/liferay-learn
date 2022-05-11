@@ -115,3 +115,7 @@
 ## Next Up
 
 * [Organizing Assets with Metadata](./organizing-assets-with-metadata.md)
+
+## Previous Step
+
+* [Organizing Assets with Asset Libraries](./organizing-assets-with-asset-libraries.md)
