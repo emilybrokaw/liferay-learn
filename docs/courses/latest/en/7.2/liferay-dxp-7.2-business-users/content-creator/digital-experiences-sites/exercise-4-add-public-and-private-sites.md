@@ -7,7 +7,7 @@
 * Create the Livingstone Loop employee intranet as a private site on the Livingstone platform
 * Manage site membership, configuration, and page configuration in the new site
 
-# Add the Livingstone Loop Employee Intranet
+## Add the Livingstone Loop Employee Intranet
 
 1. **Go to** _Control Panel_ → _Sites_ → _Sites_ in the _Menu_.
 2. **Click** the _Add_ button.
@@ -22,7 +22,7 @@
 
 <img src="../images/exercise-images/add-private-site.png" style="max-height:28%">
 
-# Add the Livingstone Life Blog Site
+## Add the Livingstone Life Blog Site
 
 1. **Go to** _Control Panel_ → _Sites_ → _Sites_ in the _Menu_.
 2. **Click** the _Add_ button.
@@ -36,7 +36,7 @@
 
 <img src="../images/exercise-images/add-blog-site.png" style="max-height:25%">
 
-# View All the Sites
+## View All the Sites
 
 1. **Go to** _Control Panel_ → _Sites_ → _Sites_ in the _Menu_.
 	- You should see four sites.

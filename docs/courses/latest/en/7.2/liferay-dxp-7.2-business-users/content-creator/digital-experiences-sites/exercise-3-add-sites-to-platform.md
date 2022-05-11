@@ -117,8 +117,8 @@
 
 ## Next Up
 
-* [Get Sites Out to Market Quickly with Site Templates](./get-sites-to-market-with-site-templates.md)
+* [Manage Site Configuration](./manage-site-configuration.md)
 
 ## Previous Step
 
-* [Manage Site Configuration](./manage-site-configuration.md)
+* [Get Sites Out to Market Quickly with Site Templates](./get-sites-to-market-with-site-templates.md)

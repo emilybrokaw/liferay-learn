@@ -34,7 +34,7 @@ Using the versatility of Liferay Sites, _Livingstone_ can create exactly the kin
 Once a user is a site member, they not only have access to a site's private pages, but they are also given any additional permissions that belong to the Site Member role. Member permissions can be modified through the permissions menus on the site or by creating different Site Teams.
 
 > Key Point: 
->Sites in Liferay have three different kinds of membership:
+> Sites in Liferay have three different kinds of membership:
 > * _Open_: When a site has open membership, any Liferay User can become a member of the site at any time.
 > * _Restricted_: Restricted membership means a user can request membership to a site, but the Site Administrator must approve the user's request before they can become a site member.
 > * _Private_: With private membership, users cannot request site membership. Site Administrators must manually select and add a user as a member.
@@ -124,10 +124,11 @@ Each child site in the hierarchy has its own administrator, and the Site Adminis
 > Note: If you wanted a user to have administrative access to all sites in a parent/child site hierarchy, you must create a role based on the Site Administrator role that has the permission Manage SubSites.
 
 ## Knowledge Check
+
 * There are three different kinds of Site Memberships:
-	- __________________________
- 	- __________________________
- 	- __________________________
+	- __________________________ membership
+	- __________________________ membership
+	- __________________________ membership
 * Sites allow for both __________________________ and __________________________ pages.
 * Organizing sites hierarchically gives __________________________ more precise control over pages, content, app data, and site members. 
 
