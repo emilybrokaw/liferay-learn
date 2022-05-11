@@ -1,4 +1,4 @@
-# Add Pages to the Livingstone Platform with Page Templates
+# Exercise 2: Add Pages to the Livingstone Platform with Page Templates
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/vjJv6EBsqZw
 
@@ -14,7 +14,7 @@
 	- The _Site Selector_ allows you to choose which site you want to access in your Liferay platform. Once selected, you will be able to access and edit the site with the _Site Administration_ panel.
 3. **Click** the _My Sites_ tab.
 4. **Choose** the _Global_ site.
-5. **Go to** _Site Builder → Pages_ in the _Site Administration_ panel.
+5. **Go to** _Site Builder_ → _Pages_ in the _Site Administration_ panel.
 	- You'll see the default global Page Templates here already: Search, Wiki, and Blog.
 6. **Click** the _Add_ button in the top right corner.  
 7. **Type** `Hotel Landing Page` as the _Name_.  
@@ -42,7 +42,7 @@
 3. **Drop** a _Web Content Display_ at the top of the page.
 4. **Add** a _Web Content Display_ from the _Widgets → Highlighted_ section in the left column below the first one.
 5. **Add** an _Asset Publisher_ from the _Widgets → Highlighted_ section and place it in the right column beside the last Web Content Display. 
-6. **Drop** a _Language Selector_ from the _Widgets → Tools_ section and place it at the bottom of the page in the single column below the Web Content Display and Asset Publisher.
+6. **Drop** a _Language Selector_ from the _Widgets_ → _Tools_ section and place it at the bottom of the page in the single column below the Web Content Display and Asset Publisher.
 7. **Click** the _Back_ (<) button.
 	- If your browser opened a new tab when you clicked on the _Hotel Landing Page_ template, close the tab to get back to the _Pages_ section of the _Global_ site.
 
@@ -69,7 +69,7 @@
 ## Add the Asset Publisher Widget to the Template
 
 1. **Click** the _Add_ button in the top right corner of the page.  
-2. **Open** the _Widgets → Highlighted_ section.
+2. **Open** the _Widgets_ → _Highlighted_ section.
 3. **Add** an _Asset Publisher_.
 	- If your browser opened a new tab when you clicked on the _Asset Publisher Page_ template, close the tab to get back to the _Pages_ section of the _Global_ site.
 
@@ -78,7 +78,7 @@
 1. **Open** the _Menu_.
 2. **Click** on the _Site Selector_ in the _Site Administration_ panel.
 3. **Choose** the _Livingstone Hotels & Resorts_ site.
-4. **Go to** _Site Builder → Pages_ in the _Site Administration_ panel.
+4. **Go to** _Site Builder_ → _Pages_ in the _Site Administration_ panel.
 5. **Click** the _Add_ button next to _Public Pages_.
 6. **Go to** the _Global Templates_ tab.
 	- You should see the three default page templates plus the two we added above.

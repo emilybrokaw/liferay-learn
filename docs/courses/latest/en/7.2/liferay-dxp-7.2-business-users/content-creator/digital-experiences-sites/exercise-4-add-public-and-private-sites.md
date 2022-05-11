@@ -1,4 +1,4 @@
-# Add Public and Private Sites to the Platform
+# Exercise 4: Add Public and Private Sites to the Platform
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/ojd4UOPfiUU
 
@@ -9,7 +9,7 @@
 
 # Add the Livingstone Loop Employee Intranet
 
-1. **Go to** _Control Panel → Sites → Sites_ in the _Menu_.
+1. **Go to** _Control Panel_ → _Sites_ → _Sites_ in the _Menu_.
 2. **Click** the _Add_ button.
 3. **Choose** _Intranet Site_.
 4. **Type** `Livingstone Loop`.
@@ -24,7 +24,7 @@
 
 # Add the Livingstone Life Blog Site
 
-1. **Go to** _Control Panel → Sites → Sites_ in the _Menu_.
+1. **Go to** _Control Panel_ → _Sites_ → _Sites_ in the _Menu_.
 2. **Click** the _Add_ button.
 3. **Choose** _Blank Site_.
 4. **Type** `Livingstone Life`.
@@ -38,7 +38,7 @@
 
 # View All the Sites
 
-1. **Go to** _Control Panel → Sites → Sites_ in the _Menu_.
+1. **Go to** _Control Panel_ → _Sites_ → _Sites_ in the _Menu_.
 	- You should see four sites.
 2. **Click** the _Livingstone Hotels & Resorts_ site.
 	- You should see at least three sites. (If you did the Bonus Exercises in the last section, you should see more.)

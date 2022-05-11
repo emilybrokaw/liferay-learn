@@ -1,4 +1,4 @@
-# Add Sites to the Livingstone Platform
+# Exercise 3: Add Sites to the Livingstone Platform
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/BrbkqVOueuc
 
@@ -10,13 +10,13 @@
 ## Create a Site Template for Luxury Hotel Location Landing Pages
 
 1. **Open** the _Menu_.
-2. **Go to** _Control Panel → Sites → Site Templates_ in the _Menu_. 
+2. **Go to** _Control Panel_ → _Sites_ → _Site Templates_ in the _Menu_. 
 3. **Click** the _Add_ button near the top right.
 4. **Type** `Luxury Hotel Location Site` as the _Name_. 
 5. **Click** _Save_.  
 6. **Click** the _Luxury Hotel Location Site_.
 	- This will open up our Site Template in a new tab.
-7. **Go to** _Site Builder → Pages_ in the _Site Administration_ panel.
+7. **Go to** _Site Builder_ → _Pages_ in the _Site Administration_ panel.
 8. **Click** the _options_ icon next to the default _Home_ page.
 9. **Choose** _Delete_.
 10. **Click** _OK_ in the pop-up asking if you are sure you want to delete this.
@@ -74,13 +74,13 @@
 
 ## Create a New Site Using the New Site Template
 
-1. **Go to** _Control Panel → Sites → Sites_ in the _Menu_.   
+1. **Go to** _Control Panel_ → _Sites_ → _Sites_ in the _Menu_.   
 2. **Click** the _options_ icon next to _Livingstone Hotels & Resorts_.
 3. **Choose** _Add Child Site_.  
 4. **Choose** _Luxury Hotel Location Site_.
 5. **Type** `Hotel Americana` as the _Name_.
 6. **Click** the _Save_ button at the bottom.
-7. **Click** on _Site Builder → Pages_ in the _Site Administration_ panel for the _Hotel Americana_ site.
+7. **Click** on _Site Builder_ → _Pages_ in the _Site Administration_ panel for the _Hotel Americana_ site.
 	* You'll see that the pages we created in the template have been generated for this site.
 8. **Click** on _Go to Site_ in the _Site Administration_ panel.
 
@@ -88,19 +88,19 @@
 
 ## Create Two More Luxury Hotel Sites with the Site Template
 
-1. **Go to** _Control Panel → Sites → Sites_.  
+1. **Go to** _Control Panel_ → _Sites_ → _Sites_.  
 2. **Click** the _options_ icon next to _Livingstone Hotels & Resorts_.  
 3. **Choose** _Add Child Site_.
 4. **Click** _Luxury Hotel Location Site_.
 4. **Type** `Livingstone Resort at Barcelona` as the _Name_.  
 6. **Click** the _Save_ button.
-7. **Go to** _Control Panel → Sites → Sites_ in the _Menu_.  
+7. **Go to** _Control Panel_ → _Sites_ → _Sites_ in the _Menu_.  
 8. **Click** the _options_ icon next to _Livingstone Hotels & Resorts_.  
 9. **Choose** _Add Child Site_.
 10. **Click** _Luxury Hotel Location Site_.
 11. **Type** `Livingstone Resort at Bali` as the _Name_.  
 12. **Click** the _Save_ button.
-13. **Go to** _Control Panel → Sites → Sites_ in the _Menu_.
+13. **Go to** _Control Panel_ → _Sites_ → _Sites_ in the _Menu_.
 14. **Click** the _Livingstone Hotels & Resorts_ site to see the child sites we created above. 
 
 <img src="../images/exercise-images/three-hotel-location-sites.png" style="max-height: 100%;">

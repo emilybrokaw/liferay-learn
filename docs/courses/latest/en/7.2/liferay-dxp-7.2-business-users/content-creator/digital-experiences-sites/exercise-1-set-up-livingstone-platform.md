@@ -1,4 +1,4 @@
-# Set Up the Livingstone Hotels & Resorts Platform
+# Exercise 1: Set Up the Livingstone Hotels & Resorts Platform
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/RB0uwxLm2bA
 
@@ -25,7 +25,7 @@
 	* Email: `test@liferay.com`
 	* Password: `test` 
 2. **Open** the _Menu_. 
-3. **Go to** _Control Panel → Sites → Sites_. 
+3. **Go to** _Control Panel_ → _Sites_ → _Sites_. 
 4. **Click** the _Add_ button.
 5. **Click** _Blank Site_. 
 6. **Type** `Livingstone Hotels & Resorts` as the _Name_.
@@ -34,7 +34,7 @@
 ## Disable Email Verification for New Users
 
 1. **Open** the _Menu_. 
-2. **Go to** _Control Panel → Configuration → Instance Settings_. 
+2. **Go to** _Control Panel_ → _Configuration_ → _Instance Settings_. 
 3. **Click** _User Authentication_ under _Platform_. 
 4. **Click** to uncheck the box next to _Require strangers to verify their email address?_ if it is not already disabled.
 5. **Click** _Save_. 
@@ -61,8 +61,8 @@
 ## Deploy the Fjord Theme to the Platform
 
 1. **Open** the _Menu_.
-2. **Go to** _Control Panel → Apps → App Manager_ in the _Menu_.
-3. **Click** on _Options → Upload_.
+2. **Go to** _Control Panel_ → _Apps_ → _App Manager_ in the _Menu_.
+3. **Click** on _Options_ → _Upload_.
 4. **Click** _Browse/Choose File_.
 5. **Choose** the `livingstone-fjord-theme.war` from your module's exercise folder.
 6. **Click** _Install_.
