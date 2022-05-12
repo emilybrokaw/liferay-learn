@@ -1,17 +1,12 @@
 # Implement Access Control 
 
-Coming Soon!
-
-<!--
-
 ```{toctree}
 :maxdepth: 2
 
-implement-access-control/.md
-implement-access-control/.md
+implement-access-control/permissioning-concepts.md
+implement-access-control/exercise-1-implement-service-module-permissions.md
+implement-access-control/exercise-2-implement-web-module-permissions.md
 ```
-
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/q3veTitreto
 
 ## Learning Objectives
 
@@ -29,12 +24,11 @@ implement-access-control/.md
     - Download here: [https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
     - Instructions on installation here: [https://www.java.com/en/download/help/download_options.xml](https://www.java.com/en/download/help/download_options.xml)
 * Preferred development tools (e.g. Blade CLI, Gradle, IntelliJ IDEA with Liferay plugin, etc.) installed with the "Gradebook Workspace" already created
-	- This was done in the first training module
+    - This was done in the first training module
 * Exercise Prereqs added to workspace or previous training modules completed
 
 ## Next Steps
 
-* [](./implement-access-control/.md) 
-* [](./implement-access-control/.md) 
-
--->
+* [Permissioning Concepts](./implement-access-control/permissioning-concepts.md) 
+* [Exercise 1: Implement Service Module Permissions](./implement-access-control/exercise-1-implement-service-module-permissions.md) 
+* [Exercise 2: Implement Web Module Permissions](./implement-access-control/exercise-2-implement-web-module-permissions.md)
