@@ -7,3 +7,7 @@
 ## Next Up
 
 * [Exercise: Manage Site Configuration](./exercise-3-manage-site-configuration.md)
+
+## Previous Step
+
+* [Exercise 2: Add Sites to the Platform](./exercise-2-add-sites-to-platform.md)

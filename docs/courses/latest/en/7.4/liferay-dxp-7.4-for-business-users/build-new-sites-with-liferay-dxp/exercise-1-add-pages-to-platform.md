@@ -154,3 +154,7 @@
 ## Next Up
 
 * [Creating Sites with Site Templates](./create-sites-with-site-templates.md)
+
+## Previous Step
+
+* [Creating Reusable Page Structures](./create-reusable-page-structures.md)
