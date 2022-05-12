@@ -1,10 +1,10 @@
-# Implement Service Module Permissions
+# Exercise 1: Implement Service Module Permissions
 
-Coming Soon!
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/CdthfS5kzlE
 
-<!--
+> The exercise video above uses DXP 7.3. To complete the exercise using DXP/CE 7.4, follow the updated exercise steps below.
 
-#### Exercise Goals
+## Exercise Goals
 
 - Create the resource constants class
 - Define the permissions
@@ -15,21 +15,20 @@ Coming Soon!
 - Rebuild the service
 - Test the application
 
-</div>
-
 Before proceeding, you **must remove all the test assignments you have created so far**. This is because the existing test entities don't have the resources to support permissioning and will cause errors.
 
 To avoid misspellings in permission properties, we will create a constants class in the *gradebook-api* module.
 
-#### Create the Resource Constants Class
+## Create the Resource Constants Class
+
 1. **Create** a class `com.liferay.training.gradebook.constants.GradebookConstants` and implement as follows:
 
-	```java
+```java
 	package com.liferay.training.gradebook.constants;
 	public class GradebookConstants {
 		public static final String RESOURCE_NAME = "com.liferay.training.gradebook.model";
 	}
-	```
+```
 
 2. **Add** `com.liferay.training.gradebook.constants` to the exported packages in the `bnd.bnd` file. The file will look like this:
 
@@ -50,7 +49,8 @@ Export-Package:\
 
 By default, permissions are defined in the file called `default.xml`. 
 
-#### Define the Permissions
+## Define the Permissions
+
 1. **Create** a folder `src/main/resources/resource-actions` in the *gradebook-service* module.
 2. **Create** a file `src/main/resources/resource-actions/default.xml` and implement as follows  (switch to *Source* mode, if needed):
 
@@ -118,7 +118,7 @@ By default, permissions are defined in the file called `default.xml`.
 	
 > Notice that submission permissions are related to the optional exercises.
 
-#### Define the Permissions Definition Location
+## Define the Permissions Definition Location
 1. **Create** a file `src/main/resources/portlet.properties` in the *gradebook-service* module.
 2. **Implement** the file as follows:
 
@@ -128,11 +128,12 @@ resource.actions.configs=/resource-actions/default.xml
 
 Permissions need container objects for the model entities. When we create an entity, we need to create and bind a resource object to that. Accordingly, we have to take care of cleaning up the resources when we delete the entity:
 
-#### Implement Permission Resource Management
+## Implement Permission Resource Management
+
 1. **Open** the class `com.liferay.training.gradebook.service.impl.AssignmentLocalServiceImpl`.
 2. **Replace** the `addAssignment()` method with the following:
 
-	```java
+```java
 	public Assignment addAssignment(
 		long groupId, Map<Locale, String> titleMap, String description,
 		Date dueDate, ServiceContext serviceContext)
@@ -188,11 +189,11 @@ Permissions need container objects for the model entities. When we create an ent
 		
 		return assignment;
 	}
-	```
+```
 
 3. **Implement** a new signature for deleting assignments as follows:
 
-	```java
+```java
 	public Assignment deleteAssignment(Assignment assignment)
 		throws PortalException {
 			
@@ -205,7 +206,7 @@ Permissions need container objects for the model entities. When we create an ent
 			
 		return super.deleteAssignment(assignment);
 	}	
-	```
+```
 
 4. **Resolve** missing imports.	
 
@@ -213,11 +214,12 @@ Don't worry about the errors when adding a new method. Errors will go away after
 
 Now we will create classes for registering the model and top-level resource permissions.
 
-#### Create the Permission Registrar Classes
-1. **Create** a class  `com.liferay.training.gradebook.internal.security.permission.resource.definition.AssignmentModelResourcePermissionDefinition` in the *gradebook-service* module.
+## Create the Permission Registrar Classes
+
+1. **Create** a class `com.liferay.training.gradebook.internal.security.permission.resource.definition.AssignmentModelResourcePermissionDefinition` in the *gradebook-service* module.
 2. **Implement** as follows:
 
-	```java
+```java
 	package com.liferay.training.gradebook.internal.security.permission.resource.definition;
 
 	import com.liferay.exportimport.kernel.staging.permission.StagingPermission;
@@ -308,13 +310,13 @@ Now we will create classes for registering the model and top-level resource perm
 		@Reference
 		private WorkflowPermission _workflowPermission;
 	}
-	```
+```
 
 3. **Create** a class for registering the Gradebook portlet resources and top level permissions:
 	
-	```java
+```java
 	com.liferay.training.gradebook.internal.security.permission.resource.definition.AssignmentPortletResourcePermissionDefinition
-	```
+```
 
 4. **Implement** as follows:
 
@@ -412,7 +414,8 @@ Take a look at the `AssignmentPersistenceImpl` class and for example `filterFind
 
 In this exercise, we'll allow everybody to see and search the assignments list by the keyword search method `getAssignmentsByKeywords`. We just don't allow unauthorized users to view, update or delete them.
 
-#### Implement Permission Checking in the Remote Service
+## Implement Permission Checking in the Remote Service
+
 1. **Implement** the class `com.liferay.training.gradebook.service.impl.AssignmentServiceImpl.java` as follows (You'll see an error for the `filterFindBy` method because it's not yet generated): 
 
 ```java
@@ -575,13 +578,21 @@ public class AssignmentServiceImpl extends AssignmentServiceBaseImpl {
 }
 ```
 
-<div class="page"></div>
+## Rebuild the Service
 
-#### Rebuild the Service
 1. **Run** the `buildService` task to deploy the changes.
 
-#### Test the Application
+## Test the Application
+
 1. **Sign out** of the portal.
 2. **Try** to add an assignment. You should get an error message.
 
--->
+---
+
+## Next Up
+
+* [Exercise 2: Implement Web Module Permissions](./exercise-2-implement-web-module-permissions.md)
+
+## Previous Step
+
+* [Permissioning Concepts](./permissioning-concepts.md)

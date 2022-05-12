@@ -1,12 +1,11 @@
-# Implement Web Module Permissions
+# Exercise 2: Implement Web Module Permissions
 
-Coming Soon!
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/HJiwJ9cNwn0
 
-<!--
+> The exercise video above uses DXP 7.3. To complete the exercise using DXP/CE 7.4, follow the updated exercise steps below.
 
-Note to the editor: I had to change some snippet instructions to remove the !--, #--, or -- in order to comment out the entire file. Make sure to review and ensure the snippets are correct.
+## Exercise Goals
 
-#### Exercise Goals
 - Define portlet permissions
 - Define the permissions definition location
 - Implement the top-level permission resource permission checker class
@@ -15,9 +14,8 @@ Note to the editor: I had to change some snippet instructions to remove the !--,
 - Implement permission checking in the management toolbar
 - Test the application
 
-</div>
+## Define the Permissions
 
-#### Define the Permissions
 1. **Create** a folder `src/main/resources/resource-actions` in the *gradebook-web* module.
 2. **Create** a file `src/main/resources/resource-actions/default.xml` and implement as follows (switch to *Source* mode, if needed):
 
@@ -34,9 +32,6 @@ Note to the editor: I had to change some snippet instructions to remove the !--,
 				<action-key>CONFIGURATION</action-key>
 				<action-key>VIEW</action-key>
 			</supports>
-```
-< page break for pdf book >
-```xml
 			<site-member-defaults>
 				<action-key>VIEW</action-key>
 			</site-member-defaults>
@@ -53,7 +48,8 @@ Note to the editor: I had to change some snippet instructions to remove the !--,
 </resource-action-mapping>
 ```
 
-#### Define the Permissions Definition Location
+## Define the Permissions Definition Location
+
 1. **Create** a file `src/main/resources/portlet.properties` in the *gradebook-web* module.
 2. **Implement** the file as follows:
 
@@ -62,7 +58,8 @@ resource.actions.configs=/resource-actions/default.xml
 ```
 Implement a helper class in the *gradebook-web* module for checking top-level permissions. This is a permission checker class we'll call from the user interface.
 
-#### Implement the Top-Level Resource Permission Checker Class
+## Implement the Top-Level Resource Permission Checker Class
+
 1. **Create** the class `com.liferay.training.gradebook.web.internal.security.permission.resource.AssignmentTopLevelPermission`.
 2. **Implement** as follows:
 
@@ -108,7 +105,8 @@ public class AssignmentTopLevelPermission {
 
 Next we need to implement a class for checking existing entity permissions.
 
-#### Implement the Model Resource Permission Checker Class
+## Implement the Model Resource Permission Checker Class
+
 1. **Create** the class `com.liferay.training.gradebook.web.internal.security.permission.resource.AssignmentPermission`.
 2. **Implement** as follows:
 
@@ -167,20 +165,21 @@ public class AssignmentPermission {
 
 We'll put our entity permission checking object into the request attributes of our main view so that it can be used in the JSP files.
 
-#### Implement Permission Checking in the JSP Files
+## Implement Permission Checking in the JSP Files
+
 1. **Open** the class `com.liferay.training.gradebook.web.portlet.action.ViewAssignmentsMVCRenderCommand`
 2. **Add** a service reference for the permission checker:
 
-	```java
+```java
 	@Reference
 	protected AssignmentPermission _assignmentPermission;
-	```
+```
 
 3. **Add** the checker into the request attributes in the `render()` method:
 
-	```java
+```java
 	renderRequest.setAttribute("assignmentPermission", _assignmentPermission);		
-	```
+```
 	
 Your final class should now look like this:
 
@@ -351,12 +350,13 @@ So far, everybody has been able to see the assignment actions menu. Now we'll hi
 
 We'll also add an option to manage entity permissions. For that purpose, we'll use the `<liferay-security>` tag library:
 
-#### Add Option to Manage Entity Permissions
+## Add Option to Manage Entity Permissions
+
 1. **Declare** the `<liferay-security>` taglib in `src/main/resources/META-INF/resources/init.jsp`:
 
-	```html
+```html
 	<%@ taglib prefix="liferay-security" uri="http://liferay.com/tld/security" %>
-	```
+```
 
 2. **Open** the file `src/main/resources/META-INF/resources/assignment/entry_actions.jsp`
 3. **Wrap** all the actions with permission checks so that only authorized users can access the functions and add a permissions menu option. Replace the contents of the file with the following:
@@ -425,11 +425,12 @@ We'll also add an option to manage entity permissions. For that purpose, we'll u
 
 The last thing we need to do is to hide the plus button on the management toolbar for adding assignments. Let's add a permission check to the management toolbar backing class.
 
-#### Implement Permission Checking in the Management Toolbar
+## Implement Permission Checking in the Management Toolbar
+
 1. **Open** the class `com.liferay.training.gradebook.web.display.context.AssignmentsManagementToolbarDisplayContext.java`.
 2. **Implement** permission checking in the `getCreationMenu()` method as follows:
 
-	```java
+```java
 		public CreationMenu getCreationMenu() {
 		
 			// Check if user has permissions to add assignments.
@@ -457,15 +458,25 @@ The last thing we need to do is to hide the plus button on the management toolba
 				}
 			};		
 		}
-	```
+```
 
 3. **Resolve** missing imports.
 
-#### Test the Application
+## Test the Application
+
 1. **Go to** localhost:8080 in your browser after redeploying the module.
 2. **Sign out** of your Liferay DXP instance and test whether you can add, edit, or delete Assignments.
 3. **Create** a new user with just the *User role*.
 	* Test whether you can add, edit, or delete Assignments.
 	* Add the *Add Entry* permission to the role and test again.
 
--->
+---
+
+## Previous Step
+
+* [Exercise 1: Implement Service Module Permissions](./exercise-1-implement-service-module-permissions.md)
+
+## Related Information
+
+* [Building Applications](https://learn.liferay.com/dxp/latest/en/building-applications.html)
+* [Introduction to Application Security (DXP 7.2)](https://help.liferay.com/hc/en-us/articles/360029045311-Introduction-to-Application-Security)
