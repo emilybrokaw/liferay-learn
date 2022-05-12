@@ -1,10 +1,6 @@
-# Optional Exercise: Make the Gradebook Configurable
+# Optional Exercise 1: Make the Gradebook Configurable
 
-Coming Soon!
-
-<!--
-
-#### Exercise Goals
+## Exercise Goals
 
 - Declare dependencies in build.gradle
 - Create a configuration interface in the API module
@@ -16,23 +12,17 @@ Coming Soon!
 - Add new error message localization resources
 - Test the Application
 
-<div class="note">
-Note: This exercise is optional. It is not written as step-by-step exercises so that you can explore and experiment more.
-</div>
+> Note: This exercise is optional. It is not written as step-by-step exercises so that you can explore and experiment more.
 
-</div>
-	
-#### Declare Dependencies for the API Module
+## Declare Dependencies for the API Module
 
-You will need to open the build.gradle of your gradebook-api module to add the "biz.aQuote.bnd.annotation" and "com.liferay.portal.configuration.metatype.api" dependencies.
+You will need to open the _build.gradle_ of your _gradebook-api_ module to add the `biz.aQuote.bnd.annotation` and `com.liferay.portal.configuration.metatype.api` dependencies.
 
-#### Create the Configuration Interface in the API Module
+## Create the Configuration Interface in the API Module
 
-Add an interface to the gradebook-api module: "com.liferay.training.gradebook.configuration.GradebookSystemServiceConfiguration".
+Add an interface to the gradebook-api module: `com.liferay.training.gradebook.configuration.GradebookSystemServiceConfiguration`.
 
-<div class="note">
-Note: This naming syntax is by convention [Application][Scope][Layer]Configuration. Remember that the configuration ID must be the fully qualified name of the interface.
-</div>
+> Note: This naming syntax is by convention [Application][Scope][Layer]Configuration. Remember that the configuration ID must be the fully qualified name of the interface.
 
 The code implementation of this file should look something like this:
 
@@ -83,11 +73,11 @@ public interface GradebookSystemServiceConfiguration {
 }
 ```
 
-#### Add Exported Package
+## Add Exported Package
 
 To be able to consume the configuration from other bundles, we have to expose it by exporting its package. Open the bnd.bnd file of the gradebook-api module and add the configuration package - `com.liferay.training.gradebook.configuration` - to the exported-packages.
 
-#### Add the Localization Resources
+## Add the Localization Resources
 
 Notice the resource bundle property in our configuration interface:
 
@@ -99,7 +89,7 @@ Notice the resource bundle property in our configuration interface:
 )
 ```
 
-Let's add the referenced resources to localize the user interface by creating the `Language.properties` file in the gradebook-api module. The implementation should look similar to:
+Let's add the referenced resources to localize the user interface by creating the `Language.properties` file in the _gradebook-api_ module. The implementation should look similar to:
 
 ```properties
 gradebook-service-configuration-name=Gradebook Service Configuration
@@ -109,15 +99,15 @@ title-min-length-description=Minimum length of a title (in characters).
 title-min-length-name=Title Minimum Length
 ```
 
-#### Test the Configuration Interface
+## Test the Configuration Interface
 
-Creating a configuration interface automatically generates an user interface. Open a browser at localhost:8080 and go to System Settings in the UI. Click the configuration icon and take a look.
+Creating a configuration interface automatically generates an user interface. Open a browser at `localhost:8080` and go to System Settings in the UI. Click the configuration icon and take a look.
 
-#### Declare Dependencies for the Service Module
+## Declare Dependencies for the Service Module
 
-We need to add a dependency to the Metatype API. Open build.gradle in the gradebook-service module and add the `com.liferay.portal.configuration.metatype.api` dependency.
+We need to add a dependency to the Metatype API. Open _build.gradle_ in the _gradebook-service_ module and add the `com.liferay.portal.configuration.metatype.api` dependency.
 
-#### Implement Configuration Support to the Assignment Validator Service
+## Implement Configuration Support to the Assignment Validator Service
 
 Open the validator service component `com.liferay.training.gradebook.util.validator.AssignmentValidatorImpl` in the *gradebook-api* module and add the `configurationPid` component property as shown below.
 
@@ -147,7 +137,7 @@ private void activate(Map<String, Object> properties) {
 }	 
 ```
 
-Replace the contents of the `isDescriptionValid()` method with the code below (notice the highlighted code) and organize the missing imports.
+Replace the contents of the `isDescriptionValid()` method with the code below and organize the missing imports.
 
 ```java
 private boolean isDescriptionValid(
@@ -198,7 +188,7 @@ private boolean isDescriptionValid(
 }
 ```
 
-#### Show Messages in the User Interface
+## Show Messages in the User Interface
 
 Open the file `src/main/resources/META-INF/resources/assigment/edit_assignment.jsp` in *gradebook-web* module. Add the following messages after you find the error message tags in the beginning of the file:
 
@@ -207,7 +197,7 @@ Open the file `src/main/resources/META-INF/resources/assigment/edit_assignment.j
 <liferay-ui:error key="assignmentTitleTooLong" message="error.title-too-long" />	
 ```	
 
-#### Add Error Message Localizations
+## Add Error Message Localizations
 
 Open the localization file `src/main/resources/content/Language.properties` in the *gradebook-web* module and add localizations for the new error messages.
 
@@ -216,8 +206,16 @@ error.title-too-short=Title text too short.
 error.title-too-long=Title text too long.
 ```
 
-#### Test the Application
+## Test the Application
 
 Test the Gradebook application in your browser by creating new Assignments with either too short or too long descriptions. Make sure you've refreshed your browser before you start testing.
 
--->
+---
+
+## Next Up
+
+* [Workflows and Application Development](./workflows-and-application-development.md) 
+
+## Previous Step
+
+* [Application Configurability](./application-configurability.md)
