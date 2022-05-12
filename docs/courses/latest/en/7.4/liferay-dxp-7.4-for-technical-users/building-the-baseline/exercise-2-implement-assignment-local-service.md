@@ -1,19 +1,17 @@
-# Implement Assignment Local Service
+# Exercise 2: Implement Assignment Local Service
 
-Coming Soon!
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/jWPb3lqz-Lg
 
-<!-- 
+> The exercise video above uses DXP 7.3. To complete the exercise using DXP/CE 7.4, follow the updated exercise steps below.
 
-#### Exercise Goals
+## Exercise Goals
 
-- Implement <code>addAssignment()</code>
-- Implement <code>updateAssignment()</code>
+- Implement `addAssignment()`
+- Implement `updateAssignment()`
 - Implement the finder methods
 - Silence generated methods
 - Do a final code review
 - Rebuild the service
-
-</div>
 
 Before implementing the method for adding assignments, open the local service base class `AssignmentLocalServiceBaseImpl` and take a look at the generated `addAssigment()` method. This method doesn't automatically generate an ID, set the audit fields (like creation or modification date), or validate the entity. Creating an overload for `addAssignment()` will take care of these tasks.
 
@@ -21,58 +19,59 @@ Before implementing the method for adding assignments, open the local service ba
 @Indexable(type = IndexableType.REINDEX)
 @Override
 public Assignment addAssignment(Assignment assignment) {
-	assignment.setNew(true);
+   assignment.setNew(true);
 
-	return assignmentPersistence.update(assignment);
+   return assignmentPersistence.update(assignment);
 }
 ```
 
-#### Implement addAssignment()
+## Implement addAssignment()
+
 1. **Open** the `AssignmentLocalServiceImpl`. The empty class looks like this:
 
-	```java
-	/**
-	 * Copyright (c) 2000-present Liferay, Inc. All rights reserved.
-	 *
-	 * This library is free software; you can redistribute it and/or modify it under
-	 * the terms of the GNU Lesser General Public License as published by the Free
-	 * Software Foundation; either version 2.1 of the License, or (at your option)
-	 * any later version.
-	 *
-	 * This library is distributed in the hope that it will be useful, but WITHOUT
-	 * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-	 * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
-	 * details.
-	 */
-	package com.liferay.training.gradebook.service.impl;
-	import com.liferay.portal.aop.AopService;
-	import com.liferay.training.gradebook.service.base.AssignmentLocalServiceBaseImpl;
-	import org.osgi.service.component.annotations.Component;
-	/**
-	 * The implementation of the assignment local service.
-	 *
-	 * <p>
-	 * All custom service methods should be put in this class. Whenever methods are added, rerun ServiceBuilder to copy their definitions into the <code>com.liferay.training.gradebook.service.AssignmentLocalService</code> interface.
-	 *
-	 * <p>
-	 * This is a local service. Methods of this service will not have security checks based on the propagated JAAS credentials because this service can only be accessed from within the same VM.
-	 * </p>
-	 *
-	 * @author Brian Wing Shun Chan
-	 * @see AssignmentLocalServiceBaseImpl
-	 */
-	@Component(
-		property = "model.class.name=com.liferay.training.gradebook.model.Assignment",
-		service = AopService.class
-	)
-	public class AssignmentLocalServiceImpl extends AssignmentLocalServiceBaseImpl {
-		/*
-		 * NOTE FOR DEVELOPERS:
-		 *
-		 * Never reference this class directly. Use <code>com.liferay.training.gradebook.service.AssignmentLocalService</code> via injection or a <code>org.osgi.util.tracker.ServiceTracker</code> or use <code>com.liferay.training.gradebook.service.AssignmentLocalServiceUtil</code>.
-		 */
-	}
-	```
+```java
+   /**
+    * Copyright (c) 2000-present Liferay, Inc. All rights reserved.
+    *
+    * This library is free software; you can redistribute it and/or modify it under
+    * the terms of the GNU Lesser General Public License as published by the Free
+    * Software Foundation; either version 2.1 of the License, or (at your option)
+    * any later version.
+    *
+    * This library is distributed in the hope that it will be useful, but WITHOUT
+    * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+    * FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more
+    * details.
+    */
+   package com.liferay.training.gradebook.service.impl;
+   import com.liferay.portal.aop.AopService;
+   import com.liferay.training.gradebook.service.base.AssignmentLocalServiceBaseImpl;
+   import org.osgi.service.component.annotations.Component;
+   /**
+    * The implementation of the assignment local service.
+    *
+    * <p>
+    * All custom service methods should be put in this class. Whenever methods are added, rerun ServiceBuilder to copy their definitions into the <code>com.liferay.training.gradebook.service.AssignmentLocalService</code> interface.
+    *
+    * <p>
+    * This is a local service. Methods of this service will not have security checks based on the propagated JAAS credentials because this service can only be accessed from within the same VM.
+    * </p>
+    *
+    * @author Brian Wing Shun Chan
+    * @see AssignmentLocalServiceBaseImpl
+    */
+   @Component(
+      property = "model.class.name=com.liferay.training.gradebook.model.Assignment",
+      service = AopService.class
+   )
+   public class AssignmentLocalServiceImpl extends AssignmentLocalServiceBaseImpl {
+      /*
+       * NOTE FOR DEVELOPERS:
+       *
+       * Never reference this class directly. Use <code>com.liferay.training.gradebook.service.AssignmentLocalService</code> via injection or a <code>org.osgi.util.tracker.ServiceTracker</code> or use <code>com.liferay.training.gradebook.service.AssignmentLocalServiceUtil</code>.
+       */
+   }
+```
 
 2. **Implement** the `addAssignment()` in the class as follows:
 
@@ -99,34 +98,35 @@ public class AssignmentLocalServiceImpl extends AssignmentLocalServiceBaseImpl {
       assignment.setTitle(title);
       assignment.setUserId(userId);
       assignment.setUserName(user.getScreenName());
-```
-```java
+
   // Persist assignment to database.
   return super.addAssignment(assignment);
 }
 ```
 
-#### Implement updateAssignment
+## Implement updateAssignment
+
 1. **Create** an overload for the `updateAssignment()`:
 
 ```java
 public Assignment updateAssignment(long assignmentId, String title,
          String description, Date dueDate, ServiceContext serviceContext) throws PortalException {
-	// Get the Assignment by id.
-	Assignment assignment = getAssignment(assignmentId);
-	// Set updated fields and modification date.
-	assignment.setModifiedDate(new Date());
-	assignment.setTitle(title);
-	assignment.setDueDate(dueDate);
-	assignment.setDescription(description);
-	assignment = super.updateAssignment(assignment);
-	return assignment;
+   // Get the Assignment by id.
+   Assignment assignment = getAssignment(assignmentId);
+   // Set updated fields and modification date.
+   assignment.setModifiedDate(new Date());
+   assignment.setTitle(title);
+   assignment.setDueDate(dueDate);
+   assignment.setDescription(description);
+   assignment = super.updateAssignment(assignment);
+   return assignment;
 }
 ```
 
 Defining finders in `service.xml` automatically creates the corresponding methods in the persistence classes, but we cannot access those directly from the controller layer and have to implement facades in the service implementation class.
 
-#### Implement the Finder Methods
+## Implement the Finder Methods
+
 1. **Implement** the finder methods as follows:
 
 ```java
@@ -169,12 +169,12 @@ private DynamicQuery getKeywordSearchDynamicQuery(
 }
 ```
 
-> NOTE: <br/>
 > For the sake of this exercise, we introduced a custom `getAssignmentsByKeywords()` method here, which we will use on the user interface later for searching. This method is using Dynamic Queries, which allow you to query the database with custom SQL. Note that this specific query wouldn't work well with localized fields, which are stored in xml.
 
 Sometimes it's practical to silence generated methods to ensure correct API usage. Override and "silence" the generated `addAssignment()` and `updateAssignment()` method signatures, which we replaced with our overrides before.
 
-#### "Silence" the Generated Method 
+## "Silence" the Generated Method 
+
 1. Add the following code to the end of the `AssignmentLocalServiceImpl.java` class.
 
 ```java
@@ -187,13 +187,13 @@ public Assignment updateAssignment(Assignment assignment) {
   throw new UnsupportedOperationException("Not supported.");
 }
 ```
-<br />
 
-#### Do a Final Code Review
+## Do a Final Code Review
+
 1. **Resolve** missing imports.
 2. **Fix** indents and spacing by using automatic code formatting.
 3. **Save** the file.
-	* The final `AssignmentLocalServiceImpl.java` class will look like this:
+   * The final `AssignmentLocalServiceImpl.java` class will look like this:
 
 ```java
 /**
@@ -337,8 +337,17 @@ public class AssignmentLocalServiceImpl extends AssignmentLocalServiceBaseImpl {
 }
 ```
 
-#### Rebuild the Service
+## Rebuild the Service
+
 1. **Run** the `buildService` Gradle task at the gradebook level to regenerate the service.
       * If you encounter issues with `buildService`, you may need to run it from `gradebook-workspace/modules/gradebook/gradebook-service/build`.
 
--->
+---
+
+## Next Up
+
+* [Exercise 3: Implement Assignment Remote Service](./exercise-3-implement-assignment-remote-service.md) 
+
+## Previous Step
+
+* [Local and Remote Service](./local-and-remote-service.md)

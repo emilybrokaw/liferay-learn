@@ -1,21 +1,21 @@
-# Implement Assignment Remote Service
+# Exercise 3: Implement Assignment Remote Service
 
-Coming Soon!
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/0lNvBGjU3Y4
 
-<!--
+> The exercise video above uses DXP 7.3. To complete the exercise using DXP/CE 7.4, follow the updated exercise steps below.
 
-#### Exercise Goals
+## Exercise Goals
+
 - Declare dependencies
-- Implement the facade methods for the local service in the <code>AssignmentServiceImpl.java</code>
+- Implement the facade methods for the local service in the `AssignmentServiceImpl.java`
 - Do a final code review
 - Rebuild and deploy the service
 
-</div>
-	
-#### Implement the Façade Methods
+## Implement the Façade Methods
+
 1. **Open** the `AssignmentServiceImpl.java` class. The empty class looks like this:
 
-  ```java
+```java
   /**
    * Copyright (c) 2000-present Liferay, Inc. All rights reserved.
    *
@@ -51,25 +51,25 @@ Coming Soon!
    * @see AssignmentServiceBaseImpl
    */
   @Component(
-  	property = {
-  		"json.web.service.context.name=gradebook",
-  		"json.web.service.context.path=Assignment"
-  	},
-  	service = AopService.class
+   property = {
+      "json.web.service.context.name=gradebook",
+      "json.web.service.context.path=Assignment"
+   },
+   service = AopService.class
   )
   public class AssignmentServiceImpl extends AssignmentServiceBaseImpl {
 
-  	/*
-  	 * NOTE FOR DEVELOPERS:
-  	 *
-  	 * Never reference this class directly. Always use <code>com.liferay.training.gradebook.service.AssignmentServiceUtil</code> to access the assignment remote service.
-  	 */
+   /*
+    * NOTE FOR DEVELOPERS:
+    *
+    * Never reference this class directly. Always use <code>com.liferay.training.gradebook.service.AssignmentServiceUtil</code> to access the assignment remote service.
+    */
   }
-  ```
+```
 
 2. **Implement** the façade methods in the class as follows:
 
-  ```java
+```java
   public Assignment addAssignment(
     long groupId, String title, String description,
     Date dueDate, ServiceContext serviceContext)
@@ -109,9 +109,10 @@ Coming Soon!
     return assignmentLocalService.updateAssignment(
        assignmentId, title, description, dueDate, serviceContext);
   }
-  ```
+```
 
-#### Final Code Review
+## Final Code Review
+
 1. **Resolve** missing imports.
    * Note: You can ignore any errors for unimplemented methods as these should be addressed in later modules. 
 2. **Fix** indents and spacing by using automatic code formatting.
@@ -209,10 +210,11 @@ public class AssignmentServiceImpl extends AssignmentServiceBaseImpl {
 }
 ```
 
-#### Rebuild and Deploy the Service
+## Rebuild and Deploy the Service
+
 1. **Run** the `buildService` Gradle task to regenerate the service.
-* **Start** your Docker container if it's not running.
-* **Run** `../gradlew deploy` to deploy the modules.
+2. **Start** your Docker container if it's not running.
+3. **Run** `../gradlew deploy` to deploy the modules.
 
 You should see a success log message if modules were deployed successfully:
 
@@ -221,4 +223,12 @@ You should see a success log message if modules were deployed successfully:
 2019-03-20 11:32:02.573 INFO  [pipe-start 985][BundleStartStopLogger:39] STARTED com.liferay.training.gradebook.service_1.0.0 [985]
 ```
 
--->
+---
+
+## Next Up 
+
+* [Summary](./summary.md) 
+
+## Previous Step
+
+* [Exercise 2: Implement Assignment Local Service](./exercise-2-implement-assignment-local-service.md)

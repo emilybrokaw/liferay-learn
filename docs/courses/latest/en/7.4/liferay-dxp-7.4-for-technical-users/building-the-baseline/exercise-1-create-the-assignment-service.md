@@ -1,22 +1,19 @@
-# Create the Assignment Service
+# Exercise 1: Create the Assignment Service
 
-Coming Soon!
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/nleXG4QFsN8
 
-<!--
+> The exercise video above uses DXP 7.3. To complete the exercise using DXP/CE 7.4, follow the updated exercise steps below.
 
-Note to the editor: I had to change some snippet instructions to remove the !-- -- in order to comment out the entire file. Make sure to review and ensure the snippets are correct.
-
-#### Exercise Goals
+## Exercise Goals
 
 - Create a Liferay Service Builder Project using the _service-builder_ template
 - Define the Assignment entity
 - Define service exceptions
 - Final code review
 - Build the service 
-
-</div>
 	
-#### Create a Liferay Service Builder Project
+## Create a Liferay Service Builder Project
+
 1. **Create** a new service builder project in the gradebook-workspace with the following parameters:
 	* Use `gradebook` for the _Project Name_.
 	* Use _service-builder_ for the _Project Template Name_.
@@ -27,94 +24,98 @@ Feel free to use whatever method you are most comfortable with to generate this 
 
 `service.xml` is the main configuration file of a Service Builder project. It lets you define model entities, data sources, finder methods, and exceptions for your service. You can customize `service.xml` with a graphical designer tool or edit the file's source code directly. 
 
-#### Define the Assignment Entity
-1. **Go to** `modules > gradebook > gradebook-service` in your preferred IDE.
+## Define the Assignment Entity
+
+1. **Go to** `modules/gradebook/gradebook-service` in your preferred IDE.
 2. **Open** the `service.xml` file.
 3. **Replace** the contents of the file with the following:
-	```xml
+```xml
 	<?xml version="1.0"?>
 	<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.4.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_4_0.dtd">
 	<service-builder dependency-injector="ds" package-path="com.liferay.training.gradebook">
 		<namespace>Gradebook</namespace>
-		<<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">>
+		<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
 	</service-builder>
-	```
+```
 
 
-#### Create the Assignment Entity 
+## Create the Assignment Entity
+
 1. **Add** the following entity just before the closing `service-builder` tag:
-	```xml
+```xml
 	<entity name="Assignment" local-service="true"></entity>
-	```
+```
 
 This creates an entity named _Assignment_ and enables both the local and remote services.
 
-#### Define Assignment Columns
+## Define Assignment Columns
+
 1. **Add** a column called _title_ to the _Assignment_ entity. Your entity will look like this:
-	```xml
+```xml
 	<entity name="Assignment" local-service="true">
         <column name="title" type="String"></column>
     </entity>
-    ```
+```
 
 2. **Add** columns for _description_ and _dueDate_ to the _Assignment_ entity. Your entity will now look like this:
 
-	```xml
+```xml
 	<entity name="Assignment" local-service="true">
         <column name="title" type="String"></column>
         <column name="description" type="String"></column>
 		<column name="dueDate" type="Date"></column>
     </entity>
-    ```
+```
 
 
-#### Add Definitions to the `service.xml` File
+## Add Definitions to the `service.xml` File
+
 1. **Add** the following snippet after the _column_ definitions:
-	```xml
-	< Order >
+```xml
+	<!-- Order -->
 	<order by="asc">
 		<order-column name="title" />
 	</order>
-	```
+```
 
 2. **Add** the following snippet after the _order_ definition:
-	```xml
-	< Finders >
-	< Find by groupId >
+```xml
+	<!-- Finders -->
+	<!-- Find by groupId -->
 	<finder name="GroupId" return-type="Collection">
 		<finder-column name="groupId"></finder-column>
 	</finder>
-	```
+```
 
-	> NOTE: <br/>
-    > References define entity services injected in our service classes. This helps to keep the database calls inside a single transaction. We need the Group services and Liferay Asset services for integrating to the Liferay Asset framework for later exercise steps. 
+
+> References define entity services injected in our service classes. This helps to keep the database calls inside a single transaction. We need the Group services and Liferay Asset services for integrating to the Liferay Asset framework for later exercise steps. 
 
 3. **Add** the following reference definitions after the _finder_ definitions:
-	```xml
-	< Reference to Group entity service >
+```xml
+	<!-- Reference to Group entity service -->
 	<reference entity="Group" package-path="com.liferay.portal"></reference>
-	< Entity services needed for the integration to Asset framework >
+	<!-- Entity services needed for the integration to Asset framework -->
 	<reference entity="AssetEntry"
 		package-path="com.liferay.portlet.asset"></reference>
 	<reference entity="AssetLink"
 		package-path="com.liferay.portlet.asset"></reference>
 	<reference entity="AssetTag"
 		package-path="com.liferay.portlet.asset"></reference>
-	```
+```
 
 4. **Add** the following code snippet after the closing tag of _entity_:
-	```xml
-	< Exceptions >
+```xml
+	<!-- Exceptions -->
 	<exceptions>
 		<exception>AssignmentValidation</exception>
 	</exceptions>
-	```
+```
 
 5. **Save** the _service.xml_ file.
 
 The final `service.xml` should look like this:
 
-#### Final Code Review
+## Final Code Review
 
 ```xml
 <?xml version="1.0"?>
@@ -122,18 +123,18 @@ The final `service.xml` should look like this:
 
 <service-builder dependency-injector="ds" package-path="com.liferay.training.gradebook">
 	<namespace>Gradebook</namespace>
-	<<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
 	<entity name="Assignment" local-service="true">
 
-		< PK fields >
+		<!-- PK fields -->
 
 		<column name="assignmentId" primary="true" type="long"></column>
 
-		< Group instance >
+		<!-- Group instance -->
 
 		<column name="groupId" type="long"></column>
 
-		< Audit fields >
+		<!-- Audit fields -->
 
 		<column name="companyId" type="long"></column>
 		<column name="userId" type="long"></column>
@@ -144,25 +145,25 @@ The final `service.xml` should look like this:
 		<column name="description" type="String"></column>
 		<column name="dueDate" type="Date"></column>
 
-		< Order >
+		<!-- Order -->
 
 		<order by="asc">
 			<order-column name="title" />
 		</order>
 
-		< Finders >
+		<!-- Finders -->
 
-		< Find by groupId >
+		<!-- Find by groupId -->
 
 		<finder name="GroupId" return-type="Collection">
 			<finder-column name="groupId"></finder-column>
 		</finder>
 
-		< Reference to Group entity service >
+		<!-- Reference to Group entity service -->
 
 		<reference entity="Group" package-path="com.liferay.portal"></reference>
 
-		< Entity services needed for the integration to Asset framework >
+		<!-- Entity services needed for the integration to Asset framework -->
 
 		<reference entity="AssetEntry"
 			package-path="com.liferay.portlet.asset"></reference>
@@ -172,7 +173,7 @@ The final `service.xml` should look like this:
 			package-path="com.liferay.portlet.asset"></reference>
 	</entity>
 
-	< Exceptions >
+	<!-- Exceptions -->
 
 	<exceptions>
 		<exception>AssignmentValidation</exception>
@@ -185,12 +186,10 @@ When you run the `buildService` Gradle task, the following items are generated:
 - Persistence and caching
 - Local and remote service APIs
 
-> NOTE: <br/>
-    > Remember that you have to rebuild services whenever you edit the `service.xml`.
+> Remember that you have to rebuild services whenever you edit the `service.xml`.
 
-<div class="page"></div>
+## Build the Service
 
-#### Build the Service
 1. **Run** the `buildService` task in the `gradebook-workspace/modules/gradebook/build` directory.
 	* Note that you can run the service generation task several different ways:
  		* The _Gradle Tasks_ panel using the project's `buildService` task 
@@ -221,4 +220,12 @@ tasks.withType(JavaCompile) {
 }
 ```
 
--->
+---
+
+## Next Up
+
+* [Local and Remote Service](./local-and-remote-service.md)
+
+## Previous Step
+
+* [Using Service Builder](./using-service-builder.md)
