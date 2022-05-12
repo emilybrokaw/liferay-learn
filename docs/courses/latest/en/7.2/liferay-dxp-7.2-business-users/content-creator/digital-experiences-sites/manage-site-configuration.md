@@ -52,10 +52,7 @@ It is also possible to assign different roles within a site to Site Members. Thi
 **Site Roles** is a unique way of giving users access to do more within a site.
 ```
 
-<figure>
-	<img src="../images/lecture-images/site-roles.png" style="max-height:100%" />
-	<figcaption style="font-size: x-small">Fig.1 The default Site Roles as seen in the Control Panel</figcaption>
-</figure>
+![The default Site Roles as seen in the Control Panel.](./images/lecture-images/site-roles.png)
 
 ## Teams
 
@@ -87,19 +84,13 @@ Sites can be independent of, or associated with, Organizations. For example, you
 **Organization Sites** can be created to give Organization members access to a specific site.
 ```
 
-<figure>
-	<img src="../images/lecture-images/org-site.png" style="max-height:100%" />
-	<figcaption style="font-size: x-small">Fig.2 When selected, an organization site will automatically be created.</figcaption>
-</figure>
+![When selected, an organization site will automatically be created.](./images/lecture-images/org-site.png)
 
 ## Site Navigation
 
 Liferay DXP separates site-scoped information from the _Control Panel_ by placing it in the _Site Administration_ panel. From here, you can select the specific site you want to work on. That site gives you features to work with under each of the following categories: Build, Content, Categorization, Recycle Bin, Members, Configuration, and Publishing.
 
-<figure>
-	<img src="../images/lecture-images/site-administration-panel.png" style="max-height:30%" />
-	<figcaption style="font-size: x-small">Fig.3 The Site Administration Panel</figcaption>
-</figure>
+![The Site Administration Panel.](./images/lecture-images/site-administration-panel.png)
 
 Traditionally, in Liferay and in websites in general, a single menu across the top of the page has been used for navigation. Buttons and drop-down menus are used to link between different pages on a site, but with Liferay's updated navigation tools, multiple navigation menus can be added to different pages within a site.
 
@@ -109,10 +100,7 @@ In the _Site Administration_ panel, the _Navigation Menus_ section allows you to
 **Custom Navigation Menus** can make your site easier for users to traverse.
 ```
 
-<figure>
-	<img src="../images/lecture-images/nav.png" style="max-height:25%" />
-	<figcaption style="font-size: x-small">Fig.4 The Navigation Menu widget can be added from the Add panel.</figcaption>
-</figure>
+![The Navigation Menu widget can be added from the Add panel.](./images/lecture-images/nav.png)
 
 ## Site Hierarchies
 

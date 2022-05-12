@@ -20,7 +20,7 @@
 9. **Choose** _Private_.
 10. **Click** the _Save_ button at the bottom of the page.
 
-<img src="../images/exercise-images/add-private-site.png" style="max-height:28%">
+![The General Site Settings page with Membership set to Private.](./images/exercise-images/add-private-site.png)
 
 ## Add the Livingstone Life Blog Site
 
@@ -34,7 +34,7 @@
 8. **Choose** _Restricted_.
 9. **Click** the _Save_ button at the bottom.
 
-<img src="../images/exercise-images/add-blog-site.png" style="max-height:25%">
+![The General Settings for the Livingstone Life blog site.](./images/exercise-images/add-blog-site.png)
 
 ## View All the Sites
 
@@ -43,7 +43,7 @@
 2. **Click** the _Livingstone Hotels & Resorts_ site.
 	- You should see at least three sites. (If you did the Bonus Exercises in the last section, you should see more.)
 
-<img src="../images/exercise-images/exercises-1.4-final.png" style="max-height:30%">
+![Three sites with Membership Type circled: Open, Restricted, and Private.](./images/exercise-images/exercises-1.4-final.png)
 
 ---
 

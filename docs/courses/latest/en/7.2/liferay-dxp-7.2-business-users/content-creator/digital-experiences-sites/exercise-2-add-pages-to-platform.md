@@ -21,7 +21,7 @@
 8. **Type** `A landing page for the various hotel and resort locations.` as the _Description_.  
 9. **Click** the _Save_ button.
 
-<img src="../images/exercise-images/new-page-template.png" style="max-width:100%;">
+![Create a new Page Template.](./images/exercise-images/new-page-template.png)
 
 ## Configure the Page Template
 
@@ -46,7 +46,7 @@
 7. **Click** the _Back_ (<) button.
 	- If your browser opened a new tab when you clicked on the _Hotel Landing Page_ template, close the tab to get back to the _Pages_ section of the _Global_ site.
 
-<img src="../images/exercise-images/landing-page-complete.png" style="max-width:100%;">
+![Completed Landing Page Template.](./images/exercise-images/landing-page-complete.png)
 
 ## Create Another Widget Page Template
 
@@ -55,7 +55,7 @@
 3. **Type** `A widget page for displaying a specific type of content.` as the _Description_.  
 4. **Click** the _Save_ button.
 
-<img src="../images/exercise-images/asset-publisher-template.png" style="max-width:100%;">
+![All available Page Templates including the new Asset Publisher Page.](./images/exercise-images/asset-publisher-template.png)
 
 ## Configure the New Page Template
 
@@ -90,7 +90,7 @@
 11. **Click** _Go to Site_ in the _Site Administration_ panel.
 12. **Click** _Livingstone Gallery_ in the navigation menu.
 
-<img src="../images/exercise-images/exercise-2-finished.png" style="max-width:100%;">
+![The Livingstone Gallery Asset Publisher Page.](./images/exercise-images/exercise-2-finished.png)
 
 ---
 

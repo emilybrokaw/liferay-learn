@@ -4,12 +4,7 @@
 
 Websites have a structure of pages that can be navigated by digital users and are used by virtually every modern business, but a website without content is like a book without pages. When you're building a website, you need to figure out how to include content and how to structure and display that content efficiently. So what is the best way to deliver content in a site for your business? That is the question this course will help you answer.
 
-![Liferay Site Management](./digital-experiences-sites/images/01.png)
-
-<figure>
-	<img src="../images/lecture-images/site-examples-lrsite.png" style="max-height: 100%" />
-	<figcaption style="font-size: x-small">Fig.1 Liferay Site Management</figcaption>
-</figure>
+![Liferay Site Management.](./images/lecture-images/site-examples-lrsite.png)
 
 ## Livingstone Hotels & Resorts
 
@@ -30,19 +25,13 @@ Sites act as repositories in which all content and content types (Liferay Assets
 
 Josiah can drag and drop widgets from the _Add menu_ at the top right of a page when on a site. Each Asset has a corresponding widget that can be used to display content on a site page. For example, Web Content can be displayed via the Web Content Display widget.
 
-<figure>
-	<img src="../images/lecture-images/ContentManagementApplications.png" style="max-height: 80%" />
-	<figcaption style="font-size: x-small">Fig.2 Four of the most commonly used widgets in Liferay DXP</figcaption>
-</figure>
+![Four of the most commonly used widgets in Liferay DXP.](./images/lecture-images/ContentManagementApplications.png)
 
 When dragging widgets onto a page, it is important to know where that content can go and how it can be structured on the page. This is where _Page Layouts_ come in. 
 
 In Liferay, widgets can be placed in the center of each page within a grid-like structure. The layout can be divided into up to twelve columns and any number of rows. Layout Templates control this grid. There are many default layouts, but developers can also create custom layouts. These can help unify the look of pages across a site.
 
-<figure>
-	<img src="../images/lecture-images/page-columns.png" style="max-height: 100%" />
-	<figcaption style="font-size: x-small">Fig.3 An example of a simple two-column layout</figcaption>
-</figure>
+![An example of a simple two-column layout.](./images/lecture-images/page-columns.png)
 
 ## The Content Management System
 
@@ -52,10 +41,7 @@ Anyone that has used a website before probably has a pretty good idea of how sit
 Liferay **Sites** are groups of Content that can be displayed on Pages.
 ```
 
-<figure>
-	<img src="../images/lecture-images/sites-pages-content.png" style="max-height: 30%;" />
-	<figcaption style="font-size: x-small">Fig.4 How Content is displayed in Liferay DXP</figcaption>
-</figure>
+![How Content is displayed in Liferay DXP.](./images/lecture-images/sites-pages-content.png)
 
 With Liferay, it's easy to create content-centric Pages such as:
 * Front Pages  
@@ -70,10 +56,7 @@ Sharing Content within a Site Hierarchy is specifically done by Site Administrat
 
 Sharing Content through the Global Site is generally recommended. Using the global scope helps to provide content types and design to every Site, which can help ensure consistency in a website. Using the Global Site will also prevent compatibility issues with Staging, as we'll discuss in a later chapter.
 
-<figure>
-	<img src="../images/lecture-images/global-or-hierchy.png" style="max-height: 100%" />
-	<figcaption style="font-size: x-small">Fig.5 The Global Site and default site on the Livingstone platform</figcaption>
-</figure>
+![The Global Site and default site on the Livingstone platform.](./images/lecture-images/global-or-hierchy.png)
 
 ## The Asset Framework
 
@@ -100,10 +83,7 @@ To create reusable types of content for Site Pages easily, you can use the follo
 * **Page Fragments**
 ```
 
-<figure>
-	<img src="../images/lecture-images/modern-site-building-example.png" style="max-height: 100%" />
-	<figcaption style="font-size: x-small">Fig.6 A Page Fragment used to create a modern site page</figcaption>
-</figure>
+![A Page Fragment used to create a modern site page.](./images/lecture-images/modern-site-building-example.png)
 
 ## Putting Everything Together
 

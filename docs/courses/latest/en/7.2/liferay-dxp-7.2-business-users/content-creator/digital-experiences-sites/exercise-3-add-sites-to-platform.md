@@ -84,7 +84,7 @@
 	* You'll see that the pages we created in the template have been generated for this site.
 8. **Click** on _Go to Site_ in the _Site Administration_ panel.
 
-<img src="../images/exercise-images/hotel-americana.png" style="max-height: 100%" />
+![The Hotel Americana Site Page Structure.](./images/exercise-images/hotel-americana.png)
 
 ## Create Two More Luxury Hotel Sites with the Site Template
 
@@ -103,7 +103,7 @@
 13. **Go to** _Control Panel_ → _Sites_ → _Sites_ in the _Menu_.
 14. **Click** the _Livingstone Hotels & Resorts_ site to see the child sites we created above. 
 
-<img src="../images/exercise-images/three-hotel-location-sites.png" style="max-height: 100%;">
+![A list of the three Livingstone Hotel & Resorts Child Sites.](./images/exercise-images/three-hotel-location-sites.png)
 
 ---
 

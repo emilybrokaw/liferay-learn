@@ -26,38 +26,23 @@ _Content Page Templates_ are constructed from Page Fragments. They are user-defi
 
 _Widget Page Templates_ group together a collection of Widgets that can be reused when creating a new Layout page. When creating similar pages across the platform, it makes sense to use Page Templates. When deciding which type of Page Template to use, think about whether widgets are going to be used to display your content. If you want to display particular assets, collaboration tools, or search results, Widget Page Templates are the best option.
 
-<figure>
-	<img src="../images/lecture-images/creating-content-template.png" style="max-height: 100%" />
-	<figcaption style="font-size: x-small">Fig.1 An example of a page created with a Content Page Template</figcaption>
-</figure>
+![An example of a page created with a Content Page Template.](./images/lecture-images/creating-content-template.png)
 
 Once a Content Page Template is published, users can select the template when creating a new Content Page.
 
-<figure>
-	<img src="../images/lecture-images/choosing-content-template.png" style="max-height: 100%" />
-	<figcaption style="font-size: x-small">Fig.2 Adding a new page and selecting a Content Page Template</figcaption>
-</figure>
+![Adding a new page and selecting a Content Page Template.](./images/lecture-images/choosing-content-template.png)
 
 Widget Page Templates are managed on the _Global_ site. You can find existing templates and create new ones by going to _Site Administration → Build → Pages_ for the _Global_ site.
 
-<figure>
-	<img src="../images/lecture-images/default-widget-templates.png" style="max-height: 100%" />
-	<figcaption style="font-size: x-small">Fig.3 Page Templates in the Global Site</figcaption>
-</figure>
+![Page Templates in the Global Site.](./images/lecture-images/default-widget-templates.png)
 
 The default Widget Page Templates available are the Search, Blog, and Wiki templates. Once a new Page Template for Widget pages is created, Widgets can be added to the page as needed. Content to be displayed on the page will be included once the Page Template for Widgets has been used to create a new page on a Site.
 
-<figure>
-	<img src="../images/lecture-images/widget-template.png" style="max-height: 100%" />
-	<figcaption style="font-size: x-small">Fig.4 An example of a Widget Page Template</figcaption>
-</figure>
+![An example of a Widget Page Template.](./images/lecture-images/widget-template.png)
 
 Page Templates for Widget Pages can be found under the _Global Templates_ collection when creating a new page on a Site. Users can select any of the Templates that exist on the _Global_ site from the _Global Templates_ tab found under _Collections_ when adding a new page.
 
-<figure>
-	<img src="../images/lecture-images/global-templates.png" style="max-height: 100%" />
-	<figcaption style="font-size: x-small">Fig.5 Adding a new page using a Widget Page Template</figcaption>
-</figure>
+![Adding a new page using a Widget Page Template.](./images/lecture-images/global-templates.png)
 
 ## Benefits of Page Templates
 
@@ -77,17 +62,11 @@ Once a Widget Page Template is created, there are a few other configuration opti
 
 _SEO settings:_ administrators can add metadata for SEO to the page. They can update the page's HTML title, description, keywords, and robots directly through the platform's administrative view. 
 
-<figure>
-	<img src="../images/lecture-images/seo.png" style="max-height: 100%" />
-	<figcaption style="font-size: x-small">Fig.6 Configuring SEO on a new page</figcaption>
-</figure>
+![Configuring SEO on a new page.](./images/lecture-images/seo.png)
 
 A custom theme can be configured directly to Widget Page Templates. By defining a specific look-and-feel for the template, each page created from the template can look consistent and in line with requirements from Design or Marketing. This means, however, that while the landing pages will have consistent branding, each hotel website can still have its own distinct content. 
 
-<figure>
-	<img src="../images/lecture-images/look-feel.png" style="max-height: 67%" />
-	<figcaption style="font-size: x-small">Fig.7 Configuring the look and feel for a page</figcaption>
-</figure>
+![Configuring the look and feel for a page.](./images/lecture-images/look-feel.png)
 
 When configuring a page template's advanced features, administrators can add things like custom JavaScript or an icon to be shown in the navigation menu.
 
