@@ -14,8 +14,9 @@ Josiah Copeland wants an easy way to rapidly add pages with the same basic struc
 
 Although individual pages can be created and modified manually, it's best to streamline the process as much as possible. One of the best ways to do this is by implementing Liferay's _Page Templates_.
 
-> Key Point: 
+```{important}
 **Page Templates** are pre-configured pages that can be used to rapidly generate new site pages in any site.
+```
 
 There are two kinds of page templates available on the platform:
 1. Content Page Templates
@@ -62,9 +63,9 @@ Page Templates for Widget Pages can be found under the _Global Templates_ collec
 
 Page Templates are useful for rapidly adding similar types of pages throughout the platform. Using page templates for similar types of pages creates a consistent look and feel for your platform and simplifies site development. After initial platform development, Page Templates are still useful because all pages created from a page template can inherit the changes made to that template. This way, a design change for a certain type of page only needs to be made once if all pages of that type share the same template.
 
-> Key Point: 
+```{important} 
 Pages created from the same Page Template can inherit later changes made to that template.
-
+```
 
 When a user creates a Widget Page Template and chooses to _Inherit changes_, any new changes made to the template will automatically be made on the page created from the template. Using this feature of page templates saves administrators a lot of time. This simplifies page maintenance by reducing the amount of work and time needed to make updates.
 

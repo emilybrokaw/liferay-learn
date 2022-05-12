@@ -24,8 +24,9 @@ Livingstone Hotels & Resorts has tasked Josiah Copeland with leading a team to b
 
 Sites act as repositories in which all content and content types (Liferay Assets) are stored. Pages can be created within Sites in order to display content to Users. Josiah can add content to these pages via _Widgets_.
 
-> Key Point: 
+```{important} 
 **Widgets** display Site content on pages.
+```
 
 Josiah can drag and drop widgets from the _Add menu_ at the top right of a page when on a site. Each Asset has a corresponding widget that can be used to display content on a site page. For example, Web Content can be displayed via the Web Content Display widget.
 
@@ -47,8 +48,9 @@ In Liferay, widgets can be placed in the center of each page within a grid-like 
 
 Anyone that has used a website before probably has a pretty good idea of how sites look and work. Liferay Sites are similar in concept, but there are a few distinctions that make the creation and management of content and pages more effective. They serve as a foundational block of content, documents, and pages. Each Site contains its own unique group of content and provides a framework for managing Roles and permissions to control access. Content can be displayed to a wider audience on Site Pages.
 
-> Key Point: 
+```{important} 
 Liferay **Sites** are groups of Content that can be displayed on Pages.
+```
 
 <figure>
 	<img src="../images/lecture-images/sites-pages-content.png" style="max-height: 30%;" />
@@ -77,8 +79,9 @@ Sharing Content through the Global Site is generally recommended. Using the glob
 
 Content teams can work with a couple of content management features within their sites. The first is the traditional _Asset Framework_. The Asset Framework allows for many different kinds of content to be created within the Liferay platform. In addition, there are common features such as adding metadata for content organization or allowing users to interact with comments. This makes for an easy way to sort, find, and interact with the content in the platform.
 
-> Key Point: 
+```{important} 
 The **Asset Framework** provides a number of different content types and features.
+```
 
 ## Experience Management Features in Liferay DXP 7.2
 
@@ -89,12 +92,13 @@ Content teams can also work with new Web Experience tools now available in Lifer
 
 We'll discuss these tools in further detail in a later module.
 
-> Key Point:
+```{important}
 **Navigation Menus** give you greater control over your user's ability to navigate your site.
 To create reusable types of content for Site Pages easily, you can use the following:
 * **Content Pages**
 * **Display Pages**
 * **Page Fragments**
+```
 
 <figure>
 	<img src="../images/lecture-images/modern-site-building-example.png" style="max-height: 100%" />

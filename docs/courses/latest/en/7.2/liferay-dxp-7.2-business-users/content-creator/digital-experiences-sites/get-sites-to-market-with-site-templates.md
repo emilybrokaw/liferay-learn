@@ -12,8 +12,9 @@ Josiah has been tasked with creating and overseeing all of Livingstone's hotel a
 
 In the same way that users can create Page Templates, they can also create _Site Templates_ for rapid site creation. Instead of manually creating each site, the site development team or platform administrator can create and use site templates to rapidly create new sites of the same type.
 
-> Key Point: 
-> **Site Templates** are predefined sets of pages, layouts, widgets, and content.
+```{important}
+**Site Templates** are predefined sets of pages, layouts, widgets, and content.
+```
 
 New site templates can be created by going to _Control Panel → Sites → Site Templates_. There are two default templates, _Intranet Site_ and _Community_, that are intended as Private and Public Sites, respectively. Since Site Templates are _Page Sets_, they need to be set as either the Public or Private Pages of a site.
 
@@ -28,8 +29,9 @@ New sites created from a site template have all the pages and widgets that were 
 
 Site templates streamline the site creation process for administrators, making it easy to create sites quickly. Although the pages and widgets of sites created from the same site template are the same, each site will quickly be filled with unique information as users add and share content within the sites. After a site is created from a site template, site administrators and developers can add new pages, widgets, and content to the site as necessary.
 
-> Key Point: 
-> A site created from a site template will have the same pages, widgets, and content as the template.
+```{important}
+A site created from a site template will have the same pages, widgets, and content as the template.
+```
 
 <figure>
 	<img src="../images/lecture-images/new-page-site-template.png" style="max-height: 27%" />
@@ -44,8 +46,9 @@ Page management for a Site Template is a little different from page management f
 
 A Page Template's _Inherit Changes_ option has a parallel option for Site Templates. Changes made to a Site Template can be propagated to sites whose page sets are linked to the Site Template. This link is created when you add a site based on a Site Template with the _Enable propagation of changes from the Site template_ box checked. Unlike the Page Template option, however, keeping this option turned on for the Site Template does not restrict configuration in the new site. This means that administrators can make whatever changes to the site that they might need, and, if necessary, have the option to revert everything back to the Site Template base.
 
-> Key Point: 
-> Enabling the propagation of changes from the Site Template links a site to its site template, ensuring all changes made to the template are reflected in the site.
+```{important}
+Enabling the propagation of changes from the Site Template links a site to its site template, ensuring all changes made to the template are reflected in the site.
+```
 
 <figure>
 	<img src="../images/lecture-images/site-template-with-apps.png" style="max-height: 100%" />
@@ -54,8 +57,9 @@ A Page Template's _Inherit Changes_ option has a parallel option for Site Templa
 
 With the propagation of changes from the site template enabled, new pages, content, and widgets can still be added to a site created with the site template. However, the default pages of the Site Template cannot be reordered, removed, or replaced. If a site created from a site template has custom site pages as well, the site template pages always appear first. The custom pages will appear after the site template pages.
 
-> Key Point: 
-> Pages added to a site created from a Site Template are unaffected by changes propagated from the Site Template.
+```{important} 
+Pages added to a site created from a Site Template are unaffected by changes propagated from the Site Template.
+```
 
 Change the template from the Control Panel to make changes to Site Template pages. To make changes to or to add custom pages on a site created from a Site Template, go to _Site Builder → Pages_ in the _Site Administration_ panel for the site you are customizing.
 
