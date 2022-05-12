@@ -77,7 +77,19 @@
 5. **Click** _Save_. 
 6. **Close** the pop-up. 
 
+---
+
 ## Bonus Exercises 
 
 1. Grant Bethany Park and Corrie Alders membership to the Mondego Publications Site. Add them to the Web Moderators Team. Sign out of your administrator account and sign in as either Bethany or Corrie. 
 2. Create at least one additional User and add them to the Web Moderators Team. Add a new Widget to the Community Page and grant permissions to the team. 
+
+---
+
+## Next Up
+
+* [Summary](./summary.md) 
+
+## Previous Step
+
+* [Controlling Specific Permissions on Sites](./controlling-specific-permissions-on-sites.md)

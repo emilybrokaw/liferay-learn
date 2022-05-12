@@ -104,3 +104,7 @@
 ## Next Up
 
 * [Exercise 4: Permissions on Sites](./exercise-4-permissions-on-sites.md)
+
+## Previous Step
+
+* [Exercise 3a: Customize the Site Content Reviewer Role](./exercise-3a-customize-site-content-reviewer-role.md)

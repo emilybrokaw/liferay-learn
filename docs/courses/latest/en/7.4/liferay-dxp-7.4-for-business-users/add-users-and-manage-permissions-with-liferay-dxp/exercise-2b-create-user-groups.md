@@ -83,3 +83,7 @@
 ## Next Up
 
 * [Exercise 3a: Customize Site Content Reviewer Role](./exercise-3a-customize-site-content-reviewer-role.md)
+
+## Previous Step
+
+* [Exercise 2a: Create an Organization Hierarchy](./exercise-2a-create-an-organization-hierarchy.md)
