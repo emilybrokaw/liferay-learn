@@ -1,17 +1,16 @@
 # Content Presentation
 
-Coming Soon!
-
-<!--
-
 ```{toctree}
 :maxdepth: 2
 
-content-presentation/.md
-content-presentation/.md
+content-presentation/user-experience-in-liferay.md
+content-presentation/web-content-templates.md
+content-presentation/exercise-1-create-web-content-templates.md
+content-presentation/widget-templates.md
+content-presentation/exercise-2-customize-a-navigation-menu-widget.md
 ```
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/q3veTitreto
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/bto5joV6dEI
 
 ## Learning Objectives
 
@@ -36,7 +35,8 @@ Liferay widgets
 
 ## Next Steps
 
-* [](./content-presentation/.md) 
-* [](./content-presentation/.md) 
-
--->
+* [User Experience in Liferay](./content-presentation/user-experience-in-liferay.md) 
+* [Web Content Templates](./content-presentation/web-content-templates.md) 
+* [Exercise 1: Create Web Content Templates](./content-presentation/exercise-1-create-web-content-templates.md) 
+* [Widget Templates](./content-presentation/widget-templates.md) 
+* [Exercise 2: Customize a Navigation Menu Widget](./content-presentation/exercise-2-customize-a-navigation-menu-widget.md)
