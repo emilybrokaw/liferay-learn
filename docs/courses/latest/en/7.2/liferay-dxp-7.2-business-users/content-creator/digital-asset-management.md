@@ -7,14 +7,14 @@ digital-asset-management/what-are-assets.md
 digital-asset-management/exercise-1-add-assets.md
 digital-asset-management/organizing-assets-with-metadata.md
 digital-asset-management/exercise-2-categorize-assets.md
-digital-asset-management/folders.md
+digital-asset-management/organizing-assets-with-folders.md
 digital-asset-management/exercise-3-using-folders.md
 digital-asset-management/asset-access.md
 digital-asset-management/exercise-4-accessing-assets.md
 digital-asset-management/existing-repos.md
 ```
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/qyhvW4xxx0c
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/jO4SX6yQ7nI
 
 ## Learning Objectives
 
@@ -68,9 +68,8 @@ digital-asset-management/existing-repos.md
 * [Exercise 1: Add Assets to the Platform](./digital-asset-management/exercise-1-add-assets.md)
 * [Organizing Assets with Metadata](./digital-asset-management/organizing-assets-with-metadata.md)
 * [Exercise 2: Organizing Assets with Categories and Tags](./digital-asset-management/exercise-2-categorize-assets.md)
-* [Organizing Assets into a Folder Structure](./digital-asset-management/folders.md)
+* [Organizing Assets into a Folder Structure](./digital-asset-management/organizing-assets-with-folders.md)
 * [Exercise 3: Using Folders to Organize Assets](./digital-asset-management/exercise-3-using-folders.md)
 * [Controlling Access to Assets](./digital-asset-management/asset-access.md)
 * [Exercise 4: Accessing Assets](digital-asset-management/exercise-4-accessing-assets.md)
-
-digital-asset-management/existing-repos.md
+* [Connecting with Existing Repos](./digital-asset-management/existing-repos.md)
