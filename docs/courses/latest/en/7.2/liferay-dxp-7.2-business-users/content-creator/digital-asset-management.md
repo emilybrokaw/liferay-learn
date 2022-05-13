@@ -1,12 +1,12 @@
-# Module 2: Digital Asset Management
+# Digital Asset Management
 
 ```{toctree}
 :maxdepth: 2
 
 digital-asset-management/what-are-assets.md
-digital-asset-management/exercise-1-add-assets.md
+digital-asset-management/exercise-1-add-assets-to-platform.md
 digital-asset-management/organizing-assets-with-metadata.md
-digital-asset-management/exercise-2-categorize-assets.md
+digital-asset-management/exercise-2-organizing-assets-with-categories-and-tags.md
 digital-asset-management/organizing-assets-with-folders.md
 digital-asset-management/exercise-3-using-folders.md
 digital-asset-management/asset-access.md
@@ -65,9 +65,9 @@ digital-asset-management/existing-repos.md
 ## Next Steps
 
 * [What are Assets?](./digital-asset-management/what-are-assets.md) 
-* [Exercise 1: Add Assets to the Platform](./digital-asset-management/exercise-1-add-assets.md)
+* [Exercise 1: Add Assets to the Platform](./digital-asset-management/exercise-1-add-assets-to-platform.md)
 * [Organizing Assets with Metadata](./digital-asset-management/organizing-assets-with-metadata.md)
-* [Exercise 2: Organizing Assets with Categories and Tags](./digital-asset-management/exercise-2-categorize-assets.md)
+* [Exercise 2: Organizing Assets with Categories and Tags](./digital-asset-management/exercise-2-organizing-assets-with-categories-and-tags.md)
 * [Organizing Assets into a Folder Structure](./digital-asset-management/organizing-assets-with-folders.md)
 * [Exercise 3: Using Folders to Organize Assets](./digital-asset-management/exercise-3-using-folders.md)
 * [Controlling Access to Assets](./digital-asset-management/asset-access.md)
