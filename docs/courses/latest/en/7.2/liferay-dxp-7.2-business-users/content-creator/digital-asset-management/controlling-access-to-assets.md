@@ -19,7 +19,7 @@ The ability to make these changes can be set up via permissions. Permissions are
 Content Creators need to be able to work with Blogs, Web Content, and Documents and Media on the various sites that exist throughout the platform. Individual permissions can be set for each aspect of the content that is being created. The level of control when setting permissions can be as granular and fine-tuned as you like. This is where Liferay **Permissions** come in to play.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 **Permissions** are actions on a resource in Liferay DXP.
 ```
 
@@ -40,7 +40,7 @@ If a user needs to review other team members' work, we need to give him or her p
 Now that we've covered a few of the individual permissions you can set on users, you may be asking yourself: "How do I actually set up these permissions?" All of these individual permissions are applied in the context of User Roles.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 **Roles** need to be used to group and provide permissions to users on the platform.
 ```
 
@@ -70,9 +70,9 @@ Roles, and the permissions that define those Roles, are assigned and created at 
 * Permissions define what platform ___________________________ can do and what resources they can act on.
 * Permissions are set in the context of user ___________________________.
 * The three role scopes in Liferay DXP are: 
-	* ___________________________ Role
-  * ___________________________ Role
-  * ___________________________ Role
+    * ___________________________ Role
+    * ___________________________ Role
+    * ___________________________ Role
 
 ---
 

@@ -36,11 +36,11 @@ The different Assets you can create in Liferay DXP include:
 
 ```{important}
 Key Point: <br>
-**Assets** share the common **Asset Framework** features and functions:
-	* Content teams can organize Assets with folders and by assigning them metadata.
-	* Assets can be related to each other to provide the best possible user experience.
-	* Users can comment, reply, rate, and flag collaborative content when displayed on a site.
-	* Administrators can also set permissions on Assets to determine who can see and update the content.
+**Assets** share the common **Asset Framework** features and functions:<br>
+		<li>Content teams can organize Assets with folders and by assigning them metadata.<br>
+		<li>Assets can be related to each other to provide the best possible user experience.<br>
+		<li>Users can comment, reply, rate, and flag collaborative content when displayed on a site.<br>
+		<li>Administrators can also set permissions on Assets to determine who can see and update the content.<br>
 ```
 
 For example, a content creator can relate a blog post to an image gallery that supplements the blog or a Wiki to Web Content covering a similar subject. Each of these Assets can be organized with tags to make them more easily searchable. Users can also comment on and rate blog posts or images. This level of control over content in Liferay allows for powerful content management.

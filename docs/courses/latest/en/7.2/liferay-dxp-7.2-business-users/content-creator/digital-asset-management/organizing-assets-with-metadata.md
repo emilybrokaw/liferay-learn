@@ -18,10 +18,10 @@ Ideally, employees should be able to organize their contributions and interactio
 Content can be organized and made more easily searchable using metadata. Aside from Metadata Sets defined by Document Types, users can organize content by attributing other metadata to Liferay Assets.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 There are two types of **metadata** that can be used to organize any Asset on the platform:
-	* Tags
-	* Categories
+	<li>Tags
+	<li>Categories
 ```
 
 ![Where Tags and Categories can be added in the Site Administration panel.](./images/categorization-section.png)
@@ -33,7 +33,7 @@ Both types of metadata can be attributed to any asset in the platform, and both 
 You probably already understand the concept of tagging content, which helps users organize their own content. The most familiar example may be hashtags on social media. In Liferay DXP, Tags are an important tool that can help organize information and make it easier for users to find the content they want. Tags are all-lowercase words or phrases that you can attach to any assets. Users can create posts or repost articles, and they can organize their content with a new tag or a trending tag as they see fit.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 **Tags** are a “folksonomy”, which is an organizational system classified by the user.
 ```
 
@@ -46,11 +46,11 @@ Tags allow users to organize their own content and make it easy for others to fi
 In Liferay DXP 7.2, it is possible to tag content automatically. For example, Liferay DXP can scan an image on upload and apply tags that describe the image’s content. This lets you leverage tags without requiring your Content Creators to apply them manually. Currently, auto-tagging can be configured for images, text-based documents, and text-based Web Content.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 **Auto-tagging** can be configured to automatically attribute tags to:
-	* Images
-	* Text-based documents
-	* Text-based Web Content
+	<li>Images
+	<li>Text-based documents
+	<li>Text-based Web Content
 ```
 
 Asset auto-tagging is enabled by default. It can be configured at three levels:
@@ -88,7 +88,7 @@ There are two text auto-tagging providers available to use with Liferay DXP:
 Although Tags make for improved searchability, they lack an organizational structure. _Categories_ solve that problem. 
 
 ```{important}
-Key Point: 
+Key Point: <br>
 **Categories** are a taxonomy and have a strict hierarchical structure.
 ```
 

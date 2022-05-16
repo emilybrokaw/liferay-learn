@@ -15,7 +15,7 @@ Josiah will have his hands full trying to manage all the individual documents th
 _Documents and Media_ is a mechanism for storing all kinds of files and documents online and serves as a kind of virtual shared drive within a site. It will feel very familiar to most users, as it's structured in the same way files and folders are structured on your local machine. Similarly, administrators and Content Creators can use folders to organize Web Content for more efficient access.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 **Folders** are used to organize Files and Web Content in Liferay DXP and work in a similar way to the folders on your personal computer.
 ```
 
@@ -39,7 +39,7 @@ Users can also access the document repository by downloading and installing _Lif
 Site and Platform Administrators may need to import many files from outside of the _Documents and Media_ repository. Fortunately, Liferay allows you to import multiple files at once. By selecting all the necessary files to import, administrators can make quick work of the file imports.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 The **Documents and Media repository** can have multiple files imported at once.
 ```
 
@@ -62,10 +62,10 @@ Administrators can make it so that all the files in the platform are kept in an 
 Once files have been imported into the platform and organized into folders, it is time to start collaborating on that content. Administrators can let users collaborate on files by assigning the appropriate file permissions to a Role, and then assigning users to that Role. Similarly, Content Creators and other non-administrative users can grant permissions on files that they own.
 
 ```{important}
-Key Point:
+Key Point: <br>
 **Folder Restrictions** must be configured before Workflow processes can be implemented. Workflow processes can be configured for both:
-	* Documents and Media
-	* Web Content
+	<li>Documents and Media
+	<li>Web Content
 ```
 
 By adding workflow definitions for these resources, administrators can have even more control over the review process. Both Web Content and Document Folders can be configured to use Restrictions, which include the following options:

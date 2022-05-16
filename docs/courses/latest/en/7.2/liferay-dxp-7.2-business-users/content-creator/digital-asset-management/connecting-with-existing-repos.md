@@ -13,7 +13,7 @@ Livingstone has many files and documents that already exist in an external conte
 Administrators can connect any external repositories their business might be using to store and share files with Liferay DXP.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 **External repositories** can be connected to sites in Liferay DXP.
 ```
 
