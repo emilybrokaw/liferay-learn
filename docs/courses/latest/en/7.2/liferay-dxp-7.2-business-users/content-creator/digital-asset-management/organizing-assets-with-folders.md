@@ -90,8 +90,8 @@ For example, an administrator can create a new folder for HR documents and set t
 
 ## Next Up
 
-* [Exercise 2: Organizing Assets with Categories and Tags](./exercise-2-organizing-assets-with-categories-and-tags.md)
+* [Exercise 3: Using Folders to Organize Assets](./exercise-3-using-folders-to-organize-assets.md)
 
 ## Previous Step
 
-* [Exercise 3: Using Folders to Organize Assets](./exercise-3-using-folders.md)
+* [Exercise 2: Organizing Assets with Categories and Tags](./exercise-2-organizing-assets-with-categories-and-tags.md)
