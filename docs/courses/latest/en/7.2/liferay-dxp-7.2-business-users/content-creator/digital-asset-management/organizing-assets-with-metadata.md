@@ -126,8 +126,8 @@ Now that we have categories, Tags, and Document Types set up, let's help Josiah 
 
 ## Next Up
 
-* [Exercise 1: Add Assets to the Platform](./exercise-1-add-assets-to-platform.md)
+* [Exercise 2: Organizing Assets with Categories and Tags](./exercise-2-organizing-assets-with-categories-and-tags.md)
 
 ## Previous Step
 
-* [Exercise 2: Organizing Assets with Categories and Tags](./exercise-2-organizing-assets-with-categories-and-tags.md)
+* [Exercise 1: Add Assets to the Platform](./exercise-1-add-assets-to-platform.md)

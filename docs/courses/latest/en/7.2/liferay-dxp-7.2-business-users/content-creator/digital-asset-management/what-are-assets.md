@@ -13,7 +13,7 @@ Maria Flores works as a content creator for Livingstone Hotels & Resorts and has
 With Liferay, you can create different kinds of content. Any individual piece of content created in Liferay DXP is called an _Asset_.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 **Assets** are all the different content types that can be created in a site.
 ```
 
@@ -35,7 +35,7 @@ The different Assets you can create in Liferay DXP include:
 ## The Asset Framework
 
 ```{important}
-Key Point: 
+Key Point: <br>
 **Assets** share the common **Asset Framework** features and functions:
 	* Content teams can organize Assets with folders and by assigning them metadata.
 	* Assets can be related to each other to provide the best possible user experience.
@@ -54,7 +54,7 @@ The _Asset Framework_ also allows you to access customizable publishing tools li
 Users with web design skills can create editable _Page Fragments_ using HTML, CSS, and JavaScript. Business users and Marketing teams can then take Page Fragments and place them on _Content Pages_ as desired. Content Pages are designed to accelerate and simplify content creation and are, as the name suggests, content-centric. Content editors can directly enter and update text and images in-line by leveraging the rich editor.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 **Page Fragments** are editable bits of HTML, CSS, and JavaScript that can be used to build **Content Pages**.
 ```
 
@@ -71,7 +71,7 @@ There are a few differences between Content Pages and the Layout/Widget pages yo
 Page Fragments are reusable pieces of content that can be combined with Assets to create pages that can be easily maintained and edited by Marketing and content teams.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 Use the **Fragment Editor** to create Page Fragments or save a completed section of a page as a Page Fragment and reuse it in multiple pages.
 ```
 
@@ -99,7 +99,7 @@ While uploading documents using the _Basic Document_ type works for some uploads
 Document Types give the user the ability to describe and categorize documents by adding custom metadata to uploaded files. This metadata not only helps distinguish files, it also makes files searchable by metadata and allows the user to take advantage of Liferay's search features.
 
 ```{important}
-Key Point: 
+Key Point: <br>
 **Document Types** associate a set of custom metadata fields with files of a certain type as soon as they are added to the platform.
 ```
 
@@ -123,7 +123,7 @@ If an administrator finds that there are some common sets of metadata that shoul
 
 ## Next Up
 
-* [Exercise 1: Add Assets to the Platform](./exercise-1-add-assets.md)
+* [Exercise 1: Add Assets to the Platform](./exercise-1-add-assets-to-platform.md)
 
 ## Previous Step
 

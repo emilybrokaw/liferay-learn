@@ -1,4 +1,4 @@
-# Using Folders to Organize Assets
+# Exercise 3: Using Folders to Organize Assets
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/a9iQQ5D3IXU
 
@@ -169,7 +169,7 @@
 
 ## Next Up
 
-* [Controlling Access to Assets](./asset-access.md)
+* [Controlling Access to Assets](./controlling-access-to-assets.md)
 
 ## Previous Step
 

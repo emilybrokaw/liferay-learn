@@ -1,4 +1,4 @@
-# Add Assets to the Platform
+# Exercise 1: Add Assets to the Platform
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/zQFH-63v-Jk
 

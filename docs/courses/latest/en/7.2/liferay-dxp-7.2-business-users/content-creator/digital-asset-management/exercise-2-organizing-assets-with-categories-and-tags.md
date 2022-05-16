@@ -1,4 +1,4 @@
-# Organizing Assets with Categories and Tags
+# Exercise 2: Organizing Assets with Categories and Tags
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/MvTp90tFv5I
 

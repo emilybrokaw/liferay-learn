@@ -1,4 +1,4 @@
-# Accessing Assets
+# Exercise 4: Accessing Assets
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/0KVHqbxToSc
 
@@ -218,7 +218,7 @@
 
 ## Next Up
 
-* [Connecting with Existing Repos](./existing-repos.md)
+* [Connecting with Existing Repos](./connecting-with-existing-repos.md)
 
 ## Previous Step
 
