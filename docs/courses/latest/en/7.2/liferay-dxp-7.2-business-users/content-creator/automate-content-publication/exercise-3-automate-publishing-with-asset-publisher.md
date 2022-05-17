@@ -1,4 +1,4 @@
-# Automating Publishing with the Asset Publisher
+# Exercise 3: Automating Publishing with the Asset Publisher
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/xxInB33TWcU
 
