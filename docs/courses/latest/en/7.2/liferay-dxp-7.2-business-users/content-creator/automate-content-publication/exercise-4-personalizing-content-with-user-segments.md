@@ -1,4 +1,4 @@
-# Personalizing Content with User Segments
+# Exercise 4: Personalizing Content with User Segments
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/87LKxK8eBiY
 
