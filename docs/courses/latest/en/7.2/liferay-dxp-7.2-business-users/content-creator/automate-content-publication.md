@@ -66,5 +66,5 @@ automate-content-publication/exercise-5-create-content-sets-to-personalize-site-
 * [Exercise 3: Automate Publishing with the Asset Publisher](./automate-content-publication/exercise-3-automate-publishing-with-asset-publisher.md)
 * [User Segments and Content Page Personalization](./automate-content-publication/user-segments-and-content-page-personalization.md)
 * [Exercise 4: Personalizing Content with User Segments](./automate-content-publication/exercise-4-personalizing-content-with-user-segments.md)
-* [Content Set Personalization](./automate-content-publication/content-sets-and-personalization.md)
+* [Content Sets and Personalization](./automate-content-publication/content-sets-and-personalization.md)
 * [Exercise 5: Creating Content Sets to Personalize Site Content](./automate-content-publication/exercise-5-create-content-sets-to-personalize-site-content.md)

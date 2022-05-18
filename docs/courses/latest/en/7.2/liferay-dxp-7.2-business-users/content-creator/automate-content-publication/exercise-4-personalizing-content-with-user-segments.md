@@ -115,7 +115,7 @@
 
 ## Next Up
 
-* [Content Set Personalization](./content-sets-and-personalization.md)
+* [Content Sets and Personalization](./content-sets-and-personalization.md)
 
 ## Previous Step
 
