@@ -24,7 +24,7 @@ Create Segments by using user, organization, and session data, and then use thos
 
 ## Creating Segments with the Segment Editor
 
-Liferay DXP 7.2 provides an editor for defining User Segments. This _Segment Editor_ is used to add Segments from under _People → Segments_ in the _Site Administration_ panel.
+Liferay DXP 7.2 provides an editor for defining User Segments. This _Segment Editor_ is used to add Segments from under _People_ → _Segments_ in the _Site Administration_ panel.
 
 ```{important}
 Key Point: <br>
@@ -35,9 +35,9 @@ The **Segment Editor** is used to create custom User Segments in a site.
 
 The Segment Editor allows you to create User Segments based on certain Conditions that users possess. The _Properties Menu_ has three sections that can be expanded to reveal the individual properties that can be added as Conditions that users in your Segment must have. The three sections are:
 
-1. User Properties - User metadata as defined in their accounts, but also contains certain group memberships (like Roles and User Groups) as well as information like the date the user profile was last modified
-2. Organization Properties - A selectable list of Organizations to include in your Segment. They contain similar criteria as User selection, like Name and Date Modified.
-3. Session Properties - Criteria based on the user’s activity, browser, and system information. You can use this to target the user’s device or OS or for activity-based criteria such as users entering the website through a specific campaign-driven landing page.
+1. **User Properties**: User metadata as defined in their accounts, but also contains certain group memberships (like Roles and User Groups) as well as information like the date the user profile was last modified
+2. **Organization Properties**: A selectable list of Organizations to include in your Segment. They contain similar criteria as User selection, like Name and Date Modified.
+3. **Session Properties**: Criteria based on the user’s activity, browser, and system information. You can use this to target the user’s device or OS or for activity-based criteria such as users entering the website through a specific campaign-driven landing page.
 
 Properties become Conditions by relating user data to the property in question. Operators such as _equals_, _greater than_, and _contains_ relate user data to the property to create a Condition of the User Segment. For example, in the _User_ section of the _Properties Menu_, the _Date Modified_ property can be dragged into the _Conditions_ section of the Segment Editor. Then a date can be selected on the right and an operator, e.g., _less than_, can be chosen to relate users to the data property selected.
 
@@ -45,7 +45,7 @@ Properties become Conditions by relating user data to the property in question. 
 
 > Note: A full list of properties and their respective fields and operators can be found at [https://help.liferay.com/hc/en-us/articles/360029147011-Defining-Segmentation-Criteria](https://help.liferay.com/hc/en-us/articles/360029147011-Defining-Segmentation-Criteria).
 
-After Segments have been created, a full list of all Segments in a site can be viewed from _People → Segments_ in the _Site Administration_ panel. From here, not only can Segments be added using the Segment Editor as discussed above, but you can also edit, delete, or change permissions for your Segments as well. Segments cannot be deleted if they are being used in an Experience, and changing permissions changes user access to Segment management (i.e., who can access Segments via the _Site Administration_ panel).
+After Segments have been created, a full list of all Segments in a site can be viewed from _People_ → _Segments_ in the _Site Administration_ panel. From here, not only can Segments be added using the Segment Editor as discussed above, but you can also edit, delete, or change permissions for your Segments as well. Segments cannot be deleted if they are being used in an Experience, and changing permissions changes user access to Segment management (i.e., who can access Segments via the _Site Administration_ panel).
 
 ## Content Page Personalization
 
@@ -58,7 +58,7 @@ Key Point: <br>
 
 ![Using Experiences to create multiple versions of a Content Page for personalization.](./images/personalizing-page.png)
 
-When you create a new Experience for a Content Page, you are personalizing the page for a particular User Segment. To manage Experiences for Content Pages, go to _Site Builder → Pages_ and edit an existing Content Page. From here, you can click on an Experience and have one of three options:
+When you create a new Experience for a Content Page, you are personalizing the page for a particular User Segment. To manage Experiences for Content Pages, go to _Site Builder_ → _Pages_ and edit an existing Content Page. From here, you can click on an Experience and have one of three options:
 
 1. Change the name or selected Segment for the Experience
 2. Delete the Experience

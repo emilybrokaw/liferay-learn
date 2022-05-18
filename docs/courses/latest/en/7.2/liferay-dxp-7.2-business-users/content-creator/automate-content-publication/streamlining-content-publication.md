@@ -45,21 +45,21 @@ Once these Structures are created, they can be given certain fields that need to
 * Article Text
 
 Since Structures are based on Liferay's Forms functionality, Administrators and Content Creators can create the above examples with the following fields:
-- Boolean: Adds a checkbox
-- Date: Adds a date-picker
-- Decimal: Adds a field that requires a number with a decimal point
-- Documents and Media: Choose a file from the _Documents and Media_ repository
-- Geolocation: Adds a map that displays a location
-- HTML: Adds the Alloy Editor
-- Image: Choose an image from either the _Documents and Media_ repository or the computer's storage
-- Integer: Adds a field to input non-fractional numbers
-- Link to Page: Adds a field to insert a link
-- Number: Adds a place to insert any number
-- Radio: Adds radio button inputs for a user to choose from
-- Select: Adds a select box
-- Separator: Adds a line separator between fields
-- Test: Used for titles and headings
-- Text Box: Used for the body of content or long descriptions
+- **Boolean**: Adds a checkbox
+- **Date**: Adds a date-picker
+- **Decimal**: Adds a field that requires a number with a decimal point
+- **Documents and Media**: Choose a file from the _Documents and Media_ repository
+- **Geolocation**: Adds a map that displays a location
+- **HTML**: Adds the Alloy Editor
+- **Image**: Choose an image from either the _Documents and Media_ repository or the computer's storage
+- **Integer**: Adds a field to input non-fractional numbers
+- **Link to Page**: Adds a field to insert a link
+- **Number**: Adds a place to insert any number
+- **Radio**: Adds radio button inputs for a user to choose from
+- **Select**: Adds a select box
+- **Separator**: Adds a line separator between fields
+- **Test**: Used for titles and headings
+- **Text Box**: Used for the body of content or long descriptions
 
 ![The field types that can be added to a Web Content Structure.](./images/structures-items.png)
 
@@ -85,8 +85,10 @@ Structures and Templates provide direct access to Liferay’s APIs, which makes 
 ```{important}
 Key Point: <br>
 We recommend you create at least two Roles that deal with access to Structures and Templates:
-	<li>Content Developer
-	<li>Content Creator
+<ul>
+	<li>Content Developer</li>
+	<li>Content Creator</li>
+</ul>
 ```
 
 ![Add Web Content Structure and Template Permissions in Roles defined from the Control Panel.](./images/structures-templates-permissions.png)

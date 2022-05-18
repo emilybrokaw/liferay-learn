@@ -39,7 +39,7 @@
 6. **Click** on the _Livingstone Front Page_ collection on the right side of the Page Editor.
 7. **Click** to add the _01-Main Banner_ Fragment to the Page.
 8. **Click** where it says _Livingstone Hotels and Resorts_.
-9. **Click** the _edit_ icon.
+9. **Click** the _Edit_ icon.
     - This is the icon that looks like a pencil.
 10. **Replace** the text with `Welcome to Livingstone`.
 

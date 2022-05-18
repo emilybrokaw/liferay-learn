@@ -197,8 +197,8 @@
 
 ## Next Up
 
-* [Streamlining Content Publication with Structures and Templates](./streamlining-content-publication.md)
+* [Simplifying Content Updates and Page Creation with Fragments](./simplifying-updates-and-page-creation-with-fragments.md)
 
 ## Previous Step
 
-* [Simplifying Content Updates and Page Creation with Fragments](./simplifying-updates-and-page-creation-with-fragments.md)
+* [Streamlining Content Publication with Structures and Templates](./streamlining-content-publication.md)

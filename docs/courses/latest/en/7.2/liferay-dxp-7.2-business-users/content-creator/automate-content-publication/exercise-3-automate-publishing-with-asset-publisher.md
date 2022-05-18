@@ -104,7 +104,7 @@
 8. **Click** _Map_.
 9. **Choose** the _Content_ mapping field.
 10. **Click** _Publish_.
-  * Before we add our Web Content, let's make sure our new Display Page is the default display for any Web Content created with the News Structure.
+    * Before we add our Web Content, let's make sure our new Display Page is the default display for any Web Content created with the News Structure.
 11. **Click** _Options_ → _Mark as Default_ for the _News Content_ Display Page.
 
 ![The remaining Fragment fields mapped to the News Web Content fields.](./images/news-display.png)

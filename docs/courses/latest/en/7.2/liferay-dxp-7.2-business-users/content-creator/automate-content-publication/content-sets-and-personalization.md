@@ -29,8 +29,8 @@ Content Creators can create Content Sets from under the _Site Builder_ section o
 Key Point: <br>
 There are two ways to create Content Sets:
 <ul>
-	<li>**Manually**</li>
-	<li>**Dynamically**</li>
+	<li>Manually</li>
+	<li>Dynamically</li>
 </ul>
 ```
 

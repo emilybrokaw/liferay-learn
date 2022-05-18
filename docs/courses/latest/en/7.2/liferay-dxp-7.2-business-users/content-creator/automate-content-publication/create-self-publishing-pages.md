@@ -47,9 +47,9 @@ The Asset Publisher has two starting options in the _Asset Selection_ section.
 
 The _Asset Selection_ configuration will display the following filtering options:
 
-* _Source_: Here, you can select the site scope and Asset type. Depending on the Asset type, new filtering options become available, such as field or structure.
-* _Filter_: With this option, you can filter content based on tags or categories.
-* _Ordering_: Here, you can choose how to group and order content by things like title, date, etc.
+* __Source__: Here, you can select the site scope and Asset type. Depending on the Asset type, new filtering options become available, such as field or structure.
+* __Filter__: With this option, you can filter content based on tags or categories.
+* __Ordering__: Here, you can choose how to group and order content by things like title, date, etc.
 
 ![Choosing which Asset Type to display in an Asset Publisher.](./images/asset-configuration.png)
 
@@ -61,11 +61,11 @@ The _Display Settings_ option has a large number of options for adjusting displa
 
 There are also a number of toggle-able options that can be changed:
 
-* _Show Add Content Button_: This option allows you to turn the _Add_ button on or off from the widget itself. This ensures that nobody adds additional content manually once configured.
-* _Display Template_: This section allows you to choose from a number of default display templates or any custom Application Display Templates that have been created. The display template will determine the next few configuration field options.
-* _Show Available Locales_: If there are any translations available, they will show as an option.
-* _Set as the Default Asset Publisher for this Page_: This is a very important option that allows us to create a Content Display Page.
-* _Additional Enable Options_: There are a number of additional options that can be enabled, such as comments, flags, print mode, etc.
+* __Show Add Content Button__: This option allows you to turn the _Add_ button on or off from the widget itself. This ensures that nobody adds additional content manually once configured.
+* __Display Template__: This section allows you to choose from a number of default display templates or any custom Application Display Templates that have been created. The display template will determine the next few configuration field options.
+* __Show Available Locales__: If there are any translations available, they will show as an option.
+* __Set as the Default Asset Publisher for this Page__: This is a very important option that allows us to create a Content Display Page.
+* __Additional Enable Options__: There are a number of additional options that can be enabled, such as comments, flags, print mode, etc.
 
 ![The toggle-able options when configuring the Asset Publisher.](./images/set-and-enable.png)
 

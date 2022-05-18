@@ -54,7 +54,7 @@ It is also possible to specify which parts of the Fragment can be modified and w
 
 ```{important}
 Key Point: <br>
-**Editable Elements** can be created by adding <code><lfr-editable></code> tags around:
+**Editable Elements** can be created by adding `<lfr-editable>` tags around:
 <ul>
   <li>Text</li>
   <li>Images</li>
