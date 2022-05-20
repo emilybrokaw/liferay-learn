@@ -98,12 +98,12 @@ Element Sets can be created from _Content & Data_ → _Forms_ → _Element Sets_
 
 When a Form is created, you can open it back up to add _Rules_. The _Rules_ tab lets you define conditions and actions for the fields you add to the form. The _Select from List_ field, for instance, allows you to define conditions such as "Is equal to," "Is not equal to," "Contains," "Does not contain," and "Is empty" and define actions such as:
 
-* Show/Hide - Set the visibility of a form field based on a predefined condition.
-* Enable/Disable - Use a predefined condition to enable or disable a field.
-* Require - Use a predefined condition to enable or disable a field.
-* Jump to Page - Skip over some form pages directly to a relevant page based on user input.
-* Autofill with Data Provider - Use a data provider to populate fields when a condition is met in another field.
-* Calculate - Populate a field with a calculated value using data entered in other fields.
+* Show/Hide: Set the visibility of a form field based on a predefined condition.
+* Enable/Disable: Use a predefined condition to enable or disable a field.
+* Require: Use a predefined condition to enable or disable a field.
+* Jump to Page: Skip over some form pages directly to a relevant page based on user input.
+* Autofill with Data Provider: Use a data provider to populate fields when a condition is met in another field.
+* Calculate: Populate a field with a calculated value using data entered in other fields.
 
 ```{important}
 Key Point: <br>
