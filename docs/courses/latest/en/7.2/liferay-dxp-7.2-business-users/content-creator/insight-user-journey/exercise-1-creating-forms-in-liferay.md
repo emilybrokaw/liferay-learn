@@ -1,4 +1,4 @@
-# Creating Forms in Liferay
+# Exercise 1: Creating Forms in Liferay
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/u5QtBFjfsrk
 
