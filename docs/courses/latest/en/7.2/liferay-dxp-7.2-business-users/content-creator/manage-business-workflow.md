@@ -9,7 +9,7 @@ manage-business-workflow/exercise-1-create-workflow-definitions.md
 manage-business-workflow/staging-site-pages-and-content.md
 manage-business-workflow/exercise-2a-turning-on-staging-and-publishing-content.md
 manage-business-workflow/exercise-2b-automating-staging-publication.md
-manage-business-workflow/business-process-consideration.md
+manage-business-workflow/business-process-considerations.md
 ```
 
 ## Learning Objectives
@@ -50,4 +50,4 @@ manage-business-workflow/business-process-consideration.md
 * [Staging Site Pages and Content](./manage-business-workflow/staging-site-pages-and-content.md)
 * [Exercise 2a: Turning on Staging and Publishing Content](./manage-business-workflow/exercise-2a-turning-on-staging-and-publishing-content.md)
 * [Exercise 2b: Automating Staging Publication](./manage-business-workflow/exercise-2b-automating-staging-publication.md)
-* [Business Process Considerations](./manage-business-workflow/business-process-consideration.md)
+* [Business Process Considerations](./manage-business-workflow/business-process-considerations.md)
