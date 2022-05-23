@@ -1,4 +1,4 @@
-# Turning on Staging and Publishing Content
+# Exercise 2a: Turning on Staging and Publishing Content
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/edtU7AFmvyE
 
