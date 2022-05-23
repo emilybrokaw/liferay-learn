@@ -13,9 +13,9 @@
 2. **Click** the _Add_ button to add a new Workflow.  
 3. **Type** `Parallel Review` for the _Title_.  
 4. **Click** on the _Connector_ to highlight it.
-  * The transition connector is the line between the StartNode and EndNode.
+    * The transition connector is the line between the StartNode and EndNode.
 5. **Delete** the _Connector_.
-  * This can be done by pressing the _Delete_ key on your keyboard.
+    * This can be done by pressing the _Delete_ key on your keyboard.
 6. **Click** _Ok_ on the pop-up.
 7. **Drag** the _StartNode_ to the left-middle of the editor.
 8. **Drag** the _EndNode_ to the right-middle of the editor.
@@ -30,7 +30,7 @@
 4. **Type** `Administrator Review` for the _Name_.   
 5. **Click** the _Save_ button. 
 6. **Click** the _Nodes_ tab.   
-7. **Drag** a _Task_ node to the bottom-middle of the editor, between the _StartNode_ and _EndNode_.  
+7. **Drag** a _Task_ node to the bottom-middle of the editor, between the _StartNode_ and _EndNode_.
 8. **Click** the new node. 
 9. **Double-click** the _Name_ value to edit it.
 10. **Type** `Copyediting Review` for _Name_.   
@@ -58,7 +58,7 @@
 ## Connect All of the Nodes with Transitions
 
 1. **Drag** a _Transition_ arrow from the _StartNode_ to the _Stakeholder Review_ fork.
-  * To drag a transition, you need to place your cursor on the edge of the node so that you see a thin plus sign. When you see that, you can click and drag the arrow to the next node, connecting it by positioning it to see the orange circle.
+    * To drag a transition, you need to place your cursor on the edge of the node so that you see a thin plus sign. When you see that, you can click and drag the arrow to the next node, connecting it by positioning it to see the orange circle.
 2. **Drag** a _Transition_ arrow from the _Stakeholder Review_ fork to the _Administrator Review_ Task.
 3. **Drag** a _Transition_ arrow from the _Stakeholder Review_ fork to the _Copyediting Review_ Task.
 4. **Drag** a _Transition_ arrow from the _Administrator Review_ task to the _Review Complete_ Join.

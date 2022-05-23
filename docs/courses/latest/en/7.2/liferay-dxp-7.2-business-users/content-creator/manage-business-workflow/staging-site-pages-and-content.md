@@ -31,8 +31,8 @@ Staging creates a work-in-progress environment where the Web Team can collaborat
 ![Configuring Staging in a site.](./images/staging-config.png)
 
 When staging is turned on, a couple of options show up:
-* _Page Versioning_: This lets you work in parallel to different variations of the pages. It also lets you keep track of the history of changes in those pages.
-* _Staged Content_: This makes it so the content is copied to staging, and it may not be possible to edit the content directly in live.
+* __Page Versioning__: This lets you work in parallel to different variations of the pages. It also lets you keep track of the history of changes in those pages.
+* __Staged Content__: This makes it so the content is copied to staging, and it may not be possible to edit the content directly in live.
 
 ![Configuring the content you want to be Staged.](./images/staged-content.png)
 

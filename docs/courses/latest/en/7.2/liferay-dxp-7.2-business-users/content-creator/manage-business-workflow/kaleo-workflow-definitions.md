@@ -26,34 +26,34 @@ You will remember that there are four key parts to any workflow definition: Stat
 
 States have the following properties:
 
-* _Actions_: Different actions can be added to this part of the workflow, like scripts.
-* _Notifications_: One or more notifications can be created and sent out to different audiences.
-* _Description_: Provides a description of the specific part of the workflow
-* _Name_: Defines the database name
-* _Type_: Shows the type of node in use
+* __Actions__: Different actions can be added to this part of the workflow, like scripts.
+* __Notifications__: One or more notifications can be created and sent out to different audiences.
+* __Description__: Provides a description of the specific part of the workflow
+* __Name__: Defines the database name
+* __Type__: Shows the type of node in use
 
 ![The details of the Start Node.](./images/start-state.png)
 
 Remember that tasks represent actual tasks that need to be fulfilled in the review process. Tasks have the following properties:
 
-* *Description*: Provides a description of the Task
-* *Name*: Defines the database name
-* *Type*: Shows the type of node in use
-* *Actions*: Different actions can be added to this part of the workflow, like Task Timers or scripts.
-* *Notifications*: One or more notifications can be created and sent out to different audiences.
-* *Assignment*: This is where you can assign who will be responsible for performing the task.
+* **Description**: Provides a description of the Task
+* **Name**: Defines the database name
+* **Type**: Shows the type of node in use
+* **Actions**: Different actions can be added to this part of the workflow, like Task Timers or scripts.
+* **Notifications**: One or more notifications can be created and sent out to different audiences.
+* **Assignment**: This is where you can assign who will be responsible for performing the task.
 
 ![The details of a default Task node.](./images/task.png)
 
 Tasks and Task Assignments are distinct in concept, but one in practice. Task Assignments have different Assignment Types, including the following:
 
-* *Asset Creator*: Assigns the task to the original Content Writer or Content Creator of the asset
-* *Resource Actions*: Assigns by permissions 
+* **Asset Creator**: Assigns the task to the original Content Writer or Content Creator of the asset
+* **Resource Actions**: Assigns by permissions 
   * For example, you can assign something to a particular user who has permission to edit a blog post.
-* *Role*: Assigns by a single role
-* *Role Type*: Assigns by one or more roles
-* *Scripted Assignment*: Assigns via script
-* *User*: Assigns to one or more specific users
+* **Role**: Assigns by a single role
+* **Role Type**: Assigns by one or more roles
+* **Scripted Assignment**: Assigns via script
+* **User**: Assigns to one or more specific users
 
 Both States and Tasks can have different actions added to them. Actions can be specific or scripted. For example, Tasks can include _Task Timers_ that can be used to prevent bottlenecks. Task Timers perform certain actions based on a specified amount of time, such as re-assignment, email notifications, etc. For anything more advanced, scripts can be added as different States or Tasks in the workflow.
 
