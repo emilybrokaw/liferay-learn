@@ -7,8 +7,8 @@ manage-business-workflow/business-review-processes.md
 manage-business-workflow/kaleo-workflow-definitions.md
 manage-business-workflow/exercise-1-create-workflow-definitions.md
 manage-business-workflow/staging-site-pages-and-content.md
-manage-business-workflow/exercise-2-turning-on-staging-and-publishing-content.md
-manage-business-workflow/exercise-3-automating-staging-publication.md
+manage-business-workflow/exercise-2a-turning-on-staging-and-publishing-content.md
+manage-business-workflow/exercise-2b-automating-staging-publication.md
 manage-business-workflow/business-process-consideration.md
 ```
 
@@ -48,6 +48,6 @@ manage-business-workflow/business-process-consideration.md
 * [Kaleo Workflow Definitions](./manage-business-workflow/kaleo-workflow-definitions.md)
 * [Exercise 1: Creating Workflow Definitions](./manage-business-workflow/exercise-1-create-workflow-definitions.md)
 * [Staging Site Pages and Content](./manage-business-workflow/staging-site-pages-and-content.md)
-* [Exercise 2a: Turning on Staging and Publishing Content](./manage-business-workflow/exercise-2-turning-on-staging-and-publishing-content.md)
-* [Exercise 2b: Automating Staging Publication](./manage-business-workflow/exercise-3-automating-staging-publication.md)
+* [Exercise 2a: Turning on Staging and Publishing Content](./manage-business-workflow/exercise-2a-turning-on-staging-and-publishing-content.md)
+* [Exercise 2b: Automating Staging Publication](./manage-business-workflow/exercise-2b-automating-staging-publication.md)
 * [Business Process Considerations](./manage-business-workflow/business-process-consideration.md)
