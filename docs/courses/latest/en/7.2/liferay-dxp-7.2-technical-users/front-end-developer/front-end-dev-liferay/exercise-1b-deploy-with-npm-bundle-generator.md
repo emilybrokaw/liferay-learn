@@ -1,15 +1,13 @@
-# Deploying with the NPM Bundle Generator
-<!-- 
-<div class="ahead">
-<h4>Exercise Goals</h4>
-	<ul>
-	<li>Use the NPM Liferay Bundle generator to generate and deploy a React JavaScript module</li>
-    <ul>
-        <li>Set up NPM Bundler</li>
-        <li>Create a React JavaScript module</li>
-        <li>Deploy the module and view it on a page</li>
-    </ul>
-</div>
+# Exercise 1b: Deploy with the NPM Bundle Generator
+
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/SD9AGeBomPA
+
+## Exercise Goals
+	
+* Use the NPM Liferay Bundle generator to generate and deploy a React JavaScript module
+    * Set up NPM Bundler
+    * Create a React JavaScript module
+    * Deploy the module and view it on a page
 
 ## Install the Liferay NPM Bundle Generator
 
@@ -18,11 +16,11 @@
 	* You should now see both the Liferay Bundle and Liferay Theme generators.
 3. **Choose** _Get me out of here!_
 
-<img src="../images/both-generators.png" style="max-width: 70%">
+![The Command Line Terminal showing two generators: Liferay Bundle and Liferay Theme.](./images/both-generators.png)
 
 ## Create a Basic React Module
 
-1. **Go to** your _`liferay`_ folder in your _Command Line/Terminal_.
+1. **Go to** your `liferay` folder in your _Command Line/Terminal_.
 	* Windows: _C:\liferay_
 	* Unix Systems: _[userhome]/liferay_	
 2. **Run** `yo liferay-bundle` in your _Command Line/Terminal_.
@@ -41,7 +39,7 @@
 
 ## Deploy the New React Module
 
-1. **Go to** your _`test-project`_ project folder in your _Command Line/Terminal_.
+1. **Go to** your `test-project` project folder in your _Command Line/Terminal_.
 2. **Run** _npm run deploy_ in your _Command Line/Terminal_.
 	* You may need to choose whether or not you want to report usage stats to improve the tool.
 
@@ -54,11 +52,17 @@
 5. **Open** the _Sample_ section.
 6. **Drag and drop** the _Test Project_ widget to the page.
 
-<img src="../images/react-sample-deploy.png" style="max-width: 80%">
+![The deployed Test Project added as a widget to the Home page.](./images/react-sample-deploy.png)
 
 ---
 
 ## Bonus Exercises
 
 1. Create any of the other JavaScript module types.
-2. Create and deploy another module using blade. -->
+2. Create and deploy another module using blade. 
+
+---
+
+## Previous Step
+
+* [Exercise 1a: Set Up and Deploy with the NPM Theme Generator](./exercise-1a-set-up-and-deploy-with-npm-theme-generator.md)
