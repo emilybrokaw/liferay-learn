@@ -1,62 +1,64 @@
-# Module 2: Branding the Platform with Themes
+# Branding the Platform with Themes
 
-Coming Soon!
+```{toctree}
+:maxdepth: 2
 
-<!--
+branding-platform-with-themes/branding-the-platform-with-themes.md
+branding-platform-with-themes/exercise-1-create-livingstone-fjord-theme.md
+branding-platform-with-themes/adding-custom-styling-to-platform.md
+branding-platform-with-themes/exercise-2-modify-styling-of-themes.md
+branding-platform-with-themes/adding-custom-javascript-to-theme.md
+branding-platform-with-themes/exercise-3-add-custom-javascript-to-theme.md
+branding-platform-with-themes/configuring-the-theme.md
+branding-platform-with-themes/exercise-4-configure-theme-to-provide-administrative-options.md
+branding-platform-with-themes/using-themelets.md
+branding-platform-with-themes/exercise-5-create-themelets-to-deploy-with-theme.md
+branding-platform-with-themes/importing-and-embedding.md
+```
 
-<div class="ahead">
-<h4>Learning Objectives</h4>
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/qyhvW4xxx0c
+
+## Learning Objectives
 
 In this module, you'll learn how to control the branding of the platform by creating and customizing theme modules.
 
-<h4>Tasks to Accomplish</h4>
-<ul>
-    <li>Use the NPM Theme generator to generate a custom theme</li>
-    <ul>
-        <li>Customize the HTML, CSS, and JS source files</li>
-        <li>Create custom platform settings in the theme</li>
-    </ul>
-    <li>Create reusable components with Themelets</li>
-</ul>
+## Tasks to Accomplish
 
-<h4>Exercise Prerequisites</h4>
-<ul>
-    <li>Java JDK installed to run Liferay</li>
-	<ul>
-        <li>Download here: <a href="https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html">https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html</a>
-        </li>
-        <li>Instructions on installation here: <a href="https://www.java.com/en/download/help/download_options.xml">https://www.java.com/en/download/help/download_options.xml</a>
-        </li>
-    </ul>
-    <li>Liferay Tomcat bundle installed in the following folder:</li>
-	<ul>	
-		<li> Windows: <code>C:\liferay\bundles</code></li>
-        <ul>
-            <li>Start Liferay by double-clicking the <code>startup.bat</code> file.</li>
-        </ul>
-		<li> Unix Systems: <code>[user-home]/liferay/bundles</code></li>
-        <ul>
-            <li>Start Liferay by using <code>catalina.sh</code> run in the Terminal.</li>
-        </ul>
-	</ul>
-    <li>Unzipped module exercise files in the following folder structure:
-	<ul>
-		<li>Windows: <code>C:\liferay</code></li>
-		<li>Unix Systems: <code>[user-home]/liferay</code></li>
-	</ul>
-    <li>NPM, Yeoman, and the Liferay Theme Generator installed</li>
-    <ul>
-		<li>Download Node 10.15.1 here: <a href="https://nodejs.org/en/">https://nodejs.org/en/</a></li>
-        <ul>
-            <li>Node versions newer than 10.15.1 may not work with the Liferay theme generator on DXP 7.2</li>
-        </ul>
-		<li>Run <code>npm install -g yo</code></li>
-        <li>Run <code>npm install -g generator-liferay-theme</code></li>
-        <ul>
-            <li><b>Note:</b> OSX and Linux Users may need to redirect the NPM global command. See module 1 exercise instructions for more details.</li>
-        </ul>
-	</ul>
-</ul>
-</div>
+* Use the NPM Theme generator to generate a custom theme
+    * Customize the HTML, CSS, and JS source files
+    * Create custom platform settings in the theme   
+* Create reusable components with Themelets
 
--->
+## Exercise Prerequisites
+
+* Java JDK installed to run Liferay
+    * Download here: [https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html](https://www.oracle.com/technetwork/java/javase/downloads/jdk11-downloads-5066655.html)
+    * Instructions on installation here: [https://www.java.com/en/download/help/download_options.xml](https://www.java.com/en/download/help/download_options.xml)
+* Liferay Tomcat bundle installed in the following folder:
+	*  Windows: `C:\liferay\bundles`
+        * Start Liferay by double-clicking the `startup.bat` file.
+	*  Unix Systems: `[user-home]/liferay/bundles`
+        * Start Liferay by using `catalina.sh` run in the Terminal.
+* Unzipped module exercise files in the following folder structure:
+	* Windows: `C:\liferay`
+	* Unix Systems: `[user-home]/liferay`	
+* NPM, Yeoman, and the Liferay Theme Generator installed
+    * Download Node 10.15.1 here: [https://nodejs.org/en/](https://nodejs.org/en/)   
+        * Node versions newer than 10.15.1 may not work with the Liferay theme generator on DXP 7.2
+	* Run `npm install -g yo`
+    * Run `npm install -g generator-liferay-theme`
+        * **Note:** OSX and Linux Users may need to redirect the NPM global command. See module 1 exercise instructions for more details.
+
+## Next Steps
+
+[Branding the Platform with Themes](./branding-platform-with-themes/branding-the-platform-with-themes.md)
+[Exercise 1: Create the Livingstone Fjord Theme](./branding-platform-with-themes/exercise-1-create-livingstone-fjord-theme.md)
+[Adding Custom Styling to the Platform](./branding-platform-with-themes/adding-custom-styling-to-platform.md)
+[Exercise 2: Modify the Styling of Themes](./branding-platform-with-themes/exercise-2-modify-styling-of-themes.md)
+[Adding Custom JavaScript to a Theme](./branding-platform-with-themes/adding-custom-javascript-to-theme.md)
+[Exercise 3: Add Custom JavaScript to a Theme](./branding-platform-with-themes/exercise-3-add-custom-javascript-to-theme.md)
+[Configuring the Theme](./branding-platform-with-themes/configuring-the-theme.md)
+[Exercise 4: Configure the Theme to Provide Administrative Options](./branding-platform-with-themes/exercise-4-configure-theme-to-provide-administrative-options.md)
+[Using Themelets](./branding-platform-with-themes/using-themelets.md)
+[Exercise 5: Create Themelets to Deploy with the Theme](./branding-platform-with-themes/exercise-5-create-themelets-to-deploy-with-theme.md)
+[Importing and Embedding](./branding-platform-with-themes/importing-and-embedding.md)
