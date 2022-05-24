@@ -1,46 +1,33 @@
 # Configuring the Theme
 
-<!-- When managing multiple sites, flexibility in fulfilling the particular requirements that are necessary to crafting a tailored user experience is important. The web-team responsible for the creation and management of sites will often need the ability to add, move, or remove different UI elements added in the theme. For example, if the web-team wanted to use the same basic theme elements on an intranet site without footer icon links to social media, they'll need options to remove those. With a Liferay Theme, developers can create configuration settings that bridge the gap between the developer team and the web-team to meet these needs.
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/94g7-qltrT8
 
-## Livingstone's Theme Configuration {#livingstone}
+When managing multiple sites, flexibility in fulfilling the particular requirements that are necessary to crafting a tailored user experience is important. The web-team responsible for the creation and management of sites will often need the ability to add, move, or remove different UI elements added in the theme. For example, if the web-team wanted to use the same basic theme elements on an intranet site without footer icon links to social media, they'll need options to remove those. With a Liferay Theme, developers can create configuration settings that bridge the gap between the developer team and the web-team to meet these needs.
+
+## Livingstone's Theme Configuration
 
 Kaito and Martin are responsible for the design and implementation of the Livingstone Hotels & Resorts brand as a whole and Josiah Copeland, the Platform Administrator, will be the one responsible for leading the effort to set up each of Livingstone Hotels & Resorts's sites. As of right now, if Kaito were to deploy the theme to production, the theme would be HTML, CSS, and JavaScript complete. But Josiah needs to update certain aspects of the page, layout, and widgets.  Kaito can configure the theme to include a number of configurable settings as well as layouts.
 
-## Theme Settings and Packages {#settingspackages}
+## Theme Settings and Packages
 
 Configurable settings allow administrators to do things like configure the site to display the theme, configure how content is being displayed, and modify aspects of the page without having to modify and redeploy the theme itself.
 
-<div class="key-point">
-Key Point <br />
+```{important}
+Key Point <br>
 <li>A Theme can be configured to include the following settings and packages:</li>
   <ul>
-      <li>
-        <b>Theme Settings:</b> Hard-coded or configurable values in the Theme that can give administrators functional control over different stylistic elements of a site
-      </li>
-      <li>
-        <b>Portlet Decorators:</b> A mechanism that allows developers to customize the styles of the portlet wrappers
-      </li>
-      <li>
-        <b>Color Schemes:</b> Variations of SCSS and images packaged in the theme that administrators can choose for entire sites or specific site pages
-      </li>
-      <li>
-        <b>Bundled Layout Templates:</b> Layout Templates that can be created and bundled into the Theme to ensure the entire design implementation is included
-      </li>
+      <li><b>Theme Settings:</b> Hard-coded or configurable values in the Theme that can give administrators functional control over different stylistic elements of a site</li>
+      <li><b>Portlet Decorators:</b> A mechanism that allows developers to customize the styles of the portlet wrappers</li>
+      <li><b>Color Schemes:</b> Variations of SCSS and images packaged in the theme that administrators can choose for entire sites or specific site pages</li>
+      <li><b>Bundled Layout Templates:</b> Layout Templates that can be created and bundled into the Theme to ensure the entire design implementation is included</li>
     </ul>
-</div>
+```
 
-<br />
-
-## Adding Configurable Theme Settings {#configuretheme}
+## Adding Configurable Theme Settings
 
 _Theme Settings_ will allow developers to give administrators control over different elements of the page without having to touch the code at all.
 
-<figure>
-	<img src="../images/settings-example.png" style="max-height: 33%" />
-	<figcaption style="font-size: x-small">Fig.1 Settings example</figcaption>
-</figure>
-
-<br />
+![Settings example.](./images/settings-example.png)
 
 Theme Settings, like all the other configuration options, are configured in the _liferay-look-and-feel.xml_ file found in the src/WEB-INF folder.
 
@@ -71,29 +58,17 @@ Theme Settings, like all the other configuration options, are configured in the 
 </look-and-feel>
 ```
 
-<div class="key-point">
-Key Point <br />
+```{important}
+Key Point <br>
 <li>Each Theme Setting can have the following properties:</li>
   <ul>
-      <li>
-        <b>configurable</b>: a value of true or false determines whether this field should be displayed or hidden from the Control Panel
-      </li>
-      <li>
-        <b>key</b>: a name used to retrieve user value in the theme (no spaces)
-      </li>
-      <li>
-        <b>type</b>: defines the type of form field to show. Possible values are text, textarea, select, or checkbox.
-      </li>
-      <li>
-        <b>options</b>: a comma-separated list of options the user can choose for the select type
-      </li>
-      <li>
-        <b>value</b>: default setting value
-      </li>
+      <li><b>configurable</b>: a value of true or false determines whether this field should be displayed or hidden from the Control Panel</li>
+      <li><b>key</b>: a name used to retrieve user value in the theme (no spaces)</li>
+      <li><b>type</b>: defines the type of form field to show. Possible values are text, textarea, select, or checkbox.</li>
+      <li><b>options</b>: a comma-separated list of options the user can choose for the select type</li>
+      <li><b>value</b>: default setting value</li>
     </ul>
-</div>
-
-<br />
+```
 
 An example of configurable theme settings you can add can be found in the _Classic_ theme. These include:
 * **Bullet Style**: Adds Bullet Point options for different portlets
@@ -131,7 +106,7 @@ To add and use custom theme settings, developers need to do the following:
 </#if>
 ```
 
-## Providing Custom Portlet Decorators {#portletdecorators}
+## Providing Custom Portlet Decorators
 
 Developers can also provide different designs for the portlets displaying content on any site. This can be done by adding new portlet decorators to the liferay-look-and-feel.xml.
 
@@ -140,8 +115,8 @@ By default, the _Styled_ base theme includes the three out-of-the-box decorators
 * **Borderless**: When this decorator is applied, the portlet is no longer wrapped in a white box, but the portlet custom title is displayed at the top.
 * **Decorate**: This is the default Portlet Decorator. When this decorator is applied, the portlet is wrapped in a white box with a border, and the portlet custom title is displayed at the top.
 
-<div class="key-point">
-Key Point <br />
+```{important}
+Key Point <br>
 The portlet decorator tag accepts the following properties:
 <ul>
     <li>
@@ -151,7 +126,7 @@ The portlet decorator tag accepts the following properties:
       <b>default-portlet-decorator</b>: When set to true, the decorator will be the default for all portlets where the theme is applied.
     </li>
   </ul>
-</div>
+```
 
 Developers can add decorators by including the following in their `liferay-look-and-feel.xml`:
 
@@ -167,30 +142,21 @@ To set the default portlet decorator, they can add this to the custom decorator:
 
 Once deployed, administrators have control over which decorators to set for different portlets on the page.
 
-<figure>
-	<img src="../images/app-decorator-choosing.png" style="max-height: 25%" />
-	<figcaption style="font-size: x-small">Fig.2 Choosing a Decorator</figcaption>
-</figure>
+![Choosing a Decorator.](./images/app-decorator-choosing.png)
 
-## Including Color Scheme Variations {#colorscheme}
+## Including Color Scheme Variations
 
 In many cases, administrators will also want to change UI elements of the landing pages in order to highlight them. One aspect of this can, of course, be accomplished by theme settings and portlet decorators. But if an administrator wants to provide variations specifically for CSS and images, developers can add color schemes.
 
-<div class="key-point">
-Key Point <br />
+```{important}
+Key Point <br>
 Adding color schemes to a theme can be done with the following:
 <ol>
-    <li>
-      Add a <i>color_schemes</i> folder in src/css, including color scheme css partial files (ex. _custom.scss).
-    </li>
-    <li>
-      Add a <i>color_schemes</i> folder in src/images, including a folder for each color scheme with any thumbnail or image sprites included.
-    </li>
-    <li>
-      Include the color schemes in the <i>liferay-look-and-feel.xml.</i>
-    </li>
+    <li>Add a <i>color_schemes</i> folder in src/css, including color scheme css partial files (ex. _custom.scss).</li>
+    <li>Add a <i>color_schemes</i> folder in src/images, including a folder for each color scheme with any thumbnail or image sprites included.</li>
+    <li>Include the color schemes in the <i>liferay-look-and-feel.xml.</i></li>
 </ol>
-</div>
+```
 
 Developers can add color schemes by adding the following to their `liferay-look-and-feel.xml`:
 ```XML
@@ -216,22 +182,18 @@ And finally, the color scheme partial files must be included in the _\_custom.sc
 @import "color_schemes/custom";
 ```
 
-## Bundling Layout Template Modules into the Theme {#layouts}
+## Bundling Layout Template Modules into the Theme
 
 Finally, developers can include any custom layouts that are necessary for the overall user experience when the theme is deployed. Once custom layouts have been created by the team, everything can be bundled together. This removes the need for the platform administrators to have to deploy multiple modules at once.
 
-<div class="key-point">
-Key Point <br />
+```{important}
+Key Point <br>
 To add a custom layout template to the theme, developers need to do the following:
 <ol>
-  <li>
-    Add a <i>layouttpl</i> folder in the theme src that includes your layout source file and thumbnail
-  </li>
-  <li>
-    Update the <i>liferay-look-and-feel.xml</i> to reference those files
-  </li>
+  <li>Add a <i>layouttpl</i> folder in the theme src that includes your layout source file and thumbnail</li>
+  <li>Update the <i>liferay-look-and-feel.xml</i> to reference those files</li>
 </ol>
-</div>
+```
 
 Developers can add a layouttpl folder to the theme src, include the files, and update the _liferay-look-and-feel.xml_ with the following:
 ```XML
@@ -247,18 +209,20 @@ Developers can add a layouttpl folder to the theme src, include the files, and u
 
 With all these settings included, administrators will be able to control all these elements of the page without having to update the theme.
 
-<br />
+## Knowledge Check
 
-<div class="summary-chapter">
-<h3>Knowledge Check</h3>
-<ul>
-  <li> Developers can provide _____________________________________ options that administrators can then use to change UI elements of the page once a theme is added:</li>
-  <ul>
-      <li>Configurable _____________________________ Decorators</li>
-      <li>Configurable _________________________ Settings</li>
-      <li>___________________________ Layout Templates</li>
-      <li>Configurable ______________________________ Variations</li>
-    </ul>
-  </li>
-</ul>
-</div> -->
+*  Developers can provide _____________________________________ options that administrators can then use to change UI elements of the page once a theme is added: 
+  * Configurable _____________________________ Decorators
+  * Configurable _________________________ Settings
+  * ___________________________ Layout Templates
+  * Configurable ______________________________ Variations
+
+---
+
+## Next Up
+
+* [Exercise 3: Add Custom JavaScript to a Theme](./exercise-3-add-custom-javascript-to-theme.md)
+
+## Previous Step
+
+* [Exercise 4: Configure the Theme to Provide Administrative Options](./exercise-4-configure-theme-to-provide-administrative-options.md)
