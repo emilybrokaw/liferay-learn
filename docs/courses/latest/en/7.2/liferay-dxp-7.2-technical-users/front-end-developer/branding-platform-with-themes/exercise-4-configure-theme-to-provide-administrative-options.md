@@ -1,36 +1,33 @@
-# Configure the Theme to Provide Administrative Options
-<!-- 
-<div class="ahead">
-<h4>Exercise Goals</h4>
-    <ul>
-    <li>Add Portlet Decorators to the theme</li>
-      <ul>
-          <li>Add the Configuration files</li>
-          <li>Add styling for the Portlet Decorators</li>
-      </ul>
-    <li>Add Custom Theme Settings</li>
-      <ul>
-          <li>Add Theme Settings</li>
-          <li>Create Theme Setting Variables</li>
-          <li>Add FreeMarker Files and Styling for Theme Settings</li>
-      </ul>
-    </ul>
-</div>
+# Exercise 4: Configure the Theme to Provide Administrative Options
+
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/SyD5bY20kYw
+
+## Exercise Goals
+    
+* Add Portlet Decorators to the theme      
+    * Add the Configuration files
+    * Add styling for the Portlet Decorators
+* Add Custom Theme Settings
+    * Add Theme Settings
+    * Create Theme Setting Variables
+    * Add FreeMarker Files and Styling for Theme Settings
 
 ## Add WEB-INF Files to the Theme
-1. **Copy** the `liferay-plugin-package.properties` and `src` folder from the _`exercise-src/WEB-INF`_ folder.  
-2. **Paste** the files into the `livingstone-fjord-theme/src/WEB-INF` folder.
-  * You'll need to replace the existing `liferay-plugin-package.properties`.
 
-<img src="../images/web-inf-files.png" style="max-height:100%">
+1. **Copy** the `liferay-plugin-package.properties` and `src` folder from the `exercise-src/WEB-INF` folder.  
+2. **Paste** the files into the `livingstone-fjord-theme/src/WEB-INF` folder.
+    * You'll need to replace the existing `liferay-plugin-package.properties`.
+
+![The src folder structure with the liferay-look-and-feel.xml and liferay-plugin-package.properties files added to the WEB-INF folder.](./images/web-inf-files.png)
 
 ## Add Portlet Decorators
+
 1. **Drop** the `liferay-look-and-feel.xml` file from `livingstone-fjord-theme/src/WEB-INF` into the _Visual Studio Code_ editor.
 2. **Click** to highlight the `<!-- Insert snippet 01-portlet-decorators here -->` comment.
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `01-portlet-decorators` snippet.
 5. **Save** the file.  
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```XML
 <portlet-decorator id="barebone" name="Barebone">
@@ -49,12 +46,13 @@
 ```
 
 ## Add Sass Styling for the Portlet Decorator
-1. **Drop** the `_portlet_decorator.scss` from _`livingstone-fjord-theme\src\css\portlet`_ into the _Visual Studio Code_ editor.
+
+1. **Drop** the `_portlet_decorator.scss` from `livingstone-fjord-theme\src\css\portlet` into the _Visual Studio Code_ editor.
 2. **Click** to highlight the `// Insert snippet 09-portlet-decorator-scss here` comment.
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `09-portlet-decorator-scss` snippet.
 5. **Save** the file.   
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```SCSS
 .portlet-decorate {
@@ -79,12 +77,13 @@
 ```
 
 ## Add Custom Theme Settings to the Theme XML File
-1. **Drop** the `liferay-look-and-feel.xml` from _`livingstone-fjord-theme\src\WEB-INF`_ into the _Visual Studio Code_ editor.
+
+1. **Drop** the `liferay-look-and-feel.xml` from `livingstone-fjord-theme\src\WEB-INF` into the _Visual Studio Code_ editor.
 2. **Click** to highlight the `<!-- Insert snippet 02-theme-settings here -->` comment.
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `02-theme-settings` snippet.
 5. **Save** the file.   
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```XML
 <setting configurable="true" key="facebook-icon" type="checkbox" value="true" />
@@ -94,12 +93,13 @@
 ```
 
 ## Add Custom Variables in the Init_Custom File
-1. **Drop** the `init_custom.ftl` from _`livingstone-fjord-theme\src\templates`_ into the _Visual Studio Code_ editor.
+
+1. **Drop** the `init_custom.ftl` from `livingstone-fjord-theme\src\templates` into the _Visual Studio Code_ editor.
 2. **Click** to highlight the `<#-- Insert snippet 06-init-custom-settings here -->` comment.
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `06-init-custom-settings` snippet.
 5. **Save** the file.
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```html
 facebook_icon = getterUtil.getBoolean(themeDisplay.getThemeSetting("facebook-icon"))
@@ -109,12 +109,13 @@ twitter_icon_link_url = themeDisplay.getThemeSetting("twitter-icon-link-url")
 ```
 
 ## Add Social Media Icons to the Theme Footer
-1. **Drop** the `portal_normal.ftl` from _`livingstone-fjord-theme\src\templates`_ into the _Visual Studio Code_ editor.
+
+1. **Drop** the `portal_normal.ftl` from `livingstone-fjord-theme\src\templates` into the _Visual Studio Code_ editor.
 2. **Click** to highlight the `<#-- Insert snippet 07-social-portal-normal here -->` comment.
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `07-social-portal-normal` snippet.
 5. **Save** the file.
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```html
 <div class="ml-md-auto mt-3 mt-md-0">
@@ -123,12 +124,13 @@ twitter_icon_link_url = themeDisplay.getThemeSetting("twitter-icon-link-url")
 ```
 
 ## Add the Code to the Social Media FreeMarker File
-1. **Drop** the `social_media.ftl` from _`livingstone-fjord-theme\src\templates`_ into the _Visual Studio Code_ editor.
-* **Click** to highlight the `<#-- Insert snippet 08-social-media-footer here -->` comment.
-* **Type** `lfr` to view the available code snippets.
-* **Choose** the `08-social-media-footer` snippet.
-* **Save** the file.
-  * Alternatively, you can type and save the following:
+
+1. **Drop** the `social_media.ftl` from `livingstone-fjord-theme\src\templates` into the _Visual Studio Code_ editor.
+2. **Click** to highlight the `<#-- Insert snippet 08-social-media-footer here -->` comment.
+3. **Type** `lfr` to view the available code snippets.
+4. **Choose** the `08-social-media-footer` snippet.
+5. **Save** the file.
+    * Alternatively, you can type and save the following:
 
 ```html
 <#if facebook_icon || twitter_icon>
@@ -154,12 +156,13 @@ twitter_icon_link_url = themeDisplay.getThemeSetting("twitter-icon-link-url")
 ```
 
 ## Add Sass Styling to Social Media Icons
-1. **Drop** the `_footer.scss` from _`livingstone-fjord-theme\src\css\partial`_ into the _Visual Studio Code_ editor.
+
+1. **Drop** the `_footer.scss` from `livingstone-fjord-theme\src\css\partial` into the _Visual Studio Code_ editor.
 2. **Click** to highlight the `// Insert snippet 10-social-media-footer-scss here` comment.
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `10-social-media-footer-scss` snippet.
 5. **Save** the file.
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```SCSS
 .fjord-social {
@@ -174,8 +177,19 @@ twitter_icon_link_url = themeDisplay.getThemeSetting("twitter-icon-link-url")
 ```
 
 ## Deploy the Theme to See the JavaScript Changes
-1. **Run** `npm run gulp deploy` in the _Command Line_ or _Terminal_.
-  * If you're already running gulp watch, this isn't needed.
-  * You may need to reselect the Livingstone Fjord theme, if the default theme is still shown after refreshing the page. 
 
-<img src="../images/theme-settings-complete.png" style="max-height:45%"> -->
+1. **Run** `npm run gulp deploy` in the _Command Line_ or _Terminal_.
+    * If you're already running gulp watch, this isn't needed.
+    * You may need to reselect the Livingstone Fjord theme, if the default theme is still shown after refreshing the page. 
+
+![The Theme settings page with the "Use a Retina Logo", "Facebook Icon", and "Twitter Icon" switched to Yes.](./images/theme-settings-complete.png)
+
+---
+
+## Next Up
+
+* [Using Themelets](./using-themelets.md)
+
+## Previous Step
+
+* [Configuring the Theme](./configuring-the-theme.md)
