@@ -1,4 +1,4 @@
-# Adding Custom Branding to the Liferay Platform
+# Introducing Front-End Development
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/4Lb-N_uuiyc
 
@@ -26,9 +26,9 @@ In order to customize the branding and presentation of the platform, developers 
 Key Point: <br>
 <li>Liferay has three primary ways of creating stylistic changes on the platform:</li>
   <ul>
-      <li>**Modules**: including Themes, Layout Templates, and JavaScript modules for global look-and-feel changes</li>
-      <li>**Templates**: including specific customization options for content, assets, and widgets</li>
-      <li>**Fragments**: including the ability to create the html, css, and JavaScript sections and components of any page</li>
+      <li>Modules: including Themes, Layout Templates, and JavaScript modules for global look-and-feel changes</li>
+      <li>Templates: including specific customization options for content, assets, and widgets</li>
+      <li>Fragments: including the ability to create the html, css, and JavaScript sections and components of any page</li>
     </ul>
 ```
 
@@ -70,7 +70,7 @@ Finally, _Page Fragments_ will give the developers the tools they need to craft 
 Key Point: <br>
 <li>Creating Page Fragments using the Liferay Fragments generator is the best practice for treating your fragments like code within a DevOps lifecycle.</li>
   <ul>
-    <li>You can find more information at [https://github.com/liferay/generator-liferay-fragments#liferay-fragments-cli](https://github.com/liferay/generator-liferay-fragments#liferay-fragments-cli)</li>    
+    <li>You can find more information at <a>https://github.com/liferay/generator-liferay-fragments#liferay-fragments-cli</a></li>    
   </ul>
 ```
 
