@@ -1,13 +1,11 @@
 # Create Themelets to Deploy with the Theme
 
-<!-- <div class="ahead">
-<h4>Exercise Goals</h4>
-    <ul>
-    <li>Create a Widget Dropzone themelet</li>
-      <ul>
-          <li>Connect the themelet to the theme</li>
-      </ul>
-</div>
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/FB4bUfSU5Ns
+
+## Exercise Goals
+
+* Create a Widget Dropzone themelet
+	* Connect the themelet to the theme
 
 ## Generate a Themelet
 1. **Go to** the _liferay_ folder you already created in the _Command Line/Terminal_.
@@ -28,9 +26,9 @@
 
 ## Add CSS to the Themelet 
 1. **Drop** the `_custom.scss` file from `liferay/widget-dropzone/src/css` into the _Visual Studio Code_ editor.  
-* **Type** `lfr` to view the available code snippets.
-* **Choose** the `11-widget-drag-themelet` snippet.
-* **Save** the file.  
+2. **Type** `lfr` to view the available code snippets.
+3. **Choose** the `11-widget-drag-themelet` snippet.
+4. **Save** the file.  
 
 ## Deploy the Drag Indicator Themelet
 1. **Run** `cd ../livingstone-fjord-theme` in the _Command Prompt/Terminal_.  
@@ -73,4 +71,14 @@ The themelet has been added to the Livingstone Fjord Theme. Now when you drag an
 7. **Run** `npm run gulp deploy`.  
 
 <img src="../../images/menu-animation.png" style="max-width: 100%">
---> -->
+--> 
+
+---
+
+## Next Up
+
+* [Importing and Embedding](./importing-and-embedding.md)
+
+## Previous Step
+
+* [Using Themelets](./using-themelets.md)
