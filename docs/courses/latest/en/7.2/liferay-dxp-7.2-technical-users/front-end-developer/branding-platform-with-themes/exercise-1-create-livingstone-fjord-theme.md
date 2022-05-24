@@ -1,4 +1,4 @@
-# Create the Livingstone Fjord Theme
+# Exercise 1: Create the Livingstone Fjord Theme
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/cf0a2C2MzLM
 
