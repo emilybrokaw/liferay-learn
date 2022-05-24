@@ -1,24 +1,22 @@
-# Add Custom JavaScript to a Theme
+# Exercise 3: Add Custom JavaScript to a Theme
 
-<!-- <div class="ahead">
-<h4>Exercise Goals</h4>
-    <ul>
-    <li>Add JavaScript to the theme</li>
-        <ul>
-            <li>Add DOM variables</li>
-            <li>Add the Sign-in Modal</li>
-            <li>Add the Click event for closing the nav</li>
-        </ul>
-    </ul>
-</div>
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/iNrwFAMCKIU
+
+## Exercise Goals
+
+* Add JavaScript to the theme
+    * Add DOM variables
+    * Add the Sign-in Modal
+    * Add the Click event for closing the nav
 
 ## Add Main.js to the Theme
 
-1. **Copy** the `main.js` from the _`exercise-src\js`_ folder. 
+1. **Copy** the `main.js` from the `exercise-src\js` folder. 
 3. **Paste** it into your `livingstone-fjord-theme/src/js` folder.
 
 ## Set DOM Variables and the Sign-In Widget
-1. **Drop** the `main.js` from _`livingstone-fjord-theme\src\js`_ into the _Visual Studio Code_ editor. 
+
+1. **Drop** the `main.js` from `livingstone-fjord-theme\src\js` into the _Visual Studio Code_ editor. 
 2. **Click** to highlight the `// Insert snippet 01-variables-and-sign-in here` comment.
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `01-variables-and-sign-in` snippet.
@@ -37,9 +35,8 @@ if (signIn && signIn.getData('redirect') !== 'true') {
 var fullScreenToggleIcon = A.one('.full-screen-navigation #banner .navbar-toggler');
 ```
 
-<br />
-
 ## Add the Click Event for Closing the Navigation
+
 1. **Click** to highlight the `// Insert snippet 02-close-nav-click here` comment.
 2. **Type** `lfr` to view the available code snippets.
 3. **Choose** the `02-close-nav-click` snippet.
@@ -58,7 +55,18 @@ if (fullScreenToggleIcon) {
 ```
 
 ## Deploy the Theme to See the JavaScript Changes
+
 1. **Run** `npm run gulp deploy` in the _Command Line_ or _Terminal_. 
   * If you're already running gulp watch, this isn't needed.
 
-<img src="../images/sign-in-js-example.png" style="max-height:39%"> -->
+![The Sign In page for the Livingstone Hotels & Resorts site.](./images/sign-in-js-example.png)
+
+---
+
+## Next Up
+
+* [Configuring the Theme](./configuring-the-theme.md)
+
+## Previous Step
+
+* [Adding Custom JavaScript to a Theme](./adding-custom-javascript-to-theme.md)
