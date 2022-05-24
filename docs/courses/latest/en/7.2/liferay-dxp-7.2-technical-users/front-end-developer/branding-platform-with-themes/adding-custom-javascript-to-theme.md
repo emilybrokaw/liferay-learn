@@ -1,28 +1,25 @@
 # Adding Custom JavaScript to a Theme
 
-<!-- Beyond simple styling, pages across a platform often need to have JavaScript functions and components added to create a great user experience. Developers may need to add both global JavaScript as well as specific JavaScript components or applications. The Theme is the context in which global JavaScript can be added for each site page.
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/4CoRInj6SeA
 
-<figure>
-  <img src="../images/coding.png" style="max-height: 18%" />
-</figure>
+Beyond simple styling, pages across a platform often need to have JavaScript functions and components added to create a great user experience. Developers may need to add both global JavaScript as well as specific JavaScript components or applications. The Theme is the context in which global JavaScript can be added for each site page.
 
-## JavaScript on the Livingstone Platform {#livingstone}
+![A diagram demonstrating how global JavaScript can be added to site pages.](./images/coding.png)
+
+## JavaScript on the Livingstone Platform
 
 Kaito needs to create a custom sign-in modal and add some JavaScript to the top search for every page on the different Livingstone Hotels & Resorts sites. He will do this by implementing JavaScript in a theme similar to how he added custom CSS. For the remaining JavaScript needs, he can use the Bundle Generator to create JavaScript modules.
 
-## Global JavaScript {#globaljs}
+## Global JavaScript
 
 Just like the HTML and CSS, the theme also controls the JavaScript that gets loaded for every single site page when the theme is applied. If there are functions that need to be defined or functions that should be available globally, they should be added to the theme.
 
-<div class="key-point">
-Key Point: <br />
-To add custom global JavaScript to a theme, include it in the <code>main.js</code> file in the theme src.
-</div>
+```{important}
+Key Point: <br>
+To add custom global JavaScript to a theme, include it in the `main.js` file in the theme src.
+```
 
-<figure>
-	<img src="../images/main-js.png" style="max-height: 100%" />
-	<figcaption style="font-size: x-small">Fig.1 Main JS in a theme</figcaption>
-</figure>
+![Main JS in a theme.](./images/main-js.png)
 
 The base `main.js` file has three callbacks that can be used for different functions:
 * **AUI().ready(fn)**: is executed after the HTML in the page finishes loading (minus loading any portlets via AJAX)
@@ -54,22 +51,20 @@ AUI().ready(
 
 This is used to make the password visible `(type, text)` and hidden `(type, password)` at the press of a button when combined with the FreeMarker and CSS defined in a theme. 
 
-## Using Third-Party JavaScript {#thirdjs}
+## Using Third-Party JavaScript
 
 Developers can also take advantage of the other JavaScript libraries included in Liferay. 
 
-<div class="key-point">
-Key Point: <br />
+```{important}
+Key Point: <br>
 Liferay DXP 7.2 is compatible with additional JavaScript frameworks out-of-the-box, including:
 <ul>
 	<li><b>Metal.js</b> (developed by Liferay)</li>  
 	<li><b>jQuery</b> (included with Liferay)</li>  
 </ul>
-</div>
+```
 
-<div class="note">
-Note: Lodash was included in Liferay DXP 7.1 out-of-the-box, but is no longer included in 7.2. If you want to use Lodash in Liferay DXP 7.2, you can go to <i>Control Panel → Configuration → System Settings → Third Party</i> and set Lodash to <code>true</code>.
-</div>
+> Note: Lodash was included in Liferay DXP 7.1 out-of-the-box, but is no longer included in 7.2. If you want to use Lodash in Liferay DXP 7.2, you can go to _Control Panel_ → _Configuration_ → _System Settings_ → _Third Party_ and set Lodash to `true`.
 
 Developers can take advantage of the ECMAScript features with Metal.js by adding a separate `es.js` file with the ECMAScript code and include it in the `main.js` file. Similar to partials in SCSS, this better organizes the JavaScript and makes for simpler customization in the future. 
 
@@ -92,18 +87,22 @@ require(
 ```
 Finally, to get all of this to read, developers can take advantage of NPM to install the dependencies needed. For this particular example, developers would need the ES2015 hook and metal, metal-dom, and metal-state dependencies, since they're explicitly imported in the `top_search.es.js` file. 
 
-<div class="note">
-	Note: For information on creating a custom gulp hook to add the ability to compile code from external frameworks to your build process, you can check out the following post: <a href="https://web.liferay.com/web/alexander.valencia/blog/-/blogs/adding-flexibility-to-your-themes-through-gulp-hooks">https://web.liferay.com/web/alexander.valencia/blog/-/blogs/adding-flexibility-to-your-themes-through-gulp-hooks</a>  
-</div>
+> Note: For information on creating a custom gulp hook to add the ability to compile code from external frameworks to your build process, you can check out the following post: [https://web.liferay.com/web/alexander.valencia/blog/-/blogs/adding-flexibility-to-your-themes-through-gulp-hooks](https://web.liferay.com/web/alexander.valencia/blog/-/blogs/adding-flexibility-to-your-themes-through-gulp-hooks)
 
 With these options, developers can add the global JavaScript they need to accomplish their goals.
 
-<div class="summary">
-<h3>Knowledge Check</h3>
+## Knowledge Check
 Global JavaScript that will be executed on every page can be added to ____________________.
-<ul>
-  <li>The main.js file is the primary JavaScript file packaged in a ____________________.</li>
-  <li>Metal.js and jQuery are included by default with Liferay, but any front-end ____________________ can be used when writing your JavaScript.</li>
-  <li>JavaScript can be organized in a more ____________________ way by requiring other JS files in the main.js.</li>
-</ul>
-</div> -->
+* The main.js file is the primary JavaScript file packaged in a ____________________.
+* Metal.js and jQuery are included by default with Liferay, but any front-end ____________________ can be used when writing your JavaScript.
+* JavaScript can be organized in a more ____________________ way by requiring other JS files in the main.js.
+
+---
+
+## Next Up
+
+* [Exercise 2: Modify the Styling of Themes](./exercise-2-modify-styling-of-themes.md)
+
+## Previous Step
+
+* [Exercise 3: Add Custom JavaScript to a Theme](./exercise-3-add-custom-javascript-to-theme.md)
