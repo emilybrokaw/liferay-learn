@@ -16,8 +16,6 @@ branding-platform-with-themes/exercise-5-create-themelets-to-deploy-with-theme.m
 branding-platform-with-themes/importing-and-embedding.md
 ```
 
-[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/qyhvW4xxx0c
-
 ## Learning Objectives
 
 In this module, you'll learn how to control the branding of the platform by creating and customizing theme modules.
