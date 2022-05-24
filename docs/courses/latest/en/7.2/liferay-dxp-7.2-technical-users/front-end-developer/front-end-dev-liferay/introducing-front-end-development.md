@@ -70,7 +70,7 @@ Finally, _Page Fragments_ will give the developers the tools they need to craft 
 Key Point: <br>
 <li>Creating Page Fragments using the Liferay Fragments generator is the best practice for treating your fragments like code within a DevOps lifecycle.</li>
   <ul>
-    <li>You can find more information at <a>https://github.com/liferay/generator-liferay-fragments#liferay-fragments-cli</a></li>    
+    <li>You can find more information at https://github.com/liferay/generator-liferay-fragments#liferay-fragments-cli</li>
   </ul>
 ```
 

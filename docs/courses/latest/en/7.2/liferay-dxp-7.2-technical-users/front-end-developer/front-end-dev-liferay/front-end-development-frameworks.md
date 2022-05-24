@@ -82,7 +82,7 @@ Finally, for whenever text is used, Lexicon has writing standards that include t
 * **Be Current**: Use present tense throughout product messaging
 * **Be Consistent**: Apply text styles and how you address users consistently
 
->Note: You can find more information on the Lexicon site: https://liferay.design/lexicon">https://liferay.design/lexicon
+>Note: You can find more information on the Lexicon site: [https://liferay.design/lexicon](https://liferay.design/lexicon)
 
 ## Lexicon Design Implementation: Clay
 

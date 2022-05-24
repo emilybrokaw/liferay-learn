@@ -46,8 +46,8 @@ These plugins can be installed through the Eclipse and IntelliJ marketplace. Alt
 ![IntelliJ Marketplace Example.](./images/intellij-marketplace-installation.png)
 
 > Note: For more information on this set-up, you can check the following documentation:
-* Liferay IDE: https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/installing-liferay-ide
-* Liferay IntelliJ Plugin: https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/installing-the-liferay-intellij-plugin
+> * Liferay IDE: [https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/installing-liferay-ide](https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/installing-liferay-ide)
+> * Liferay IntelliJ Plugin: [https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/installing-the-liferay-intellij-plugin](https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/installing-the-liferay-intellij-plugin)
 
 ## Using the Blade CLI's Theme Template
 
@@ -60,7 +60,7 @@ For Liferay DXP 7.2, this toolset can be used to create and deploy theme and lay
 
 ![Blade CLI Set-up.](./images/blade-installer-workspace-init.png)
 
-> Note: For more information on this set-up, you can check the following documentation.
+> Note: For more information on this set-up, you can check the following documentation:
 > * Blade CLI: [https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/blade-cli](https://dev.liferay.com/en/develop/tutorials/-/knowledge_base/7-1/blade-cli)
 
 ## Using the Liferay NPM Toolkit
