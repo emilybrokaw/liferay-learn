@@ -1,31 +1,26 @@
-# Setting up and Deploying with the NPM Theme Generator
-<!-- 
-<div class="ahead">
-<h4>Exercise Goals</h4>
-	<ul>
-	<li>Use the NPM Theme generator to quickly generate and deploy a theme</li>
-		<ul>
-			<li>Set up a local instance of Liferay</li>
-			<li>Install the NPM tools to create and deploy front-end modules</li>
-			<li>Create a basic Theme Module</li>
-			<li>Deploy the basic Theme Module to the local instance of Liferay</li>
-			<li>Select the Theme Module on the platform</li>
-		</ul>
-	</ul>
-</div>
+# Exercise 1a: Set up and Deploy with the NPM Theme Generator
+
+[$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/3W7xFErrXG4
+
+## Exercise Goals
+	
+* Use the NPM Theme generator to quickly generate and deploy a theme
+	* Set up a local instance of Liferay
+	* Install the NPM tools to create and deploy front-end modules
+	* Create a basic Theme Module
+	* Deploy the basic Theme Module to the local instance of Liferay
+	* Select the Theme Module on the platform
 
 ## Install a Liferay Tomcat Bundle in a New Bundles Folder
 
-1. **Create** a new _`bundles`_ folder in your liferay folder so that you have a directory that looks like this:
+1. **Create** a new `bundles` folder in your liferay folder so that you have a directory that looks like this:
 	* Windows: _C:\liferay\bundles_
 	* Unix Systems: _[user-home]/liferay/bundles_
 2. **Expand** the `liferay-dxp-tomcat-[version]` file to the bundles directory.  
 	* Windows: liferay-dxp-tomcat-[version].zip
 	* Unix Systems: liferay-dxp-tomcat-[version].tar.gz
 
-<div class="note">
-Note: This file can be found in the software materials provided by the instructor. Windows' built-in archive tool causes problems with Liferay when it tries to extract the large .zip file. We recommend using a third-party tool, like 7-Zip or WinZip.
-</div>
+> Note: This file can be found in the software materials provided by the instructor. Windows' built-in archive tool causes problems with Liferay when it tries to extract the large .zip file. We recommend using a third-party tool, like 7-Zip or WinZip.
 
 ## Set the Tomcat Bundle to Developer Mode
 
@@ -42,15 +37,11 @@ Note: This file can be found in the software materials provided by the instructo
 4. **Open** a _Command Line/Terminal_ window.  
 5. **Run** `node -v` in your _Command Line_ to verify your installation once you have installed node.js and npm.
 6. Run `npm -version` to double-check that the appropriate version is installed.
-	* _The npm version should be 6.x.x or above_.
+	* The npm version should be 6.x.x or above.
 
-<div class="note">
-Note: It is possible you may run into errors with the latest LTS version of Node. To avoid this, we recommend using Node version 10.15.1 as shown above.
-</div>
+> Note: It is possible you may run into errors with the latest LTS version of Node. To avoid this, we recommend using Node version 10.15.1 as shown above.
 
-<br />
-
-<img src="../images/node-LTS.png" style="max-height: 100%">
+![Two Node.js download options for macOS: the 10.15.3 LTS and the 11.14.0 Current.](./images/node-LTS.png)
 
 ## Mac OSX and Linux: Redirect the NPM Global Command
 
@@ -83,7 +74,7 @@ export PATH=${PATH}:${NPM_PACKAGES}/bin
 	* Type _Y or N_ if an initial prompt asks to collect data.    
 4. **Choose** _Get me out of here!_
 
-<img src="../images/get-me-out-of-here.png" style="max-height: 100%">
+![The Comand Line Terminal running the Liferay Theme Generator with the command "Get me out of here!" selected](./images/get-me-out-of-here.png)
 
 ## Start the Liferay-Tomcat Bundle
 
@@ -98,8 +89,7 @@ export PATH=${PATH}:${NPM_PACKAGES}/bin
 
 1. **Copy** the _activation-key-digitalenterprisedevelopment-7.2-liferaycom.xml_ file from your provided materials.
 2. **Paste** the file into your _liferay-dxp-[version]/deploy_ folder.
-
-You should see that the Activation Key is registered in the _Terminal_ or _Command Line_ window.
+	* You should see that the Activation Key is registered in the _Terminal_ or _Command Line_ window.
 
 ## Complete the Liferay Setup Wizard
 
@@ -134,21 +124,19 @@ You should see that the Activation Key is registered in the _Terminal_ or _Comma
 	* Unix Systems: _[user-home]/liferay/bundles/liferay-dxp-[version]/tomcat-[version]_
 9. **Press** _Enter_ to accept the default url.
 
-<div class="note">
-Note: Liferay themes created with the theme generator are bundled with Gulp. In order to run Gulp locally from the command line, we must add a script to the package.json file. Additionally, some setups run into issues running scripts with npm. If this is the case, try creating an .npmrc file in the root of your project and add the <code>ignore-scripts=false</code> configuration.
-</div>
+> Note: Liferay themes created with the theme generator are bundled with Gulp. In order to run Gulp locally from the command line, we must add a script to the package.json file. Additionally, some setups run into issues running scripts with npm. If this is the case, try creating an .npmrc file in the root of your project and add the `ignore-scripts=false` configuration.
 
 ## Add Gulp Scripts to package.json
 
-1. **Go to** your _`my-test-theme`_ folder.
-* **Open** your `package.json` file.
-* **Add** the following beneath the "liferayTheme" dependencies:
+1. **Go to** your `my-test-theme` folder.
+2. **Open** your `package.json` file.
+3. **Add** the following beneath the "liferayTheme" dependencies:
 ```
 "scripts": {
 	"gulp": "node_modules/.bin/gulp"
 },
 ```
-* **Save** the file.
+4. **Save** the file.
 
 When you're finished, `package.json` should look something like this:
 
@@ -187,23 +175,33 @@ When you're finished, `package.json` should look something like this:
 1. **Go to** your new theme directory in the _Command Line/Terminal_:
 	* Windows: _C:\liferay\my-test-theme_
 	* Unix Systems: _[userhome]/liferay/my-test-theme_
-* **Run** _npm run gulp deploy_ in the _Command Line/Terminal_.
+2. **Run** _npm run gulp deploy_ in the _Command Line/Terminal_.
 
 ## Select the New Theme on the Platform
 1. **Log in** to _localhost:8080_ if you're not already logged in.
 2. **Open** the _Menu_.
-3. **Go to** _`Site Builder → Pages`_ in the _Site Administration_ panel.
+3. **Go to** _Site Builder_ → _Pages_ in the _Site Administration_ panel.
 4. **Click** on the configuration icon next to _Public Pages_.
 5. **Click** _Change Current Theme_.
 6. **Choose** the _My Test_ theme.
 7. **Click** _Save_.
 8. **Click** _Go to Site_ in the _Site Administration_ panel to see the base theme without any customization.
 
-<img src="../images/base-theme-test.png" style="max-height: 100%">
+![The Livingstone Hotels & Resorts Home page with the test theme running.](./images/base-theme-test.png)
 
 ---
 
 ## Bonus Exercises
 
 1. Change the theme back to the _Classic_ theme.
-2. Explore the new theme project and add some css to the _custom.scss_ file in the _src_ folder and deploy the changes. -->
+2. Explore the new theme project and add some css to the _custom.scss_ file in the _src_ folder and deploy the changes. 
+
+---
+
+## Next Up
+
+* [Exercise 1b: Deploy with the NPM Bundle Generator](./exercise-1b-deploy-with-npm-bundle-generator.md)
+
+## Previous Step
+
+* [Front-End Development Tools](./front-end-development-tools.md)
