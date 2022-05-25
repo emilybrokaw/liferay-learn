@@ -128,9 +128,9 @@ The order of deployment will deploy the Base theme (`styled` or `unstyled`) firs
 To start, let's focus on customizing the html of the themes, starting with the `portal_normal.ftl` file. As stated above, the `portal_normal` file contains the main structure of every site page and is the main HTML source file.
 
 The `portal_normal.ftl` breaks down into three main sections within the body wrapper div:
-1. _The Banner Section_: includes the top part of a page with its sections
-2. _The Content Section_: includes the code needed to render widgets and content
-3. _The Footer Section_: includes the bottom of the page that can be customized
+1. __The Banner Section__: includes the top part of a page with its sections
+2. __The Content Section__: includes the code needed to render widgets and content
+3. __The Footer Section__: includes the bottom of the page that can be customized
 
 ![The three main sections in an HTML source file.](./images/page-breakdown.png)
 

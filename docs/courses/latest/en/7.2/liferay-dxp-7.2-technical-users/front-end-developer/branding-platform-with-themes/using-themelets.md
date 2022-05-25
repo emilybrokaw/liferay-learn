@@ -1,4 +1,4 @@
-# Themelets
+# Using Themelets
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/6cX2Sfw9VR8
 

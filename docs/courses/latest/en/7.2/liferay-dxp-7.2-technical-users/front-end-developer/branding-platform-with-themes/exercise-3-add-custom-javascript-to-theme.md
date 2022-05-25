@@ -21,7 +21,7 @@
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `01-variables-and-sign-in` snippet.
 5. **Save** the file. 
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```JavaScript
 var BODY = A.getBody();
@@ -41,7 +41,7 @@ var fullScreenToggleIcon = A.one('.full-screen-navigation #banner .navbar-toggle
 2. **Type** `lfr` to view the available code snippets.
 3. **Choose** the `02-close-nav-click` snippet.
 4. **Save** the file. 
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```JavaScript
 if (fullScreenToggleIcon) {
@@ -57,7 +57,7 @@ if (fullScreenToggleIcon) {
 ## Deploy the Theme to See the JavaScript Changes
 
 1. **Run** `npm run gulp deploy` in the _Command Line_ or _Terminal_. 
-  * If you're already running gulp watch, this isn't needed.
+    * If you're already running gulp watch, this isn't needed.
 
 ![The Sign In page for the Livingstone Hotels & Resorts site.](./images/sign-in-js-example.png)
 

@@ -1,4 +1,4 @@
-# Create Themelets to Deploy with the Theme
+# Exercise 5: Create Themelets to Deploy with the Theme
 
 [$LIFERAY_LEARN_YOUTUBE_URL$]=https://www.youtube.com/embed/FB4bUfSU5Ns
 

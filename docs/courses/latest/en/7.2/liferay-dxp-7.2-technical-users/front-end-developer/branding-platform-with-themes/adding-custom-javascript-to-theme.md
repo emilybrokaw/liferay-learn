@@ -101,8 +101,8 @@ Global JavaScript that will be executed on every page can be added to __________
 
 ## Next Up
 
-* [Exercise 2: Modify the Styling of Themes](./exercise-2-modify-styling-of-themes.md)
+* [Exercise 3: Add Custom JavaScript to a Theme](./exercise-3-add-custom-javascript-to-theme.md)
 
 ## Previous Step
 
-* [Exercise 3: Add Custom JavaScript to a Theme](./exercise-3-add-custom-javascript-to-theme.md)
+* [Exercise 2: Modify the Styling of Themes](./exercise-2-modify-styling-of-themes.md)

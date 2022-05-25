@@ -24,7 +24,7 @@
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `01-custom-clay-variables` snippet.
 5. **Save** the file. 
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```SCSS
 $body-bg: white;
@@ -44,7 +44,7 @@ $portlet-decorate-border: 1px solid $light-color;
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `02-colors-scss` snippet.
 5. **Save** the file.
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```SCSS
 $fjord-primary: #5657A1;
@@ -59,7 +59,7 @@ $fjord-success: #57D192;
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `03-variables-scss` snippet.
 5. **Save** the file.
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```SCSS
 @import "variables/colors";
@@ -71,7 +71,7 @@ $fjord-success: #57D192;
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `04-portlet-variables-custom-scss` snippet.
 5. **Save** the file. 
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```SCSS
 $portlet-header-margin-bottom: map-get($spacers, 5);
@@ -92,7 +92,7 @@ $portlet-topper-border-radius: 4px 4px 0 0;
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `05-buttons-scss` snippet.
 5. **Save** the file.
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```SCSS
 .fjord-btn-primary {
@@ -106,7 +106,7 @@ $portlet-topper-border-radius: 4px 4px 0 0;
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `06-footer-scss` snippet.
 5. **Save** the file.
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```SCSS
 .footer {
@@ -129,7 +129,7 @@ $portlet-topper-border-radius: 4px 4px 0 0;
 3. **Type** `lfr` to view the available code snippets.
 4. **Choose** the `07-custom-scss-imports` snippet.
 5. **Save** the file.
-  * Alternatively, you can type and save the following:
+    * Alternatively, you can type and save the following:
 
 ```SCSS
 @import "partials/variables";
@@ -146,7 +146,7 @@ $portlet-topper-border-radius: 4px 4px 0 0;
 ## Add Theme Images
 1. **Copy** the contents of the `images` folder from `exercise-src`.   
 2. **Paste** the contents into `livingstone-fjord-theme/src/images`.
-  * You will need to replace the thumbnail image.
+    * You will need to replace the thumbnail image.
 
 ![The screenshot.png and thumbnail.png files added to the Images folder.](./images/added-images-folder.png)
 
@@ -162,7 +162,7 @@ $portlet-topper-border-radius: 4px 4px 0 0;
 
 ## Deploy the Theme to See the Styling Changes
 1. **Run** `npm run gulp deploy` in the _Command Line_ or the _Terminal_. 
-  * If you're already running gulp watch, this isn't needed.
+    * If you're already running gulp watch, this isn't needed.
 
 ![The updated Theme applied to the Livingstone HOtels & Resorts Site.](./images/theme-styling.png)
 

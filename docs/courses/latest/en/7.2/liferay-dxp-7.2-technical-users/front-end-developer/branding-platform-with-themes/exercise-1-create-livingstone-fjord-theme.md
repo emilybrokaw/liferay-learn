@@ -62,8 +62,7 @@
 
 > Note: If the Theme Generator returns an error, make sure you are using NPM 10.15.1.
 
-![](./images/liferay-theme-generator-startup.png)
-<img src="." style="max-height: 25%">
+![The Liferay Theme Generator startup with a theme name, theme ID, and Liferay version designated.](./images/liferay-theme-generator-startup.png)
 
 > Note: Liferay themes created with the theme generator are bundled with Gulp. In order to run Gulp locally from the command line, we must add a script to the package.json file. Additionally, some setups run into issues running scripts with npm. If this is the case, try creating an .npmrc file in the root of your project and add the `ignore-scripts=false` configuration.
 

@@ -221,8 +221,8 @@ With all these settings included, administrators will be able to control all the
 
 ## Next Up
 
-* [Exercise 3: Add Custom JavaScript to a Theme](./exercise-3-add-custom-javascript-to-theme.md)
+* [Exercise 4: Configure the Theme to Provide Administrative Options](./exercise-4-configure-theme-to-provide-administrative-options.md)
 
 ## Previous Step
 
-* [Exercise 4: Configure the Theme to Provide Administrative Options](./exercise-4-configure-theme-to-provide-administrative-options.md)
+* [Exercise 3: Add Custom JavaScript to a Theme](./exercise-3-add-custom-javascript-to-theme.md)
